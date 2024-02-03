@@ -34,4 +34,4 @@ Subscribe and access list archives at [https://lists.pqca.org/g/oqs-tsc](https:/
 
 ### Discord
 
-Join the [PQCA Discord server](https://discord.gg/gv8YN5bb) and reach us on the #oqs-general channel.
+Join the [PQCA Discord server](https://discord.gg/gv8YN5bb) and reach us on the [#oqs-general](https://discordapp.com/channels/1202723482224295936/1203395992003678238) channel.
