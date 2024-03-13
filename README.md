@@ -18,11 +18,11 @@ The role and responsibilities of the TSC are described in the [Technical Charter
 
 - Norman Ashley (Cisco)
 - Michael Baentsch (independent contributor)
-- Thomas Bailleux (SandboxAQ)
-- Basil Hess (IBM Research)
+- Thomas Bailleux (SandboxAQ) – TSC representative to PQCA TAC
+- Basil Hess (IBM Research) – TSC vice chair
 - Brian Jarvis (AWS)
 - Christian Paquin (Microsoft Research)
-- Douglas Stebila (University of Waterloo)
+- Douglas Stebila (University of Waterloo) – TSC chair
 
 ## Communication Channels
 
