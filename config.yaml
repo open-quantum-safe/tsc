@@ -1,0 +1,139 @@
+teams:
+- name: core
+  maintainers:
+  - baentsch
+  - dstebila
+  members:
+  - SWilson4
+  - bhess
+  - christianpaquin
+  - praveksharma
+  - vsoftco
+- name: rust
+  maintainers:
+  - thomwiggers
+- name: tsc
+  maintainers:
+  - baentsch
+  - dstebila
+  members:
+  - ashman-p
+  - bhess
+  - brian-jarvis-aws
+  - christianpaquin
+  - thb-sb
+repositories:
+- name: .github
+  visibility: public
+- name: boringssl
+  collaborators:
+    claucece: write
+    oqs-bot: write
+    pi-314159: write
+  teams:
+    core: write
+  visibility: public
+- name: ci-containers
+  teams:
+    core: write
+  visibility: public
+- name: liboqs
+  collaborators:
+    Martyrshot: write
+    ashman-p: write
+    cothan: write
+    thomwiggers: write
+  teams:
+    core: write
+  visibility: public
+- name: liboqs-cpp
+  collaborators:
+    vsoftco: admin
+  teams:
+    core: write
+  visibility: public
+- name: liboqs-dotnet
+  collaborators:
+    oqs-bot: write
+  teams:
+    core: write
+  visibility: public
+- name: liboqs-go
+  collaborators:
+    vsoftco: admin
+  teams:
+    core: maintain
+  visibility: public
+- name: liboqs-java
+  collaborators:
+    jimouris: write
+    oqs-bot: write
+  teams:
+    core: maintain
+  visibility: public
+- name: liboqs-python
+  collaborators:
+    oqs-bot: write
+    vsoftco: admin
+  teams:
+    core: write
+  visibility: public
+- name: liboqs-rust
+  collaborators:
+    dsprenkels: write
+    thomwiggers: admin
+  teams:
+    core: write
+  visibility: public
+- name: libssh
+  collaborators:
+    christianpaquin: admin
+    kevinmkane: maintain
+  teams:
+    core: write
+  visibility: public
+- name: openssh
+  collaborators:
+    oqs-bot: write
+  teams:
+    core: write
+  visibility: public
+- name: openssl
+  collaborators:
+    oqs-bot: write
+  teams:
+    core: write
+  visibility: public
+- name: oqs-demos
+  collaborators:
+    oqs-bot: write
+  teams:
+    core: write
+  visibility: public
+- name: oqs-provider
+  collaborators:
+    oqs-bot: write
+    thb-sb: write
+  teams:
+    core: write
+  visibility: public
+- name: profiling
+  collaborators:
+    oqs-bot: write
+  teams:
+    core: maintain
+  visibility: public
+- name: tsc
+  teams:
+    tsc: write
+  visibility: public
+- name: www
+  collaborators:
+    SWilson4: write
+    christianpaquin: write
+    crockeea: write
+    praveksharma: write
+    vsoftco: write
+  teams:
+    core: read
+  visibility: private
