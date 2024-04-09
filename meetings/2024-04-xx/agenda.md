@@ -2,9 +2,9 @@
 
 ## Meeting information
 
-**Date and time:** TBD
+**Date and time:** April 10, 2024, 5pm Central European / 11am US Eastern / 8am US Pacific
 
-**Location:** Zoom
+**Location:** [Zoom](https://zoom-lfx.platform.linuxfoundation.org/meeting/99801505240?password=46baaeb1-6509-4475-8f1e-9c2fce46ef17)
 
 Information about the TSC (members, roles and responsibilities, charter) is available on Github here:
 	https://github.com/open-quantum-safe/tsc
