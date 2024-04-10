@@ -17,7 +17,7 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
    - Seeking a member or observer of the TSC to take minutes. Note that transcripts and recordings are available to assist with minute-taking.
 1. Approval of minutes of last meeting
    - Recording and transcript are available on the Linux Foundation meeting portal at https://openprofile.dev/my-meetings
-   - Minutes are available at https://github.com/open-quantum-safe/tsc/blob/main/meetings/2024-03-11/minutes.md
+   - Minutes are available at https://github.com/open-quantum-safe/tsc/pull/14/
    - Please review minutes and vote for approval via approval of the pull request, or make a comment / code review to suggest a change
 1. [Voting procedure](https://github.com/open-quantum-safe/tsc/issues/12)
 1. [Addition of Vlad Gheorghiu to TSC](https://github.com/open-quantum-safe/www/pull/183#issuecomment-2028818754)
