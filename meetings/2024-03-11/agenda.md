@@ -12,19 +12,7 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 ## Agenda
 
 1. Election of a TSC chair
-   * Douglas is elected the chair.
-   * Basil is elected the co-chair. 
 2. Establishing a voting procedure
 3. Identifying a representative from the OQS TSC to the PQCA Technical Advisory Committee
 4. Reviewing status of sub projects (https://github.com/open-quantum-safe/tsc/issues/2)
 5. Discussing plan for level of code support and the production vs. research tracks (https://github.com/orgs/open-quantum-safe/discussions/1689, https://github.com/open-quantum-safe/tsc/issues/1)
-
-## Attendees
-
-*  [x] [Norman Ashley (Cisco)](https://github.com/ashman-p)
-*  [x] [Michael Baentsch (independent contributor)](https://github.com/baentsch)
-*  [x] [Thomas Bailleux (SandboxAQ)](https://github.com/)
-*  [x] [Basil Hess (IBM Research)](https://github.com/bhess)
-*  [x] [Brian Jarvis (AWS)](https://github.com/brian-jarvis-aws)
-*  [x] [Christian Paquin (Microsoft Research)](https://github.com/christianpaquin)
-*  [x] [Douglas Stebila (University of Waterloo)](https://github.com/dstebila)
