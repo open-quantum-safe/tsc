@@ -27,6 +27,10 @@ The role and responsibilities of the TSC are described in the [Technical Charter
 
 ## Communication Channels
 
+### Meetings
+
+The TSC holds regular meetings. [agenda and minutes](meetings/index.md)
+
 ### Email list
 
 Public mailing list for the OQS TSC: [oqs-tsc@lists.pqca.org](mailto:oqs-tsc@lists.pqca.org)
