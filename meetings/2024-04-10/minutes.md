@@ -22,6 +22,7 @@ Other attendees
 
 
 ## 1. Chair's introduction
+ - The chair thanks members for being patient as we get up and running
  - TSC aims to be consensus driven & friendly
  - TSC will discuss & make strategic decisions on technical matters. Developer call handlers regular operational matters
 
@@ -31,7 +32,7 @@ Other attendees
 
 ## 3. Appoint minute-taker
 
- - Nigel will take this week's notes. Suggested a rotating role which was agreed
+ - Nigel will take this week's notes. Agreed that we would ask at the beginning of each meeting & do in rotation.
 
 ## 4. Approval of minutes of last meeting
 
@@ -43,7 +44,7 @@ Other attendees
 - [Issue #12](https://github.com/open-quantum-safe/tsc/issues/12) open for discussion
 - online/async voting to allow broadest engagement
 - open votes for technical matters
-- different opinions on whether personel matters (ie voting such as ranking) should be public or secret
+- differing opinions on whether personal matters (including voting such as ranking) should be public or secret, or referred up to the board.
 - noted that most decisions consensus driven in any case
 - mechanism - git (simple), [gitvote](https://github.com/cncf/gitvote), [Helios](https://vote.heliosvoting.org/) are possible options
 - discussion to continue in [issue 12](https://github.com/open-quantum-safe/tsc/issues/12)
@@ -52,12 +53,15 @@ Other attendees
 ## 6. Addition of Vlad Gheorghiu to TSC
 
 - Vlad is maintainer of language wrappers 
+- Intent had been he was in the TSC from launch
 - Christan proposed, Basil seconded motion to add Vlad. Agreed by verbal vote of TSC members with no objections
 
 ## 7. Meeting cadence
 
 - Monthly still seems appropriate - lots of topics
-- Two suggestions a) in PQCA TAC timeslot (alt. weeks) in off-week b) offline poll to accomodate most TSC members, and consider time rotation to handle differing timezones
+- Two suggestions:
+  - in PQCA TAC timeslot (alt. weeks) in off-week
+  - offline poll to accommodate most TSC members, and consider time rotation to handle differing timezones. This may require a higher frequency than monthly
 - Agreed poll will be conducted
 
 ## 8. Report from TAC representative (Thomas)
@@ -65,16 +69,17 @@ Other attendees
 - Project Lifecycle. 
   - [Early draft](https://docs.google.com/document/d/1NV-0vNgXWdc81oqT0jv0C-9Funb8dySS06u90ghF-X4/edit)
   - PQCA TAC suggests oqs tsc review and develop as most active project.
-  - objective is clarity for consumers as to what state the code is in - production, experimental, how good is security, maintenance - don't want to set wrong expectations. Similar to apache incubation approach
+  - objective is clarity for consumers as to what state the code is in - production, experimental, how good is security, maintenance - don't want to set wrong expectations. 
+  - Also covers adoption of new projects. Similar to apache incubation approach
   - may apply at sub-project or component level
   - should map existing oqs subprojects/components to proposal for validation
-  - clear separation may require restructuring of liboqs, additional projects etc
+  - clear separation may require feature flags, restructuring of liboqs, additional projects etc
   - should delegate to OQS dev meeting to decide/discuss in github issues
   - Issue will be opened for followup
 - Security
   - PQCA [setting up security workgroup](https://github.com/PQCA/TAC/issues/2)
   - Hoping to arrange presentation from [OSSF](https://openssf.org/) around [scorecard](https://securityscorecards.dev/) & other best practices. TSC members will be invited
-  - Also Use of sigstore, cboms, sboms, vulnerability reporting process
+  - Also Use of sigstore, CBOMs, SBOMs, vulnerability reporting process
 
 ## 9. Does OQS-BoringSSL repository require a license exemption?
 
@@ -94,3 +99,7 @@ No discussion beyond 8. above - timeout
 ## 12. Other business
 
 None
+
+## Meeting Recording
+
+A [transcript and recording of this meeting](https://zoom.us/rec/play/SSS-KDTuL7-MfCQaBoOH6NsJ2qRjPuc46X1hzaRizeJBeFsgRlTapONnlosGDbBGjAJI8dksmehEiF0I.s2Hw9yHdlBvJ0s-A?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2FoQXCKON8wrHgBsjAWgWQYZxOBfKB9eeiyw38CgqMbhVB9LqHnE0cPMhwdW3zZDYp.ID4HoVpw_jj0841b) is available
