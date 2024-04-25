@@ -137,4 +137,4 @@ repositories:
     vsoftco: write
   teams:
     core: read
-  visibility: private
+  visibility: public
