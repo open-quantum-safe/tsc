@@ -81,7 +81,6 @@ repositories:
   visibility: public
 - name: liboqs-rust
   collaborators:
-    dsprenkels: write
     thomwiggers: admin
   teams:
     core: write
