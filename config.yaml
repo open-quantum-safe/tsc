@@ -1,4 +1,9 @@
 teams:
+- name: bots
+  maintainers:
+  - ryjones
+  members:
+  - oqs-bot
 - name: core
   maintainers:
   - baentsch
@@ -29,9 +34,9 @@ repositories:
 - name: boringssl
   collaborators:
     claucece: write
-    oqs-bot: write
     pi-314159: write
   teams:
+    bots: write
     core: write
   visibility: public
 - name: ci-containers
@@ -54,9 +59,8 @@ repositories:
     core: write
   visibility: public
 - name: liboqs-dotnet
-  collaborators:
-    oqs-bot: write
   teams:
+    bots: write
     core: write
   visibility: public
 - name: liboqs-go
@@ -68,15 +72,15 @@ repositories:
 - name: liboqs-java
   collaborators:
     jimouris: write
-    oqs-bot: write
   teams:
+    bots: write
     core: maintain
   visibility: public
 - name: liboqs-python
   collaborators:
-    oqs-bot: write
     vsoftco: admin
   teams:
+    bots: write
     core: write
   visibility: public
 - name: liboqs-rust
@@ -94,34 +98,30 @@ repositories:
     core: write
   visibility: public
 - name: openssh
-  collaborators:
-    oqs-bot: write
   teams:
+    bots: write
     core: write
   visibility: public
 - name: openssl
-  collaborators:
-    oqs-bot: write
   teams:
+    bots: write
     core: write
   visibility: public
 - name: oqs-demos
-  collaborators:
-    oqs-bot: write
   teams:
+    bots: write
     core: write
   visibility: public
 - name: oqs-provider
   collaborators:
-    oqs-bot: write
     thb-sb: write
   teams:
+    bots: write
     core: write
   visibility: public
 - name: profiling
-  collaborators:
-    oqs-bot: write
   teams:
+    bots: write
     core: maintain
   visibility: public
 - name: tsc
