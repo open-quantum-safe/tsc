@@ -49,6 +49,7 @@ repositories:
     ashman-p: write
     cothan: write
     thomwiggers: write
+    oqs-bot: write
   teams:
     core: write
   visibility: public
@@ -114,6 +115,7 @@ repositories:
 - name: oqs-provider
   collaborators:
     thb-sb: write
+    oqs-bot: write
   teams:
     bots: write
     core: write
