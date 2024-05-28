@@ -14,6 +14,23 @@ teams:
   - christianpaquin
   - praveksharma
   - vsoftco
+- name: liboqs-committers
+  maintainers:
+  - dstebila
+  members:
+  - Martyrshot
+  - SWilson4
+  - baentsch
+  - bhess
+  - christianpaquin
+  - jschanck
+  - praveksharma
+  - vsoftco
+- name: liboqs-maintainers
+  maintainers:
+  - dstebila
+  members:
+  - baentsch
 - name: rust
   maintainers:
   - thomwiggers
@@ -51,6 +68,8 @@ repositories:
     thomwiggers: write
     oqs-bot: write
   teams:
+    liboqs-committers: write
+    liboqs-maintainers: maintain
     core: write
   visibility: public
 - name: liboqs-cpp
@@ -83,12 +102,16 @@ repositories:
   teams:
     bots: write
     core: write
+    liboqs-committers: write
+    liboqs-maintainers: maintain
   visibility: public
 - name: liboqs-rust
   collaborators:
     thomwiggers: admin
   teams:
     core: write
+    liboqs-committers: write
+    liboqs-maintainers: maintain
   visibility: public
 - name: libssh
   collaborators:
@@ -119,6 +142,8 @@ repositories:
   teams:
     bots: write
     core: write
+    liboqs-committers: write
+    liboqs-maintainers: maintain
   visibility: public
 - name: profiling
   teams:
