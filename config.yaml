@@ -1,8 +1,12 @@
 teams:
+- name: boringssl-maintainers
+  maintainers:
+  - dstebila
+  members:
+  - claucece
+  - pi-314159
 - name: bots
   maintainers:
-  - ryjones
-  members:
   - oqs-bot
 - name: core
   maintainers:
@@ -31,6 +35,22 @@ teams:
   - dstebila
   members:
   - baentsch
+- name: liboqs-python-admins
+  maintainers:
+  - vsoftco
+- name: libssh-admins
+  maintainers:
+  - dstebila
+  members:
+  - christianpaquin
+- name: libssh-maintainers
+  maintainers:
+  - dstebila
+  members:
+  - kevinmkane
+- name: oqs-provider-committers
+  maintainers:
+  - thb-sb
 - name: rust
   maintainers:
   - thomwiggers
@@ -53,6 +73,7 @@ repositories:
     claucece: write
     pi-314159: write
   teams:
+    boringssl-maintainers: write
     bots: write
     core: write
   visibility: public
@@ -66,11 +87,11 @@ repositories:
     ashman-p: write
     cothan: write
     thomwiggers: write
-    oqs-bot: write
   teams:
+    bots: write
+    core: write
     liboqs-committers: write
     liboqs-maintainers: maintain
-    core: write
   visibility: public
 - name: liboqs-cpp
   collaborators:
@@ -97,28 +118,25 @@ repositories:
     core: maintain
   visibility: public
 - name: liboqs-python
-  collaborators:
-    vsoftco: admin
   teams:
     bots: write
     core: write
     liboqs-committers: write
     liboqs-maintainers: maintain
+    liboqs-python-admins: admin
   visibility: public
 - name: liboqs-rust
-  collaborators:
-    thomwiggers: admin
   teams:
     core: write
     liboqs-committers: write
     liboqs-maintainers: maintain
+    rust: admin
   visibility: public
 - name: libssh
-  collaborators:
-    christianpaquin: admin
-    kevinmkane: maintain
   teams:
     core: write
+    libssh-admins: admin
+    libssh-maintainers: maintain
   visibility: public
 - name: openssh
   teams:
@@ -136,14 +154,12 @@ repositories:
     core: write
   visibility: public
 - name: oqs-provider
-  collaborators:
-    thb-sb: write
-    oqs-bot: write
   teams:
     bots: write
     core: write
     liboqs-committers: write
     liboqs-maintainers: maintain
+    oqs-provider-committers: write
   visibility: public
 - name: profiling
   teams:
