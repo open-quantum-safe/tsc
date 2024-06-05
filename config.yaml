@@ -54,6 +54,11 @@ teams:
 - name: rust
   maintainers:
   - thomwiggers
+- name: triage
+  maintainers:
+  - dstebila
+  members:
+  - planetf1
 - name: tsc
   maintainers:
   - baentsch
@@ -76,10 +81,12 @@ repositories:
     boringssl-maintainers: write
     bots: write
     core: write
+    triage: triage
   visibility: public
 - name: ci-containers
   teams:
     core: write
+    triage: triage
   visibility: public
 - name: liboqs
   collaborators:
@@ -92,23 +99,27 @@ repositories:
     core: write
     liboqs-committers: write
     liboqs-maintainers: maintain
+    triage: triage
   visibility: public
 - name: liboqs-cpp
   collaborators:
     vsoftco: admin
   teams:
     core: write
+    triage: triage
   visibility: public
 - name: liboqs-dotnet
   teams:
     bots: write
     core: write
+    triage: triage
   visibility: public
 - name: liboqs-go
   collaborators:
     vsoftco: admin
   teams:
     core: maintain
+    triage: triage
   visibility: public
 - name: liboqs-java
   collaborators:
@@ -116,6 +127,7 @@ repositories:
   teams:
     bots: write
     core: maintain
+    triage: triage
   visibility: public
 - name: liboqs-python
   teams:
@@ -124,6 +136,7 @@ repositories:
     liboqs-committers: write
     liboqs-maintainers: maintain
     liboqs-python-admins: admin
+    triage: triage
   visibility: public
 - name: liboqs-rust
   teams:
@@ -131,27 +144,32 @@ repositories:
     liboqs-committers: write
     liboqs-maintainers: maintain
     rust: admin
+    triage: triage
   visibility: public
 - name: libssh
   teams:
     core: write
     libssh-admins: admin
     libssh-maintainers: maintain
+    triage: triage
   visibility: public
 - name: openssh
   teams:
     bots: write
     core: write
+    triage: triage
   visibility: public
 - name: openssl
   teams:
     bots: write
     core: write
+    triage: triage
   visibility: public
 - name: oqs-demos
   teams:
     bots: write
     core: write
+    triage: triage
   visibility: public
 - name: oqs-provider
   teams:
@@ -160,14 +178,17 @@ repositories:
     liboqs-committers: write
     liboqs-maintainers: maintain
     oqs-provider-committers: write
+    triage: triage
   visibility: public
 - name: profiling
   teams:
     bots: write
     core: maintain
+    triage: triage
   visibility: public
 - name: tsc
   teams:
+    triage: triage
     tsc: write
   visibility: public
 - name: www
@@ -179,4 +200,5 @@ repositories:
     vsoftco: write
   teams:
     core: read
+    triage: triage
   visibility: public
