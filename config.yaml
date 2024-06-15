@@ -73,6 +73,7 @@ teams:
 repositories:
 - name: .github
   teams:
+    core: read
     tsc: write
   visibility: public
 - name: boringssl
@@ -205,6 +206,7 @@ repositories:
   visibility: public
 - name: tsc
   teams:
+    core: read
     triage: triage
     tsc: write
   visibility: public
