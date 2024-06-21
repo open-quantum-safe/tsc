@@ -20,3 +20,5 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
    - Please review minutes and vote for approval via approval of the pull request, or make a comment / code review to suggest a change
 1. Report from TAC representative (Thomas)
 1. Planning for Trail of Bits audit
+1. European Cyber Week (November)
+1. Other business.
