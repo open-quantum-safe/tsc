@@ -4,6 +4,21 @@
 
 <!-- ### Next meeting: Tuesday June 4, 2024 at 12:30pm US Eastern time / 6:30pm Central European / 9:30am US Pacific time on Zoom (https://uwaterloo.zoom.us/j/98064335970?pwd=U0tTZk84blBZTnptTXh0YmlZd1dOQT09) -->
 
+## Attendees
+
+- Alex B, Max, Nigel (IBM)
+- Alex H, Mark, Norm (Cisco)
+- Christian (MSR)
+- Douglas, Pravek, Spencer (Waterloo)
+- Gerardo (AWS)
+- Jason (SandboxAQ)
+- Ry (Linux Foundation)
+<!--- JP (Quantum Resistant Ledger)-->
+<!--- Michael (independent)-->
+<!-- - Sara (Synopsys) -->
+- Vlad (softwareQ)
+- Yarkin (NVIDIA)
+
 ## Agenda
 
 1. Welcomes
