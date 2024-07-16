@@ -59,6 +59,7 @@ teams:
   - dstebila
   members:
   - planetf1
+  - ajbozarth
 - name: tsc
   maintainers:
   - baentsch
