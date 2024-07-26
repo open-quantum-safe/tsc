@@ -60,6 +60,12 @@ teams:
   members:
   - planetf1
   - ajbozarth
+- name: trail-of-bits
+  maintainers:
+  - SWilson4
+  members:
+  - fcasal
+  - tob-scott-a
 - name: tsc
   maintainers:
   - baentsch
