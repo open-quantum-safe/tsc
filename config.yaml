@@ -48,6 +48,11 @@ teams:
   - dstebila
   members:
   - kevinmkane
+- name: openssh-committers
+  maintainers:
+  - dstebila
+  members:
+  - geedo0
 - name: oqs-provider-committers
   maintainers:
   - thb-sb
@@ -60,6 +65,7 @@ teams:
   members:
   - planetf1
   - ajbozarth
+  - geedo0
 - name: trail-of-bits
   maintainers:
   - SWilson4
@@ -177,6 +183,7 @@ repositories:
   teams:
     bots: write
     core: write
+    openssh-committers: write
     triage: triage
     tsc: read
   visibility: public
