@@ -112,6 +112,7 @@ repositories:
     ashman-p: write
     cothan: write
     thomwiggers: write
+    jplomas: read
   teams:
     bots: write
     core: write
