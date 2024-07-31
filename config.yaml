@@ -56,6 +56,11 @@ teams:
 - name: oqs-provider-committers
   maintainers:
   - thb-sb
+- name: read
+  maintainers:
+  - dstebila
+  members:
+  - jplomas
 - name: rust
   maintainers:
   - thomwiggers
@@ -112,12 +117,12 @@ repositories:
     ashman-p: write
     cothan: write
     thomwiggers: write
-    jplomas: read
   teams:
     bots: write
     core: write
     liboqs-committers: write
     liboqs-maintainers: maintain
+    read: read
     triage: triage
     tsc: read
   visibility: public
