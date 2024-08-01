@@ -56,6 +56,9 @@ teams:
 - name: oqs-provider-committers
   maintainers:
   - thb-sb
+  members:
+  - feventura
+  - iyanmv
 - name: read
   maintainers:
   - dstebila
