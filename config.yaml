@@ -46,8 +46,6 @@ teams:
 - name: libssh-maintainers
   maintainers:
   - dstebila
-  members:
-  - kevinmkane
 - name: openssh-committers
   maintainers:
   - dstebila
