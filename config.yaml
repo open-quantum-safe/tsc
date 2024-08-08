@@ -30,6 +30,13 @@ teams:
   - jschanck
   - praveksharma
   - vsoftco
+- name: liboqs-cupqc-maintainers
+  maintainers:
+   - praveksharma
+  members:
+   - ydoroz
+   - stevenireeves
+   - neil-lindquist
 - name: liboqs-maintainers
   maintainers:
   - dstebila
@@ -140,6 +147,10 @@ repositories:
     triage: triage
     tsc: read
   visibility: public
+- name: liboqs-cupqc
+  visibility: private
+  teams:
+    liboqs-cupqc-maintainers: maintain
 - name: liboqs-dotnet
   teams:
     bots: write
@@ -249,10 +260,3 @@ repositories:
     triage: triage
     tsc: write
   visibility: public
-- name: liboqs-cupqc
-  visibility: private
-  collaborators:
-    praveksharma: write
-    ydoroz: write
-    stevenireeves: write
-    neil-lindquist: write
