@@ -249,3 +249,10 @@ repositories:
     triage: triage
     tsc: write
   visibility: public
+- name: liboqs-cupqc
+  visibility: private
+  collaborators:
+    praveksharma: write
+    ydoroz: write
+    stevenireeves: write
+    neil-lindquist: write
