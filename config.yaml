@@ -24,11 +24,14 @@ teams:
   members:
   - Martyrshot
   - SWilson4
+  - ashman-p
   - baentsch
   - bhess
   - christianpaquin
+  - cothan
   - jschanck
   - praveksharma
+  - thomwiggers
   - vsoftco
 - name: liboqs-cupqc-maintainers
   maintainers:
@@ -42,6 +45,17 @@ teams:
   - dstebila
   members:
   - baentsch
+- name: liboqs-cpp-admins
+  maintainers:
+  - vsoftco
+- name: liboqs-java-committers
+  maintainers:
+  - ryjones
+  members:
+  - jimouris
+- name: liboqs-go-admins
+  maintainers:
+  - vsoftco
 - name: liboqs-python-admins
   maintainers:
   - vsoftco
@@ -101,6 +115,14 @@ teams:
   - christianpaquin
   - thb-sb
   - vsoftco
+- name: www
+  maintainers:
+  - crockeea
+  members:
+  - christianpaquin
+  - praveksharma
+  - SWilson4
+  - vsoftco
 repositories:
 - name: .github
   teams:
@@ -125,11 +147,6 @@ repositories:
     tsc: read
   visibility: public
 - name: liboqs
-  collaborators:
-    Martyrshot: write
-    ashman-p: write
-    cothan: write
-    thomwiggers: write
   teams:
     bots: write
     core: write
@@ -140,10 +157,9 @@ repositories:
     tsc: read
   visibility: public
 - name: liboqs-cpp
-  collaborators:
-    vsoftco: admin
   teams:
     core: write
+    liboqs-cpp-admins: admin
     triage: triage
     tsc: read
   visibility: public
@@ -159,10 +175,9 @@ repositories:
     tsc: read
   visibility: public
 - name: liboqs-go
-  collaborators:
-    vsoftco: admin
   teams:
     core: maintain
+    liboqs-go-admins: admin
     triage: triage
     tsc: read
   visibility: public
@@ -172,6 +187,7 @@ repositories:
   teams:
     bots: write
     core: maintain
+    liboqs-java-committers: write
     triage: triage
     tsc: read
   visibility: public
@@ -249,14 +265,9 @@ repositories:
     tsc: write
   visibility: public
 - name: www
-  collaborators:
-    SWilson4: write
-    christianpaquin: write
-    crockeea: write
-    praveksharma: write
-    vsoftco: write
   teams:
     core: write
     triage: triage
     tsc: write
+    www: write
   visibility: public
