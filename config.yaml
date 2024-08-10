@@ -246,7 +246,7 @@ repositories:
     core: write
     liboqs-committers: write
     liboqs-maintainers: maintain
-    oqs-provider-codeowners: write
+    oqs-provider-codeowners: admin
     oqs-provider-committers: write
     triage: triage
     tsc: read
