@@ -8,6 +8,7 @@
 2. Issue triaging / prioritization
 3. Status updates
 4. liboqs 0.11.0 release planning
+5. CBOM news
 
 ## OQS subprojects
 
