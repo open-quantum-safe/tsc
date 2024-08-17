@@ -240,6 +240,8 @@ repositories:
     triage: triage
     tsc: read
   visibility: public
+  collaborators:
+    pi-314159: write
 - name: oqs-provider
   teams:
     bots: write
