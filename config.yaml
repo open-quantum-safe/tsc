@@ -67,6 +67,9 @@ teams:
 - name: libssh-maintainers
   maintainers:
   - dstebila
+- name: minute-takers
+  maintainers:
+  - SWilson4
 - name: openssh-committers
   maintainers:
   - dstebila
@@ -263,6 +266,7 @@ repositories:
 - name: tsc
   teams:
     core: read
+    minute-takers: write
     triage: triage
     tsc: write
   visibility: public
