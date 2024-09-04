@@ -161,6 +161,7 @@ repositories:
   visibility: public
 - name: liboqs-cpp
   teams:
+    bots: write
     core: write
     liboqs-cpp-admins: admin
     triage: triage
@@ -179,6 +180,7 @@ repositories:
   visibility: public
 - name: liboqs-go
   teams:
+    bots: write
     core: maintain
     liboqs-go-admins: admin
     triage: triage
