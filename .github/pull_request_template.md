@@ -17,7 +17,7 @@ All the following conditions hold for permissions set in `config.yaml`:
 -    sub project maintainers have admin rights on the sub projects
 -    OQS and sub project release managers have maintainer rights on the sub projects but can themselves set/reset branch protection rules limiting write access to sensitive branches
 -    sub project committers have write rights on all branches of the sub projects but can request branch protection rules limiting this
--    sub project contributors have write rights on all branches except main on those sub projects
+-    sub project contributors (incl. code owners) have write rights on all branches except main on those sub projects
 -    OQS and sub project triage actors have triage rights on all branches of the sub projects
 -    OQS maintainers and LF admins have admin rights on the organization (e.g., org-wide secret management) as well as maintenance rights on the team configurations
 
