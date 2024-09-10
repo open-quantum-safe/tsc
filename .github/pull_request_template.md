@@ -8,7 +8,7 @@ Unconditionally, changes to `config.yaml` must
 - [ ] be approved by 2 members of the OQS TSC
 - [ ] not violate permissions documented in GOVERNANCE.md files for sub projects where such files exist
 
-The following goals apply to changes to the file `config.yaml` with exceptions possible, as long as the rationale for the excption is documented by comments in the file:
+The following goals apply to changes to the file `config.yaml` with exceptions possible, as long as the rationale for the exception is documented by comments in the file:
 - [ ] all sub projects should be treated identically wrt roles & responsibilities as per the detailed list below
 - [ ] teams/team designations are to be used wherever possible; using personal GH handles should only be used in team definitions
 - [ ] Admin changes to the file must be documented by comments as to the rationale of the change
