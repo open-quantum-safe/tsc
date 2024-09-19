@@ -55,6 +55,7 @@ teams:
 - name: liboqs-language-wrapper-maintainers
   maintainers:
    - vsoftco
+# added to eliminate key person risk:
    - oqs-maintainers
 - name: liboqs-cpp-maintainers
   maintainers:
@@ -73,6 +74,12 @@ teams:
 - name: liboqs-python-maintainers
   maintainers:
   - liboqs-language-wrapper-maintainers
+- name: liboqs-python-committers
+  maintainers:
+  - liboqs-python-maintainers
+  members:
+# Does this make sense to take support pressures off our sole language wrapper maintainer/committer? TBC
+  - core
 - name: libssh-maintainers
   maintainers:
   - oqs-maintainers
