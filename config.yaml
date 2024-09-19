@@ -1,31 +1,40 @@
 teams:
-- name: boringssl-maintainers
+- name: oqs-maintainers
   maintainers:
   - dstebila
+  - baentsch
+- name: oqs-admins
+  maintainers:
+  - tsc
   members:
-  - claucece
+  - ryjones
+- name: boringssl-maintainers
+  maintainers:
+  - oqs-maintainers
+  members:
   - pi-314159
 - name: bots
   maintainers:
   - oqs-bot
 - name: core
   maintainers:
-  - baentsch
-  - dstebila
+  - oqs-maintainers
   members:
   - SWilson4
   - bhess
   - christianpaquin
   - praveksharma
   - vsoftco
+- name: liboqs-maintainers
+  maintainers:
+  - oqs-maintainers
 - name: liboqs-committers
   maintainers:
-  - dstebila
+  - liboqs-maintainers
   members:
   - Martyrshot
   - SWilson4
   - ashman-p
-  - baentsch
   - bhess
   - christianpaquin
   - cothan
@@ -33,6 +42,8 @@ teams:
   - praveksharma
   - thomwiggers
   - vsoftco
+# The following is a completely private project intentionally hidden from view
+# Contact praveksharma for details 
 - name: liboqs-cupqc-maintainers
   maintainers:
    - praveksharma
@@ -40,67 +51,85 @@ teams:
    - ydoroz
    - stevenireeves
    - neil-lindquist
-- name: liboqs-maintainers
+- name: liboqs-language-wrapper-maintainers
   maintainers:
-  - dstebila
-  members:
-  - baentsch
-- name: liboqs-cpp-admins
+   - vsoftco
+   - oqs-maintainers
+- name: liboqs-cpp-maintainers
   maintainers:
-  - vsoftco
+  - liboqs-language-wrapper-maintainers
+- name: liboqs-java-maintainers
+  maintainers:
+  - oqs-maintainers
 - name: liboqs-java-committers
   maintainers:
-  - ryjones
+  - liboqs-java-maintainers
   members:
   - jimouris
-- name: liboqs-go-admins
+- name: liboqs-go-maintainers
   maintainers:
-  - vsoftco
-- name: liboqs-python-admins
+  - liboqs-language-wrapper-maintainers
+- name: liboqs-python-maintainers
   maintainers:
-  - vsoftco
-- name: libssh-admins
-  maintainers:
-  - dstebila
-  members:
-  - christianpaquin
+  - liboqs-language-wrapper-maintainers
 - name: libssh-maintainers
   maintainers:
-  - dstebila
+  - oqs-maintainers
+  members:
+  - christianpaquin
 - name: minute-takers
   maintainers:
   - SWilson4
+- name: openssh-maintainers
+  maintainers:
+  - oqs-maintainers
 - name: openssh-committers
   maintainers:
-  - dstebila
+  - openssh-maintainers
   members:
   - geedo0
-- name: oqs-provider-codeowners
+- name: oqsprovider-maintainers
   maintainers:
+  - oqs-maintainers
+# explicit exclusion of dstebila to align with GOVERNANCE.md
+  members:
   - baentsch
+- name: oqsprovider-codeowners
+  maintainers:
+  - oqsprovider-maintainers
   members:
   - bhess
   - feventura
   - iyanmv
   - thb-sb
-- name: oqs-provider-committers
+- name: oqsprovider-committers
   maintainers:
-  - thb-sb
+  - oqsprovider-maintainers
+  members:
+  - oqsprovider-codeowners
 - name: read
   maintainers:
-  - dstebila
+  - oqs-maintainers
   members:
   - jplomas
 - name: rust
   maintainers:
+  - oqs-maintainers
+  members:
   - thomwiggers
 - name: triage
   maintainers:
-  - dstebila
+  - oqs-maintainers
   members:
   - planetf1
   - ajbozarth
   - geedo0
+- name: oqs-demos-contributors
+  maintainers:
+  - oqs-maintainers
+  members:
+  - pi-314159
+# Is this still needed? TBD
 - name: trail-of-bits
   maintainers:
   - SWilson4
@@ -109,8 +138,7 @@ teams:
   - tob-scott-a
 - name: tsc
   maintainers:
-  - baentsch
-  - dstebila
+  - oqs-maintainers
   members:
   - ashman-p
   - bhess
@@ -120,8 +148,9 @@ teams:
   - vsoftco
 - name: www
   maintainers:
-  - crockeea
+  - oqs-maintainers
   members:
+  - crockeea
   - christianpaquin
   - praveksharma
   - SWilson4
@@ -131,30 +160,32 @@ repositories:
   teams:
     core: read
     tsc: write
+    oqs-maintainers: admin
+    oqs-admins: admin
   visibility: public
 - name: boringssl
-  collaborators:
-    claucece: write
-    pi-314159: write
   teams:
-    boringssl-maintainers: write
+    boringssl-maintainers: admin
     bots: write
     core: write
     triage: triage
     tsc: read
+    oqs-admins: admin
   visibility: public
 - name: ci-containers
   teams:
-    core: write
+    core: maintain
     triage: triage
     tsc: read
+    oqs-admins: admin
   visibility: public
 - name: liboqs
   teams:
     bots: write
     core: write
-    liboqs-committers: write
-    liboqs-maintainers: maintain
+    liboqs-committers: maintain
+    liboqs-maintainers: admin
+    oqs-admins: admin
     read: read
     triage: triage
     tsc: read
@@ -163,36 +194,40 @@ repositories:
   teams:
     bots: write
     core: write
-    liboqs-cpp-admins: admin
+    liboqs-cpp-maintainers: admin
+    oqs-admins: admin
     triage: triage
     tsc: read
   visibility: public
 - name: liboqs-cupqc
   visibility: private
   teams:
-    liboqs-cupqc-maintainers: maintain
+    liboqs-cupqc-maintainers: admin
+# No team/project maintainers for this project??? TBD
 - name: liboqs-dotnet
   teams:
     bots: write
     core: write
     triage: triage
+    oqs-admins: admin
     tsc: read
   visibility: public
 - name: liboqs-go
   teams:
     bots: write
     core: maintain
-    liboqs-go-admins: admin
+    liboqs-go-maintainers: admin
+    oqs-admins: admin
     triage: triage
     tsc: read
   visibility: public
 - name: liboqs-java
-  collaborators:
-    jimouris: write
   teams:
     bots: write
     core: maintain
-    liboqs-java-committers: write
+    liboqs-java-committers: maintain
+    liboqs-java-maintainers: admin
+    oqs-admins: admin
     triage: triage
     tsc: read
   visibility: public
@@ -200,15 +235,16 @@ repositories:
   teams:
     bots: write
     core: write
-    liboqs-committers: write
-    liboqs-maintainers: maintain
-    liboqs-python-admins: admin
+    liboqs-python-committers: maintain
+    liboqs-python-maintainers: admin
+    oqs-admins: admin
     triage: triage
     tsc: read
   visibility: public
 - name: liboqs-rust
   teams:
     core: write
+# This does not make any sense: these teams have no clue about this sub project TBD
     liboqs-committers: write
     liboqs-maintainers: maintain
     rust: admin
@@ -218,8 +254,8 @@ repositories:
 - name: libssh
   teams:
     core: write
-    libssh-admins: admin
-    libssh-maintainers: maintain
+    libssh-maintainers: admin
+    oqs-admins: admin
     triage: triage
     tsc: read
   visibility: public
@@ -227,10 +263,13 @@ repositories:
   teams:
     bots: write
     core: write
-    openssh-committers: write
+    openssh-maintainers: admin
+    openssh-committers: maintain
+    oqs-admins: admin
     triage: triage
     tsc: read
   visibility: public
+# Is this right given the project is dead? TBD
 - name: openssl
   teams:
     bots: write
@@ -240,26 +279,29 @@ repositories:
   visibility: public
 - name: oqs-demos
   teams:
+    oqs-admins: admin
+    oqs-maintainers: admin
+    oqs-demos-contributors: maintain
     bots: write
     core: write
     triage: triage
     tsc: read
   visibility: public
-  collaborators:
-    pi-314159: write
-- name: oqs-provider
+- name: oqsprovider
   teams:
     bots: write
     core: write
     liboqs-committers: write
     liboqs-maintainers: maintain
-    oqs-provider-codeowners: admin
-    oqs-provider-committers: write
+    oqsprovider-codeowners: admin
+    oqsprovider-committers: write
     triage: triage
     tsc: read
   visibility: public
 - name: profiling
   teams:
+    oqs-maintainers: admin
+    oqs-admins: admin
     bots: write
     core: maintain
     triage: triage
@@ -267,6 +309,8 @@ repositories:
   visibility: public
 - name: tsc
   teams:
+    oqs-maintainers: admin
+    oqs-admins: admin
     core: read
     minute-takers: write
     triage: triage
@@ -274,6 +318,8 @@ repositories:
   visibility: public
 - name: www
   teams:
+    oqs-maintainers: admin
+    oqs-admins: admin
     core: write
     triage: triage
     tsc: write
