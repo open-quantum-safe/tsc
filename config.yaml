@@ -6,6 +6,7 @@ teams:
 - name: oqs-admins
   maintainers:
   - tsc
+# Key person risk: TBI
   members:
   - ryjones
 - name: boringssl-maintainers
