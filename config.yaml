@@ -1,50 +1,211 @@
 teams:
+# admin access on all projects
+- name: oqs-admins
+  maintainers:
+  - ryjones
+# write access on all technical projects
+- name: oqs-bots
+  maintainers:
+  - oqs-bot
+
+# write access on TSC to post meeting minutes
+- name: minute-takers
+  maintainers:
+  - dstebila
+  members:
+  - SWilson4
+# access to Trail of Bits audit project board
+- name: trail-of-bits
+  maintainers:
+  - SWilson4
+  members:
+  - fcasal
+  - tob-scott-a
+# triage access across technical projects
+- name: triage
+  maintainers:
+  - dstebila
+  members:
+  - ajbozarth
+  - planetf1
+
+# A sensible default for projects without a clear list of Maintainers.
+# Consists of TSC members who are maintainers of at least one active OQS subproject.
+# TODO: add/update per-project GOVERNANCE.md files and remove this team.
 - name: oqs-maintainers
   maintainers:
   - dstebila
+  members:
   - baentsch
-- name: oqs-admins
+  - vsoftco
+# A sensible default for projects without a clear list of Release Managers.
+# TODO: add/update per-project GOVERNANCE.md files and remove this team.
+- name: oqs-release-managers
   maintainers:
-  - tsc
-# Key person risk: TBI
+  - dstebila
   members:
-  - ryjones
-- name: boringssl-maintainers
-  maintainers:
-  - oqs-maintainers
-  members:
-  - pi-314159
-- name: bots
-  maintainers:
-  - oqs-bot
-- name: core
-  maintainers:
-  - oqs-maintainers
-  members:
+  - baentsch
+  - dstebila
+  - praveksharma
   - SWilson4
+  - vsoftco
+# A sensible default for projects without a clear list of Committers.
+# Mirrors the old "core" team.
+# TODO: add/update per-project GOVERNANCE.md files and remove this team.
+- name: oqs-committers
+  maintainers:
+  - dstebila
+  members:
+  - baentsch
   - bhess
   - christianpaquin
   - praveksharma
+  - SWilson4
   - vsoftco
+# A sensible default for projects without a clear list of Contributors.
+# Developers who have contributed substantial code to at least one OQS subproject.
+# This includes all people who are listed in a CODEOWNERS file in an OQS subproject.
+# TODO: add/update per-project GOVERNANCE.md files and remove this team.
+- name: oqs-contributors
+  maintainers:
+  - dstebila
+  members:
+  - ashman-p
+  - alexrow
+  - cothan
+  - crockeea
+  - feventura
+  - geedo0
+  - iyanmv
+  - jimouris
+  - jplomas
+  - jschanck
+  - Martyrshot
+  - pi-314159
+  - thb-sb
+  - thomwiggers
+
+# Technical Steering Committee
+# https://github.com/open-quantum-safe/tsc/blob/main/README.md#members
+- name: tsc
+  maintainers:
+  - dstebila
+  members:
+  - ashman-p
+  - baentsch
+  - bhess
+  - brian-jarvis-aws
+  - christianpaquin
+  - thb-sb
+  - vsoftco
+
+# liboqs Maintainers
+# https://github.com/open-quantum-safe/liboqs/blob/main/GOVERNANCE.md#maintainers-1
 - name: liboqs-maintainers
   maintainers:
-  - oqs-maintainers
+  - dstebila
+  members:
+  - baentsch
+# liboqs Committers
+# https://github.com/open-quantum-safe/liboqs/blob/main/GOVERNANCE.md#committers-1
 - name: liboqs-committers
   maintainers:
-  - liboqs-maintainers
+  - dstebila
   members:
-  - Martyrshot
-  - SWilson4
-  - ashman-p
+  - baentsch
   - bhess
   - christianpaquin
-  - cothan
   - jschanck
+  - Martyrshot
   - praveksharma
-  - thomwiggers
+  - SWilson4
   - vsoftco
-# The following is a completely private project intentionally hidden from view
-# Contact praveksharma for details 
+
+# oqs-provider Maintainers
+# https://github.com/open-quantum-safe/oqs-provider/blob/main/GOVERNANCE.md#maintainers-1
+- name: oqs-provider-maintainers
+  maintainers:
+  - baentsch
+# oqs-provider Committers
+# https://github.com/open-quantum-safe/oqs-provider/blob/main/GOVERNANCE.md#committers-1
+- name: oqs-provider-committers
+  maintainers:
+  - baentsch
+  members:
+  - bhess
+  - christianpaquin
+  - thb-sb
+
+# boringssl Maintainers
+# TODO: provide "source of truth"
+- name: boringssl-maintainers
+  maintainers:
+  - pi-314159
+
+# openssh Release Managers
+# TODO: provide "source of truth"
+- name: openssh-release-managers
+  maintainers:
+  - dstebila
+  members:
+  - baentsch
+  - geedo0
+  - praveksharma
+
+# liboqs-cpp Maintainers
+# TODO: provide "source of truth"
+- name: liboqs-cpp-maintainers
+  maintainers:
+  - vsoftco
+# liboqs-cpp Release Managers
+# TODO: provide "source of truth"
+- name: liboqs-cpp-release-managers
+  maintainers:
+  - vsoftco
+
+# liboqs-go Maintainers
+# TODO: provide "source of truth"
+- name: liboqs-go-maintainers
+  maintainers:
+  - vsoftco
+# liboqs-go Release Managers
+# TODO: provide "source of truth"
+- name: liboqs-go-release-managers
+  maintainers:
+  - vsoftco
+
+# liboqs-python Maintainers
+# TODO: provide "source of truth"
+- name: liboqs-python-maintainers
+  maintainers:
+  - vsoftco
+# liboqs-python Release Managers
+# TODO: provide "source of truth"
+- name: liboqs-python-release-managers
+  maintainers:
+  - vsoftco
+
+# liboqs-java Maintainers
+# TODO: provide "source of truth"
+- name: liboqs-java-maintainers
+  maintainers:
+  - dstebila
+  members:
+  - jimouris
+
+# liboqs-rust Maintainers
+# TODO: provide "source of truth"
+- name: liboqs-rust-maintainers
+  maintainers:
+  - thomwiggers
+# liboqs-rust Release Managers
+# TODO: provide "source of truth"
+- name: liboqs-rust-release-managers
+  maintainers:
+  - thomwiggers
+
+# The following is a private project intentionally hidden from view.
+# Contact praveksharma for details.
 - name: liboqs-cupqc-maintainers
   maintainers:
    - praveksharma
@@ -52,284 +213,211 @@ teams:
    - ydoroz
    - stevenireeves
    - neil-lindquist
-- name: liboqs-language-wrapper-maintainers
-  maintainers:
-   - vsoftco
-# added to eliminate key person risk:
-   - oqs-maintainers
-- name: liboqs-cpp-maintainers
-  maintainers:
-  - liboqs-language-wrapper-maintainers
-- name: liboqs-java-maintainers
-  maintainers:
-  - oqs-maintainers
-- name: liboqs-java-committers
-  maintainers:
-  - liboqs-java-maintainers
-  members:
-  - jimouris
-- name: liboqs-go-maintainers
-  maintainers:
-  - liboqs-language-wrapper-maintainers
-- name: liboqs-python-maintainers
-  maintainers:
-  - liboqs-language-wrapper-maintainers
-- name: liboqs-python-committers
-  maintainers:
-  - liboqs-python-maintainers
-  members:
-# Does this make sense to take support pressures off our sole language wrapper maintainer/committer? TBC
-  - core
-- name: libssh-maintainers
-  maintainers:
-  - oqs-maintainers
-  members:
-  - christianpaquin
-- name: minute-takers
-  maintainers:
-  - SWilson4
-- name: openssh-maintainers
-  maintainers:
-  - oqs-maintainers
-- name: openssh-committers
-  maintainers:
-  - openssh-maintainers
-  members:
-  - geedo0
-- name: oqsprovider-maintainers
-  maintainers:
-  - oqs-maintainers
-# explicit exclusion of dstebila to align with GOVERNANCE.md
-  members:
-  - baentsch
-- name: oqsprovider-codeowners
-  maintainers:
-  - oqsprovider-maintainers
-  members:
-  - bhess
-  - feventura
-  - iyanmv
-  - thb-sb
-- name: oqsprovider-committers
-  maintainers:
-  - oqsprovider-maintainers
-  members:
-  - oqsprovider-codeowners
-- name: read
-  maintainers:
-  - oqs-maintainers
-  members:
-  - jplomas
-- name: rust
-  maintainers:
-  - oqs-maintainers
-  members:
-  - thomwiggers
-- name: triage
-  maintainers:
-  - oqs-maintainers
-  members:
-  - planetf1
-  - ajbozarth
-  - geedo0
-- name: oqs-demos-contributors
-  maintainers:
-  - oqs-maintainers
-  members:
-  - pi-314159
-# Is this still needed? TBD
-- name: trail-of-bits
-  maintainers:
-  - SWilson4
-  members:
-  - fcasal
-  - tob-scott-a
-- name: tsc
-  maintainers:
-  - oqs-maintainers
-  members:
-  - ashman-p
-  - bhess
-  - brian-jarvis-aws
-  - christianpaquin
-  - thb-sb
-  - vsoftco
-- name: www
-  maintainers:
-  - oqs-maintainers
-  members:
-  - crockeea
-  - christianpaquin
-  - praveksharma
-  - SWilson4
-  - vsoftco
+
 repositories:
 - name: .github
   teams:
-    core: read
+    oqs-admins: admin
+    tsc: read
+  visibility: public
+
+- name: tsc
+  teams:
+    oqs-admins: admin
     tsc: write
-    oqs-maintainers: admin
-    oqs-admins: admin
+    minute-takers: write
   visibility: public
-- name: boringssl
-  teams:
-    boringssl-maintainers: admin
-    bots: write
-    core: write
-    triage: triage
-    tsc: read
-    oqs-admins: admin
-  visibility: public
-- name: ci-containers
-  teams:
-    core: maintain
-    triage: triage
-    tsc: read
-    oqs-admins: admin
-  visibility: public
+
 - name: liboqs
   teams:
-    bots: write
-    core: write
-    liboqs-committers: maintain
+    oqs-admins: admin
     liboqs-maintainers: admin
-    oqs-admins: admin
-    read: read
-    triage: triage
-    tsc: read
-  visibility: public
-- name: liboqs-cpp
-  teams:
-    bots: write
-    core: write
-    liboqs-cpp-maintainers: admin
-    oqs-admins: admin
-    triage: triage
-    tsc: read
-  visibility: public
-- name: liboqs-cupqc
-  visibility: private
-  teams:
-    liboqs-cupqc-maintainers: admin
-# No team/project maintainers for this project??? TBD
-- name: liboqs-dotnet
-  teams:
-    bots: write
-    core: write
-    triage: triage
-    oqs-admins: admin
-    tsc: read
-  visibility: public
-- name: liboqs-go
-  teams:
-    bots: write
-    core: maintain
-    liboqs-go-maintainers: admin
-    oqs-admins: admin
-    triage: triage
-    tsc: read
-  visibility: public
-- name: liboqs-java
-  teams:
-    bots: write
-    core: maintain
-    liboqs-java-committers: maintain
-    liboqs-java-maintainers: admin
-    oqs-admins: admin
-    triage: triage
-    tsc: read
-  visibility: public
-- name: liboqs-python
-  teams:
-    bots: write
-    core: write
-    liboqs-python-committers: maintain
-    liboqs-python-maintainers: admin
-    oqs-admins: admin
-    triage: triage
-    tsc: read
-  visibility: public
-- name: liboqs-rust
-  teams:
-    core: write
-# This does not make any sense: these teams have no clue about this sub project TBD
+    oqs-release-managers: maintain
     liboqs-committers: write
-    liboqs-maintainers: maintain
-    rust: admin
+    oqs-contributors: write
+    bots: write
     triage: triage
     tsc: read
   visibility: public
-- name: libssh
+
+- name: oqs-provider
   teams:
-    core: write
-    libssh-maintainers: admin
     oqs-admins: admin
+    oqs-provider-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-provider-committers: maintain
+    oqs-contributors: write
+    bots: write
     triage: triage
     tsc: read
   visibility: public
+
+- name: boringssl
+  teams:
+    oqs-admins: admin
+    boringssl-maintainers: admin
+    boringssl-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
+    triage: triage
+    tsc: read
+  visibility: public
+
 - name: openssh
   teams:
-    bots: write
-    core: write
-    openssh-maintainers: admin
-    openssh-committers: maintain
     oqs-admins: admin
-    triage: triage
-    tsc: read
-  visibility: public
-# Is this right given the project is dead? TBD
-- name: openssl
-  teams:
+    oqs-maintainers: admin
+    openssh-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
     bots: write
-    core: write
     triage: triage
     tsc: read
   visibility: public
+
+- name: libssh
+  teams:
+    oqs-admins: admin
+    oqs-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
+    triage: triage
+    tsc: read
+  visibility: public
+
 - name: oqs-demos
   teams:
     oqs-admins: admin
     oqs-maintainers: admin
-    oqs-demos-contributors: maintain
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
     bots: write
-    core: write
     triage: triage
     tsc: read
   visibility: public
-- name: oqsprovider
-  teams:
-    bots: write
-    core: write
-    liboqs-committers: write
-    liboqs-maintainers: maintain
-    oqsprovider-codeowners: admin
-    oqsprovider-committers: write
-    triage: triage
-    tsc: read
-  visibility: public
+
 - name: profiling
   teams:
-    oqs-maintainers: admin
     oqs-admins: admin
+    oqs-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
     bots: write
-    core: maintain
     triage: triage
     tsc: read
   visibility: public
-- name: tsc
+
+- name: ci-containers
   teams:
-    oqs-maintainers: admin
     oqs-admins: admin
-    core: read
-    minute-takers: write
+    oqs-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
     triage: triage
-    tsc: write
+    tsc: read
   visibility: public
+
+- name: liboqs-cpp
+  teams:
+    oqs-admins: admin
+    liboqs-cpp-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
+    triage: triage
+    tsc: read
+  visibility: public
+
+- name: liboqs-go
+  teams:
+    oqs-admins: admin
+    liboqs-go-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
+    triage: triage
+    tsc: read
+  visibility: public
+
+- name: liboqs-python
+  teams:
+    oqs-admins: admin
+    liboqs-python-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
+    triage: triage
+    tsc: read
+  visibility: public
+
+- name: liboqs-rust
+  teams:
+    oqs-admins: admin
+    liboqs-rust-maintainers: admin
+    liboqs-rust-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
+    triage: triage
+    tsc: read
+  visibility: public
+
+- name: liboqs-dotnet
+  teams:
+    oqs-admins: admin
+    oqs-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
+    triage: triage
+    tsc: read
+  visibility: public
+
+- name: liboqs-java
+  teams:
+    oqs-admins: admin
+    liboqs-java-maintainers: admin
+    oqs-release-managers: maintain
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
+    triage: triage
+    tsc: read
+  visibility: public
+
+# No Release Managers team as there are no releases for this project.
 - name: www
   teams:
-    oqs-maintainers: admin
     oqs-admins: admin
-    core: write
+    oqs-maintainers: admin
+    oqs-committers: write
+    oqs-contributors: write
+    bots: write
     triage: triage
-    tsc: write
-    www: write
+    tsc: read
+  visibility: public
+
+# The following is a private project intentionally hidden from view.
+# Contact praveksharma for details.
+- name: liboqs-cupqc
+  teams:
+    liboqs-cupqc-maintainers: maintain
+  visibility: private
+
+# TODO: This project is dead and probably should be read-only.
+- name: openssl
+  teams:
+    oqs-admins: admin
+    tsc: read
   visibility: public
