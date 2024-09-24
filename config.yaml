@@ -4,7 +4,7 @@ teams:
   maintainers:
   - ryjones
 # write access on all technical projects
-- name: oqs-bots
+- name: bots
   maintainers:
   - oqs-bot
 
@@ -255,7 +255,7 @@ repositories:
   teams:
     oqs-admins: admin
     boringssl-maintainers: admin
-    boringssl-release-managers: maintain
+    oqs-release-managers: maintain
     oqs-committers: write
     oqs-contributors: write
     bots: write
