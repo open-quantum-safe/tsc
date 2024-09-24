@@ -2,8 +2,8 @@
 
 ## Next meetings:
 
-- Tuesday October 1, 2024 at 12:30pm US Eastern time / 6:30pm Central European / 9:30am US Pacific time on Zoom
-- Tuesday October 8, 2024 at 10:00am US Eastern / 4:00pm Central European / 7:00am US Pacific on Zoom
+- Tuesday October 1, 2024 at 10:00am US Eastern / 4:00pm Central European / 7:00am US Pacific on Zoom
+- Tuesday October 8, 2024 at 12:30pm US Eastern / 6:30pm Central European / 9:30am US Pacific on Zoom
 
 ## Attendees
 
