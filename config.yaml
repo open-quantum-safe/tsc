@@ -327,7 +327,7 @@ repositories:
   teams:
     oqs-admins: admin
     liboqs-cpp-maintainers: admin
-    oqs-release-managers: maintain
+    liboqs-cpp-release-managers: maintain
     oqs-committers: write
     oqs-contributors: write
     bots: write
@@ -339,7 +339,7 @@ repositories:
   teams:
     oqs-admins: admin
     liboqs-go-maintainers: admin
-    oqs-release-managers: maintain
+    liboqs-go-release-managers: maintain
     oqs-committers: write
     oqs-contributors: write
     bots: write
@@ -351,7 +351,7 @@ repositories:
   teams:
     oqs-admins: admin
     liboqs-python-maintainers: admin
-    oqs-release-managers: maintain
+    liboqs-python-release-managers: maintain
     oqs-committers: write
     oqs-contributors: write
     bots: write
