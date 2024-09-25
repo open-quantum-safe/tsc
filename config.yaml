@@ -1,4 +1,10 @@
 teams:
+# org owners
+- name: org-owners
+  maintainers:
+  - ryjones
+  - thelinuxfoundation
+
 # admin access on all projects
 - name: oqs-admins
   maintainers:
