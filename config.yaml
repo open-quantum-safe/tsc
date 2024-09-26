@@ -80,7 +80,7 @@ teams:
   - Martyrshot
   - pi-314159
   - planetf1
-  - thb-sb
+  - zadlg
   - thomwiggers
 
 # Technical Steering Committee
@@ -94,7 +94,7 @@ teams:
   - bhess
   - brian-jarvis-aws
   - christianpaquin
-  - thb-sb
+  - zadlg
   - vsoftco
 
 # liboqs Maintainers
@@ -144,7 +144,7 @@ teams:
   members:
   - bhess
   - christianpaquin
-  - thb-sb
+  - zadlg
 # oqs-provider CODEOWNERS
 # https://github.com/open-quantum-safe/oqs-provider/blob/main/.github/CODEOWNERS
 - name: oqs-provider-codeowners
@@ -156,7 +156,7 @@ teams:
   - feventura
   - iyanmv
   - jplomas
-  - thb-sb
+  - zadlg
 
 # boringssl Maintainers
 # TODO: provide "source of truth"
