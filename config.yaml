@@ -223,7 +223,8 @@ teams:
 # liboqs-rust Release Managers
 # TODO: provide "source of truth"
 # This team is tied to permissions on Crates.io: https://crates.io/teams/github:open-quantum-safe:rust
-- name: liboqs-rust-release-managers
+# It is named "rust" instead of "liboqs-rust-release-managers" in order to not break the existing Crates.io config.
+- name: rust
   maintainers:
   - thomwiggers
 
@@ -378,7 +379,8 @@ repositories:
   teams:
     oqs-admins: admin
     liboqs-rust-maintainers: admin
-    liboqs-rust-release-managers: maintain
+    # The release managers team is named "rust" for compatibility with Crates.io
+    rust: maintain
     oqs-committers: write
     oqs-contributors: triage
     bots: write
