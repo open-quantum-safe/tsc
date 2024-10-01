@@ -378,8 +378,8 @@ repositories:
   teams:
     oqs-admins: admin
     liboqs-rust-maintainers: admin
-    # The release managers team is named "rust" for compatibility with Crates.io
-    rust: maintain
+    # Note that this team name is relied on by `crates.io`
+    liboqs-rust-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
     bots: write
