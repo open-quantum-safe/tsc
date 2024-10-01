@@ -222,7 +222,7 @@ teams:
   - thomwiggers
 # liboqs-rust Release Managers
 # TODO: provide "source of truth"
-# This team is tied to permissions on Crates.io: https://crates.io/teams/github:open-quantum-safe:rust
+# This team is tied to permissions on Crates.io: https://crates.io/teams/github:open-quantum-safe:liboqs-rust-release-managers
 - name: liboqs-rust-release-managers
   maintainers:
   - thomwiggers
