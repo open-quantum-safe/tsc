@@ -222,6 +222,7 @@ teams:
   - thomwiggers
 # liboqs-rust Release Managers
 # TODO: provide "source of truth"
+# This team is tied to permissions on Crates.io: https://crates.io/teams/github:open-quantum-safe:liboqs-rust-release-managers
 - name: liboqs-rust-release-managers
   maintainers:
   - thomwiggers
@@ -377,6 +378,7 @@ repositories:
   teams:
     oqs-admins: admin
     liboqs-rust-maintainers: admin
+    # Note that this team name is relied on by `crates.io`
     liboqs-rust-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
