@@ -428,6 +428,7 @@ repositories:
 - name: liboqs-cupqc
   teams:
     liboqs-cupqc-maintainers: maintain
+    tsc: read
   visibility: private
 
 # TODO: This project is dead and probably should be read-only.
