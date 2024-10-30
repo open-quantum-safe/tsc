@@ -1,4 +1,4 @@
-# 2024-10-22 - OQS status meeting - minutes
+# 2024-10-29 - OQS status meeting - minutes
 
 ## Next meetings:
 
