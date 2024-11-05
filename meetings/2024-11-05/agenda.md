@@ -19,3 +19,5 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 6. [Security response team](https://github.com/open-quantum-safe/tsc/issues/60)
 7. Regular meeting schedule
 8. Other business.
+  - [Binary distributions](https://github.com/orgs/open-quantum-safe/discussions/1625)
+  - [Channelling external expectations into contributions](https://github.com/open-quantum-safe/tsc/issues/1#issuecomment-2453942969)
