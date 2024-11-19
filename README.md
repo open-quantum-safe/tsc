@@ -30,7 +30,23 @@ The role and responsibilities of the TSC are described in the [Technical Charter
 
 ### Meetings
 
-The TSC holds regular meetings. [agenda and minutes](meetings/index.md)
+The TSC holds regular meetings every 5 weeks, alternating between 10am and 12:30pm US Eastern time.  See the [PQCA calendar](https://pqca.org/calendar/).
+
+[Agenda and minutes](meetings/index.md)
+
+Upcoming meetings:
+
+- Tuesday December 10, 2024, at 12:30pm US Eastern time
+- Tuesday January 14, 2025, at 10:00am US Eastern time
+- Tuesday February 18, 2025, at 12:30pm US Eastern time
+- Tuesday March 25, 2025, at 10:00am US Eastern time
+- Tuesday April 29, 2025, at 12:30pm US Eastern time
+- Tuesday June 3, 2025, at 10:00am US Eastern time
+- Tuesday July 8, 2025, at 12:30pm US Eastern time
+- Tuesday August 12, 2025, at 10:00am US Eastern time
+- Tuesday September 16, 2025, at 12:30pm US Eastern time
+- Tuesday October 21, 2025, at 10:00am US Eastern time
+- Tuesday November 25, 2025, at 12:30pm US Eastern time
 
 ### Email list
 
