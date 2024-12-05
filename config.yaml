@@ -9,6 +9,7 @@ teams:
 - name: oqs-admins
   maintainers:
   - ryjones
+
 # write access on all technical projects
 - name: bots
   maintainers:
@@ -20,6 +21,18 @@ teams:
   - dstebila
   members:
   - SWilson4
+
+# Security managers
+- name: security-managers
+  maintainers:
+  - dstebila
+  members:
+  - baentsch
+  - bhess
+  - brian-jarvis-aws
+  - praveksharma
+  - SWilson4
+
 # access to Trail of Bits audit project board
 - name: trail-of-bits
   maintainers:
@@ -246,12 +259,14 @@ repositories:
 - name: .github
   teams:
     oqs-admins: admin
+    security-managers: read
     tsc: read
   visibility: public
 
 - name: tsc
   teams:
     oqs-admins: admin
+    security-managers: read
     tsc: write
     minute-takers: write
   visibility: public
@@ -264,6 +279,7 @@ repositories:
     liboqs-committers: write
     liboqs-codeowners: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -277,6 +293,7 @@ repositories:
     oqs-provider-codeowners: write
     oqs-contributors: triage
     bots: write
+    security-managers: read
     tsc: read
   visibility: public
 
@@ -287,6 +304,7 @@ repositories:
     oqs-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -298,6 +316,7 @@ repositories:
     openssh-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -309,6 +328,7 @@ repositories:
     oqs-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -320,6 +340,7 @@ repositories:
     oqs-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -331,6 +352,7 @@ repositories:
     oqs-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -342,6 +364,7 @@ repositories:
     oqs-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -354,6 +377,7 @@ repositories:
     oqs-committers: write
     oqs-contributors: triage
     bots: write
+    security-managers: read
     tsc: read
   visibility: public
 
@@ -365,6 +389,7 @@ repositories:
     oqs-committers: write
     oqs-contributors: triage
     bots: write
+    security-managers: read
     tsc: read
   visibility: public
 
@@ -375,6 +400,7 @@ repositories:
     liboqs-python-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -388,6 +414,7 @@ repositories:
     oqs-committers: write
     oqs-contributors: triage
     bots: write
+    security-managers: read
     tsc: read
   visibility: public
 
@@ -399,6 +426,7 @@ repositories:
     oqs-committers: write
     oqs-contributors: triage
     bots: write
+    security-managers: read
     tsc: read
   visibility: public
 
@@ -409,6 +437,7 @@ repositories:
     oqs-release-managers: maintain
     oqs-committers: write
     oqs-contributors: triage
+    security-managers: read
     bots: write
     tsc: read
   visibility: public
@@ -421,6 +450,7 @@ repositories:
     oqs-committers: write
     oqs-contributors: triage
     bots: write
+    security-managers: read
     tsc: read
   visibility: public
 
@@ -429,6 +459,7 @@ repositories:
 - name: liboqs-cupqc
   teams:
     liboqs-cupqc-maintainers: maintain
+    security-managers: read
     tsc: read
   visibility: private
 
@@ -436,5 +467,6 @@ repositories:
 - name: openssl
   teams:
     oqs-admins: admin
+    security-managers: read
     tsc: read
   visibility: public
