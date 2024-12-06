@@ -36,7 +36,7 @@ The TSC holds regular meetings every 5 weeks, alternating between 10am and 12:30
 
 Upcoming meetings:
 
-- Tuesday December 10, 2024, at 12:30pm US Eastern time ([agenda](2024-12-10/agenda.md), [Zoom](https://zoom-lfx.platform.linuxfoundation.org/meeting/95734644686?password=785e2d5e-e426-423f-8e0c-533cb017e6eb))
+- Tuesday December 10, 2024, at 12:30pm US Eastern time ([agenda](https://github.com/open-quantum-safe/tsc/blob/main/meetings/2024-12-10/agenda.md), [Zoom](https://zoom-lfx.platform.linuxfoundation.org/meeting/95734644686?password=785e2d5e-e426-423f-8e0c-533cb017e6eb))
 - Tuesday January 14, 2025, at 10:00am US Eastern time
 - Tuesday February 18, 2025, at 12:30pm US Eastern time
 - Tuesday March 25, 2025, at 10:00am US Eastern time
