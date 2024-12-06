@@ -13,12 +13,13 @@ Everyone, regardless of membership within the TSC itself, is welcome to attend. 
 - 2024-06-27: [agenda](2024-06-27/agenda.md) / [minutes](2024-06-27/minutes.md)
 - 2024-09-10: [agenda](2024-09-10/agenda.md) / [minutes](2024-09-10/minutes.md)
 - 2024-11-05: [agenda](2024-11-05/agenda.md) / [minutes](2024-11-05/minutes.md)
+- 2024-12-10: [agenda](2024-12-10/agenda.md)
 
 ## Upcoming meetings
 
 Upcoming meetings:
 
-- Tuesday December 10, 2024, at 12:30pm US Eastern time
+- Tuesday December 10, 2024, at 12:30pm US Eastern time ([agenda](2024-12-10/agenda.md), [Zoom](https://zoom-lfx.platform.linuxfoundation.org/meeting/95734644686?password=785e2d5e-e426-423f-8e0c-533cb017e6eb))
 - Tuesday January 14, 2025, at 10:00am US Eastern time
 - Tuesday February 18, 2025, at 12:30pm US Eastern time
 - Tuesday March 25, 2025, at 10:00am US Eastern time
