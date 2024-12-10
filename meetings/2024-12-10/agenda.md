@@ -24,3 +24,4 @@ https://github.com/open-quantum-safe/tsc
 	- See in particular: [question about Ubuntu](https://github.com/orgs/open-quantum-safe/discussions/1625#discussioncomment-11405477)
 8. Other business
 	- Can we complete [Switch open-quantum-safe/openssl to read-only](https://github.com/open-quantum-safe/tsc/issues/49)?
+	- Direction for other inactive subprojects (e.g., OpenSSH)?
