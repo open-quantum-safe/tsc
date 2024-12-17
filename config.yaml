@@ -238,12 +238,22 @@ teams:
 - name: liboqs-rust-maintainers
   maintainers:
   - thomwiggers
+  members:
+  - baentsch
+  - dstebila
+  - vsoftco
 # liboqs-rust Release Managers
 # TODO: provide "source of truth"
 # This team is tied to permissions on Crates.io: https://crates.io/teams/github:open-quantum-safe:liboqs-rust-release-managers
 - name: liboqs-rust-release-managers
   maintainers:
   - thomwiggers
+  members:
+  - baentsch
+  - dstebila
+  - praveksharma
+  - SWilson4
+  - vsoftco
 
 # The following is a private project intentionally hidden from view.
 # Contact praveksharma for details.
