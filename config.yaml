@@ -239,8 +239,8 @@ teams:
   maintainers:
   - thomwiggers
   members:
-  - baentsch
   - dstebila
+  - SWilson4
   - vsoftco
 # liboqs-rust Release Managers
 # TODO: provide "source of truth"
@@ -249,7 +249,6 @@ teams:
   maintainers:
   - thomwiggers
   members:
-  - baentsch
   - dstebila
   - praveksharma
   - SWilson4
