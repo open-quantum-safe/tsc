@@ -33,10 +33,6 @@ They will be responsible for managing the OQS response to the vulnerability repo
 COMMENT:
 Feel free to suggest an alternative to the American/Canadian football term "[quarterback](https://en.wikipedia.org/wiki/Quarterback)."
 
-COMMENT:
-As the supervisor/manager of two other members of the VMT (Pravek and Spencer), Douglas will be overseeing (directly or indirectly) half of the security reports received.
-Should he be exempt from rotating duty?
-
 ## 1. Intake
 
 This phase begins when a vulnerability report is received.
