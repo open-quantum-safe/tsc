@@ -20,7 +20,7 @@ This team is codified as `security-managers` in the [config.yaml](../config.yaml
 ### Coverage
 
 Members of the VMT take it in turns on to acknowledge and triage reports on a next-person-up basis, in the order listed here (which also happens to be alphabetical by last name).
-his ordering is intended as an aid in staying organized but may be adjusted by the VMT as circumstances dictate---the important thing is to ensure coverage at all times.
+This ordering is intended as an aid in staying organized but may be adjusted by the VMT as circumstances dictate---the important thing is to ensure coverage at all times.
 Members of the VMT should inform the team when they will be unresponsive (e.g., on vacation or at a conference) for a week or more.
 
 > Example:
