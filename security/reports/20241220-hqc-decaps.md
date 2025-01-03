@@ -1,4 +1,4 @@
-# OQS Vulnerability Response Report
+# OQS Vulnerability Response Report: 20241220-hqc-decaps
 
 <!--
 Copy this template and rename the file following the format YYYYMMDD-vulnerability-name.md format.
