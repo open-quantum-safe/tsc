@@ -476,6 +476,7 @@ repositories:
 - name: openssl
   teams:
     oqs-admins: admin
+    oqs-maintainers: admin
     security-managers: read
     tsc: read
   visibility: public
