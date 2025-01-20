@@ -156,9 +156,6 @@ Once the evaluation process is complete, the Quarterback responds to the reporte
 Regardless of the assessment outcome, the response should be courteous and thank the reporter(s) for filing the issue.
 If a patch is to be made, the reporter(s) should be offered the opportunity to review and/or contribute to the fix.
 
-COMMENT:
-Would a response template be helpful (and worth the time/effort to create)?
-
 ### Assembling a response team
 
 If the reported issue is assessed as a vulnerability to be patched, the Quarterback will assemble a team to develop the fix.
@@ -204,9 +201,6 @@ After approval, commits on the PR should be squashed into one, as the "squash an
 Concurrently with patch development, the domain expert appointed by the Quarterback should finalize the text of the security advisory.
 This includes evaluating the vulnerability using the Common Vulnerability Scoring System.
 
-COMMENT:
-Would a security advisory template be helpful?
-
 ## 4. CVE assignment
 
 This phase begins when the patch is approved and ends when a CVE is assigned by GitHub.
@@ -233,10 +227,6 @@ COMMENT:
 Apart from publishing the security advisory, should we publicize the fix in any other way?
 
 ## 6. Feedback
-
-COMMENT:
-This step is additional to the ones outlined by OSSF guidance.
-I thought it would help us to continuously revise the security process.
 
 This phase begins after the security advisory is published and ends when a security report is filed in the OQS TSC repository.
 
