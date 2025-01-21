@@ -19,19 +19,13 @@ This team is codified as `security-managers` in the [config.yaml](../config.yaml
 
 ### Coverage
 
-Members of the VMT take it in turns on to acknowledge and triage reports on a next-person-up basis, in the order listed here (which also happens to be alphabetical by last name).
-This ordering is intended as an aid in staying organized but may be adjusted by the VMT as circumstances dictate---the important thing is to ensure coverage at all times.
-Members of the VMT should inform the team when they will be unresponsive (e.g., on vacation or at a conference) for a week or more.
+Members of the VMT take it in turns to acknowledge and triage reports, rotating at each OQS Technical Steering Committee meeting, in the order listed here (which also happens to be alphabetical by last name).
+The "on-call" member of the VMT shall be confirmed and communicated at each TSC meeting.
+The above ordering is intended as an aid in staying organized but may be adjusted by the VMT as circumstances dictate---the important thing is to ensure coverage at all times.
+Members of the VMT agree to be available to support each other on short notice if the need arises (e.g., because of overload).
 
-> Example:
-Basil is the VMT member who most recently responded to a report.
-This means that Brian is "up next" and will be responsible for acknowledging the next report received.
-
-The member who acknowledges a report takes on the role of "[Quarterback](https://en.wikipedia.org/wiki/Quarterback)" for the issue.
+When acknowledging a report, the on-call VMT member takes on the role of "[Quarterback](https://en.wikipedia.org/wiki/Quarterback)" for the issue.
 They will be responsible for managing the OQS response to the vulnerability report, as described below.
-
-COMMENT:
-Feel free to suggest an alternative to the American/Canadian football term "[quarterback](https://en.wikipedia.org/wiki/Quarterback)."
 
 ## 1. Intake
 
@@ -54,7 +48,7 @@ We should confirm that all of the members of the VMT
 COMMENT:
 Since liboqs-rust is published to crates.io, it should probably have security reporting switched on as well.
 
-When a report is received via one of the first two methods, the "up next" member of the VMT is responsible for acknowledging it promptly (the OSSF recommends within 1-2 days).
+When a report is received via one of the first two methods, the "on call" member of the VMT is responsible for acknowledging it promptly (the OSSF recommends within 1-2 days).
 - For email, this means responding to the reporter, cc'ing security@openquantumsafe.org.
 - For a GitHub security advisory (which will be in the "Triage" state), this means leaving a comment on the security advisory.
 
@@ -67,13 +61,13 @@ Reports received via encrypted email may be more sensitive and will be handled o
 
 > Example 1:
 A vulnerability report is received via email.
-Brian is "up next."
+Brian is on call.
 He replies to the reporter(s) the next day, cc'ing security@openquantumsafe.org.
 Brian is now the Quarterback for the report.
 
 > Example 2:
 A GitHub security advisory is received.
-Pravek is "up next."
+Pravek is on call.
 He leaves a comment on the advisory the next day to acknowledge receipt of the report.
 Pravek is now the Quarterback for the report.
 
@@ -106,7 +100,7 @@ It ends when the VMT responds to the reporter(s) with an assessment of the repor
 The Quarterback identifies the person or people who are most qualified to assess the report and, if necessary, develop a fix.
 The Quarterback provides them with all necessary information.
 These domain experts may not be members of the VMT, but they should be people whom the VMT trusts to handle security-related information.
-It is possible that the Quarterback will also be the team member who is most qualified to assess the issue. In this case, the Quarterback may request that the "up next" member of the VMT assume the role of Quarterback, allowing the original Quarterback to focus on the technical aspects of the response process.
+It is possible that the Quarterback will also be the team member who is most qualified to assess the issue.
 
 ### Assessing the report
 
