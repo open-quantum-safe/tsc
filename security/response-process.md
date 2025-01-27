@@ -2,6 +2,20 @@
 
 This document follows the framework and terminology from the OpenSSF's [`oss-vulnerability-guide`](https://github.com/ossf/oss-vulnerability-guide), with one additional step ("Feedback") added.
 
+## Scope
+
+This document applies to the following OQS subprojects:
+- liboqs,
+- liboqs-cpp,
+- liboqs-go,
+- liboqs-java,
+- liboqs-python,
+- liboqs-rust, and
+- oqs-provider.
+
+Other technical subprojects, such as the OQS fork of OpenSSH, are not considered to have security support.
+Subprojects may be added to or removed from this list in the future.
+
 ## Vulnerability Management Team
 
 The Vulnerability Management Team (VMT) is responsible for responding to reports of security vulnerabilities in OQS software.
@@ -143,7 +157,10 @@ As a next step, we should compile a list of upstream contacts.
 
 #### Determining affected subprojects
 
-Part of the assessment should involve determining which subprojects are affected by the issue and how to fix the vulnerability throughout the OQS suite.
+Part of the assessment should involve determining which subprojects are affected by the issue and how to fix the vulnerability throughout the OQS suite of [security-supported projects](#scope).
+Issues within liboqs, in particular, will impact almost every subproject.
+For every liboqs security advisory, advisories with the same CVE should be published on oqs-provider and the liboqs language wrappers instructing users to update the liboqs dependency.
+Additionally, since the [oqs Rust crate](https://crates.io/crates/oqs) installs a specific version of liboqs as part of its build process, every liboqs security release should have a corresponding liboqs-rust security release.
 
 ### Responding to the reporter
 
