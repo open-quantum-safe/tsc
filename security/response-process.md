@@ -114,7 +114,7 @@ The below table, indicating possible assessment outcomes, is copied from the [OS
 | Bug                 | Let the reporter know this is unwanted behavior but not a security issue, and ask them to refile this as a bug. Close the security issue.                                                                                                                                                                                                                              |
 | Feature request     | Let the reporter know this is the intended behavior. If they think this behavior could be improved, they can file a feature request. Close the security issue.                                                                                                                                                                                                         |
 | Vulnerability       | Let the reporter know that you have confirmed this unwanted behavior creates a security issue. Proceed with the process.                                                                                                                                                                                                                                               |
-| Out of scope        | Let the reporter know that the issue lies in upstream code packaged by OQS. Assist them in refiling the report upstream. See the following section for further actions.                                                                                                                                                                                                  |
+| Out of scope        | Let the reporter know that the issue is out of scope for OQS. If applicable, assist them in refiling the report upstream. See the following section for further actions.                                                                                                                                                                                                  |
 
 #### "Out of scope" assessments
 
@@ -127,6 +127,7 @@ Depending on the nature of the issue, additional action may be required.
 
 | "Out of scope" assessment | Description | Additional action |
 |------------------|----------|-|
+| Outside threat model | The issue lies outside the threat model of OQS. | Decide whether or not the severity of the issue warrants developing a patch irrespective of scope. |
 | Unable to assess | Assessing the issue requires domain knowledge about the upstream beyond that of the OQS VMT. | Monitor the upstream for resolution. |
 | Vulnerability: can patch  | The issue is indeed a vulnerability and can be simply and easily patched within OQS. | Decide whether or not to develop a patch. Coordinate disclosure with the upstream. |
 | Vulnerability: can't patch | The issue is indeed a vulnerability but cannot be simply and easily patched within OQS. | Coordinate disclosure with the upstream. Monitor the upstream for resolution. Depending on severity, consider dropping the upstream. |
