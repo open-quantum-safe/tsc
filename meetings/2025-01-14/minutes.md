@@ -40,7 +40,7 @@
  - General agreement that it would need more commitment, particularly by the commercial entities to improve OQS; Hart and Douglas to take this to the GB
  - General consensus that the committer base must be broadened
 9. Other business.
- - Agreement to try to bring more NIST on-ramp algorithm authors to contribute (Hart already reaching out; Basil pointing out that second round closes in February; Douglas stating his reach out had limited success)
+ - Agreement to try to bring more NIST on-ramp algorithm authors to contribute (Hart already reaching out; Basil pointing out that second round closes in February; Douglas stating that efforts to get contributions from NIST submission teams from the original PQC rounds 1/2/3 had limited success for teams we didn't already have a strong connection with)
 
 ## Recording location
 
