@@ -55,13 +55,6 @@ This email is an alias for the members of the VMT.
 These are submitted similarly to GitHub issues but are private.
 3. Encrypted email to dstebila@uwaterloo.ca.
 
-COMMENT:
-We should confirm that all of the members of the VMT
-(1) receive some sort of notification when a GitHub security advisory is filed on any OQS repo and (2) have the necessary permissions to view security advisories.
-
-COMMENT:
-Since liboqs-rust is published to crates.io, it should probably have security reporting switched on as well.
-
 When a report is received via one of the first two methods, the "on call" member of the VMT is responsible for acknowledging it promptly (the OSSF recommends within 1-2 days).
 - For email, this means responding to the reporter, cc'ing security@openquantumsafe.org.
 - For a GitHub security advisory (which will be in the "Triage" state), this means leaving a comment on the security advisory.
@@ -84,9 +77,6 @@ A GitHub security advisory is received.
 Pravek is on call.
 He leaves a comment on the advisory the next day to acknowledge receipt of the report.
 Pravek is now the Quarterback for the report.
-
-COMMENT:
-Do we want to commit to a reponse timeline?
 
 ### Internal reports
 
@@ -151,9 +141,6 @@ These include responsiveness to vulnerability reports and ability of the upstrea
 It is also important to consider the impact on end-users.
 A longer response time can be tolerated for an experimental algorithm than for a standardized or standard-track algorithm.
 For severe vulnerabilities which the upstream is unlikely to patch in a reasonable time frame, OQS may opt to drop support---temporarily or not---for algorithms affected by the vulnerability and publish a security advisory immediately.
-
-COMMENT:
-As a next step, we should compile a list of upstream contacts.
 
 #### Determining affected subprojects
 
@@ -231,12 +218,10 @@ It may be necessary to override branch protections.
 - If necessary, prepare and publish a security release.
 - Add specifics about the patch to the security advisory text (commit hash and version information).
 - Publish the security advisory.
+- Publicize the security advisory via the oqs-security-announce@lists.pqca.org mailing list.
 
 The security advisory should be published only after the patch has been merged and, if applicable, a security release has been published.
 Whether or not a security release is required is left to the discretion of the VMT.
-
-COMMENT:
-Apart from publishing the security advisory, should we publicize the fix in any other way?
 
 ## 6. Feedback
 
