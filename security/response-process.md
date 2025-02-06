@@ -31,9 +31,14 @@ The Vulnerability Management Team (VMT) is responsible for responding to reports
 
 This team is codified as `security-managers` in the [config.yaml](../config.yaml) file.
 
+VMT members may be added or removed by the OQS TSC via its standard voting procedures.
+Members may voluntarily remove themselves from the VMT.
+Members may additionally declare absence for a period of time not exceeding one year, to be documented in this file.
+If a member's absence extends beyond one year, then that member shall be removed from the VMT.
+
 ### Coverage
 
-Members of the VMT take it in turns to acknowledge and triage reports, rotating at each OQS Technical Steering Committee meeting, in the order listed here (which also happens to be alphabetical by last name).
+Non-absent members of the VMT take it in turns to acknowledge and triage reports, rotating at each OQS Technical Steering Committee meeting, in the order listed here (which also happens to be alphabetical by last name).
 The "on-call" member of the VMT shall be confirmed and communicated at each TSC meeting.
 The above ordering is intended as an aid in staying organized but may be adjusted by the VMT as circumstances dictate---the important thing is to ensure coverage at all times.
 Members of the VMT agree to be available to support each other on short notice if the need arises (e.g., because of overload).
