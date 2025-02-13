@@ -4,8 +4,11 @@ This document follows the framework and terminology from the OpenSSF's [`oss-vul
 
 ## Scope
 
-This document applies to the following OQS subprojects:
-- liboqs,
+This document applies **only** to vulnerabilities found in liboqs.
+Other OQS subprojects are not considered to have security support, although vulnerabilities may still be addressed on a best-effort basis.
+
+The OQS OpenSSL 3 provider and the liboqs language wrappers will be kept up to date with liboqs security releases.
+Concretely, these consist of
 - liboqs-cpp,
 - liboqs-go,
 - liboqs-java,
@@ -13,8 +16,10 @@ This document applies to the following OQS subprojects:
 - liboqs-rust, and
 - oqs-provider.
 
-Other technical subprojects, such as the OQS fork of OpenSSH, are not considered to have security support.
-Subprojects may be added to or removed from this list in the future.
+Other technical subprojects, such as the OQS fork of OpenSSH, do not have security support and will only be updated on a best-effort basis.
+
+This document was initially accepted on *TODO: add date before merge*.
+It does not apply to versions of OQS projects released before this date.
 
 ## Vulnerability Management Team
 
@@ -56,7 +61,7 @@ It ends when the report is acknowledged by a member of the VMT, who assumes the 
 OQS provides reporters with three methods for reporting a vulnerability:
 1. Email to security@openquantumsafe.org.
 This email is an alias for the members of the VMT.
-2. GitHub security advisories (for liboqs and oqs-provider).
+2. GitHub security advisories.
 These are submitted similarly to GitHub issues but are private.
 3. Encrypted email to dstebila@uwaterloo.ca.
 
@@ -129,14 +134,16 @@ The below table, indicating possible assessment outcomes, is copied from the [OS
 
 OQS packages cryptographic algorithm implementations from a variety of upstream sources.
 These vary widely in level of support and software development expertise.
-OQS assumes no obligation to fix vulnerabilities in upstream code, but it may choose to do so on a best-effort basis.
+OQS assumes no obligation to fix vulnerabilities in upstream code, but may choose to do so on a best-effort basis.
+Similarly, OQS may fix vulnerabilties in its own projects without security support on a best-effort basis.
 
-For all "out of scope" assessments, the vulnerability report should be passed on to the relevant upstream(s).
+For all "out of scope" assessments involving upstream code, the vulnerability report should be passed on to the relevant upstream(s).
 Depending on the nature of the issue, additional action may be required.
 
 | "Out of scope" assessment | Description | Additional action |
 |------------------|----------|-|
 | Outside threat model | The issue lies outside the threat model of OQS. | Decide whether or not the severity of the issue warrants developing a patch irrespective of scope. |
+| Unsupported project | The issue lies in an OQS subproject that does not have security support. | Decide whether or not the issue warrants developing a patch irrespective of scope. If not, document the issue in the affected subproject. |
 | Unable to assess | Assessing the issue requires domain knowledge about the upstream beyond that of the OQS VMT. | Monitor the upstream for resolution. |
 | Vulnerability: can patch  | The issue is indeed a vulnerability and can be simply and easily patched within OQS. | Decide whether or not to develop a patch. Coordinate disclosure with the upstream. |
 | Vulnerability: can't patch | The issue is indeed a vulnerability but cannot be simply and easily patched within OQS. | Coordinate disclosure with the upstream. Monitor the upstream for resolution. Depending on severity, consider dropping the upstream. |
@@ -146,13 +153,6 @@ These include responsiveness to vulnerability reports and ability of the upstrea
 It is also important to consider the impact on end-users.
 A longer response time can be tolerated for an experimental algorithm than for a standardized or standard-track algorithm.
 For severe vulnerabilities which the upstream is unlikely to patch in a reasonable time frame, OQS may opt to drop support---temporarily or not---for algorithms affected by the vulnerability and publish a security advisory immediately.
-
-#### Determining affected subprojects
-
-Part of the assessment should involve determining which subprojects are affected by the issue and how to fix the vulnerability throughout the OQS suite of [security-supported projects](#scope).
-Issues within liboqs, in particular, will impact almost every subproject.
-For every liboqs security advisory, advisories with the same CVE should be published on oqs-provider and the liboqs language wrappers instructing users to update the liboqs dependency.
-Additionally, since the [oqs Rust crate](https://crates.io/crates/oqs) installs a specific version of liboqs as part of its build process, every liboqs security release should have a corresponding liboqs-rust security release.
 
 ### Responding to the reporter
 
@@ -227,6 +227,9 @@ It may be necessary to override branch protections.
 
 The security advisory should be published only after the patch has been merged and, if applicable, a security release has been published.
 Whether or not a security release is required is left to the discretion of the VMT.
+
+For every liboqs security advisory and release, advisories and releases using the same CVE should be published on oqs-provider and the liboqs language wrappers.
+Additionally, since the [oqs Rust crate](https://crates.io/crates/oqs) installs a specific version of liboqs as part of its build process, a new version should be pushed to Crates.io whenever a security release of liboqs is made.
 
 ## 6. Feedback
 
