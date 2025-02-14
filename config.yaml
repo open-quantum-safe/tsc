@@ -189,6 +189,16 @@ teams:
   - geedo0
   - praveksharma
 
+# oqs-demos CODEOWNERS
+# https://github.com/open-quantum-safe/oqs-demos/blob/main/.github/CODEOWNERS
+- name: oqs-demos-codeowners
+  maintainers:
+  - baentsch
+  members:
+  - ajbozarth
+  - bhess
+  - pi-314159
+
 # liboqs-cpp Maintainers
 # TODO: provide "source of truth"
 - name: liboqs-cpp-maintainers
@@ -333,6 +343,7 @@ repositories:
     oqs-maintainers: admin
     oqs-release-managers: maintain
     oqs-committers: write
+    oqs-demos-codeowners: write
     oqs-contributors: triage
     security-managers: read
     bots: write
