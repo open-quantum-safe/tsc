@@ -21,6 +21,9 @@ Other technical subprojects, such as the OQS fork of OpenSSH, do not have securi
 This document was initially accepted on *TODO: add date before merge*.
 It does not apply to versions of OQS projects released before this date.
 
+In the future, the scope of this document may be expanded to include other OQS subprojects.
+All subprojects included in its scope should reference this document in a SECURITY.md file, which in turn should file should be referenced in the subproject README.
+
 ## Vulnerability Management Team
 
 The Vulnerability Management Team (VMT) is responsible for responding to reports of security vulnerabilities in OQS software.
