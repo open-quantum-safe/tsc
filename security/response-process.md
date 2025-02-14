@@ -194,6 +194,8 @@ From the private fork, the response team can create a pull request to fix the vu
 Development on the private fork proceeds more or less as on public OQS GitHub repos, with one notable exception:
 Due to current limitations on GitHub security advisories, the private fork will not have access to OQS CI.
 Therefore, thorough testing of the patch should be performed offline.
+The patch has to pass all CI tests for [Tier 1 platforms](https://github.com/open-quantum-safe/liboqs/blob/main/PLATFORMS.md#tier-1-1) and lower-tier platforms explicitly affected by the issue in local execution.
+If possible, a new test demonstrating absence of the faulty behaviour fixed by the patch should be added.
 The PR should be approved by
 - at least two members of the response team with write permissions for the affected repo and
 - if applicable, the reporter.
