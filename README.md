@@ -36,8 +36,7 @@ The TSC holds regular meetings every 5 weeks, alternating between 10am and 12:30
 
 Upcoming meetings:
 
-- Tuesday January 14, 2025, at 10:00am US Eastern time ([agenda](https://github.com/open-quantum-safe/tsc/blob/main/meetings/2025-01-14/agenda.md), [Zoom](https://zoom-lfx.platform.linuxfoundation.org/meeting/95087899447?password=6ae71107-6694-48d4-8780-9bf9e6db5c09))
-- Tuesday February 18, 2025, at 12:30pm US Eastern time
+- Tuesday February 18, 2025, at 12:30pm US Eastern time -- rescheduled to Tuesday, March 4 at 12:30pm US Eastern time
 - Tuesday March 25, 2025, at 10:00am US Eastern time
 - Tuesday April 29, 2025, at 12:30pm US Eastern time
 - Tuesday June 3, 2025, at 10:00am US Eastern time
