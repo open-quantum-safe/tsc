@@ -22,7 +22,8 @@ This document was initially accepted on *TODO: add date before merge*.
 It does not apply to versions of OQS projects released before this date.
 
 In the future, the scope of this document may be expanded to include other OQS subprojects.
-All subprojects included in its scope should reference this document in a SECURITY.md file, which in turn should file should be referenced in the subproject README.
+All subprojects included in its scope should reference this document in a SECURITY.md file, which in turn should be referenced in the subproject README.
+They should include platform support documentation following the model of the liboqs [PLATFORMS.md](https://github.com/open-quantum-safe/liboqs/blob/main/PLATFORMS.md) file, which should include details about platform-specific security support priorities.
 
 ## Vulnerability Management Team
 
@@ -204,6 +205,9 @@ The PR should be approved by
 - if applicable, the reporter.
 
 After approval, commits on the PR should be squashed into one, as the "squash and merge" option is not currently available for security advisories.
+
+In the event that tests do not pass for a lower-tier platform, the VMT may decide to drop support for the platform, temporarily or not, in the interest of an expedient security release for Tier 1 platforms.
+This decision should take into account the severity of the issue as well as the estimated time and effort to fix the patch for the lower-tier platform.
 
 ### Finalizing the security advisory
 
