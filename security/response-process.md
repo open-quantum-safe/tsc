@@ -103,7 +103,7 @@ Vulnerabilities may also be discovered internally by members of the OQS developm
 For these reports, the Intake and Assessment phases may be streamlined at the discretion of the VMT.
 
 > Example 3:
-Michael receives an email from a former OQS developer advising him of a security issue in oqs-provider, including a patch.
+Michael receives an email from a former OQS developer advising him of a security issue in liboqs, including a patch.
 Michael immediately recognizes the issue as a vulnerability.
 Michael responds to the report, cc'ing security@openquantumsafe.org, and proceeds directly to the Patching phase.
 
@@ -122,7 +122,7 @@ It ends when the VMT responds to the reporter(s) with an assessment of the repor
 
 The Quarterback identifies the person or people who are most qualified to assess the report and, if necessary, develop a fix.
 The Quarterback provides them with all necessary information.
-These domain experts may not be members of the VMT, but they should be people whom the VMT trusts to handle security-related information.
+These domain experts may or may not be members of the VMT, but they should be people whom the VMT trusts to handle security-related information.
 It is possible that the Quarterback will also be the team member who is most qualified to assess the issue.
 
 ### Assessing the report
@@ -133,10 +133,10 @@ The below table, indicating possible assessment outcomes, is copied from the [OS
 
 | Assessment          | Response                                                                                                                                                                                                                                                                                                                                                               |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Working as intended | Let the reporter know this is the intended behavior. If they think this behavior could be improved, they can file a feature request. Close the security issue. When responding with this assessment, you should explain why you arrived at this conclusion, in case the original report was unclear and the VMT has unintentionally misunderstood the original report. |
+| Working as intended | Let the reporter know this is the intended behavior. If they think this behavior could be improved, they can file a feature request. Close the security issue. When responding with this assessment, the VMT responder should explain why this conclusion was reached, in case the original report was unclear and the VMT has unintentionally misunderstood the original report. |
 | Bug                 | Let the reporter know this is unwanted behavior but not a security issue, and ask them to refile this as a bug. Close the security issue.                                                                                                                                                                                                                              |
 | Feature request     | Let the reporter know this is the intended behavior. If they think this behavior could be improved, they can file a feature request. Close the security issue.                                                                                                                                                                                                         |
-| Vulnerability       | Let the reporter know that you have confirmed this unwanted behavior creates a security issue. Proceed with the process.                                                                                                                                                                                                                                               |
+| Vulnerability       | Let the reporter know that the VMT has confirmed this unwanted behavior creates a security issue. Proceed with the process.                                                                                                                                                                                                                                               |
 | Out of scope        | Let the reporter know that the issue is out of scope for OQS. If applicable, assist them in refiling the report upstream. See the following section for further actions.                                                                                                                                                                                                  |
 
 #### "Out of scope" assessments
@@ -180,7 +180,7 @@ Assembling the team can be done concurrently with the other steps in the Assessm
 
 ## 3. Patching
 
-This phase after the VMT has responded to the reporter(s) with an assessment of the report.
+This phase begins after the VMT has responded to the reporter(s) with an assessment of the report.
 It ends once a patch has been approved by the response team.
 
 This document deliberately does not refer to specific GitHub UI features in order to stay current in the event of a redesign.
