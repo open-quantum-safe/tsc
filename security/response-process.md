@@ -7,8 +7,13 @@ This document follows the framework and terminology from the OpenSSF's [`oss-vul
 This document applies **only** to vulnerabilities found in liboqs.
 Other OQS subprojects are not considered to have security support, although vulnerabilities may still be addressed on a best-effort basis.
 
-The OQS OpenSSL 3 provider and the liboqs language wrappers will be kept up to date with liboqs security releases.
-Concretely, these consist of
+The OQS OpenSSL 3 provider and the liboqs language wrappers will retain build support against liboqs versions tagged as being "Supported" in the [liboqs SECURITY.md](https://github.com/open-quantum-safe/liboqs/blob/main/SECURITY.md).
+This is to facilitate potentially required consequent security release of those sub projects against those downlevel liboqs codebases receiving a security update.
+In addition, all "main" branches of all sub projects listed below also will be kept up to date with the "main" branch of liboqs such as to ensure security updates landing there can immediately be used in those sub projects, also allowing a release in lock-step with a liboqs (security) release.
+Therefore, if a security release of any or all of the sub projects listed below is deemed required, it can be done by anybody with the required GH permissions, not requiring any development effort.
+Therefore, such "consequent" releases can and will be done at the same time as the liboqs security release.
+
+Concretely, the OQS OpenSSL 3 provider and the liboqs language wrappers consist of
 - liboqs-cpp,
 - liboqs-go,
 - liboqs-java,
