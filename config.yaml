@@ -251,16 +251,6 @@ teams:
   - SWilson4
   - vsoftco
 
-# The following is a private project intentionally hidden from view.
-# Contact praveksharma for details.
-- name: liboqs-cupqc-maintainers
-  maintainers:
-   - praveksharma
-  members:
-   - ydoroz
-   - stevenireeves
-   - neil-lindquist
-
 repositories:
 - name: .github
   teams:
@@ -472,15 +462,6 @@ repositories:
     security-managers: read
     tsc: read
   visibility: public
-
-# The following is a private project intentionally hidden from view.
-# Contact praveksharma for details.
-- name: liboqs-cupqc
-  teams:
-    liboqs-cupqc-maintainers: maintain
-    security-managers: read
-    tsc: read
-  visibility: private
 
 # TODO: This project is dead and probably should be read-only.
 - name: openssl
