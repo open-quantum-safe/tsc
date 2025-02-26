@@ -448,6 +448,19 @@ repositories:
     tsc: read
   visibility: public
 
+- name: liboqs-cupqc-meta
+  teams:
+    oqs-admins: admin
+    liboqs-maintainers: admin
+    oqs-release-managers: maintain
+    liboqs-committers: write
+    liboqs-codeowners: write
+    oqs-contributors: triage
+    security-managers: read
+    bots: write
+    tsc: read
+  visibility: public
+
 # No Release Managers team as there are no releases for this project.
 - name: www
   teams:
