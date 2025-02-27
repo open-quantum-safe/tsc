@@ -36,23 +36,16 @@ The Vulnerability Management Team (VMT) is responsible for responding to reports
 
 ### Members
 
-- Michael Baentsch (@baentsch, info@baentsch.ch)
-- Basil Hess (@bhess, BHE@zurich.ibm.com)
-- Brian Jarvis (@brian-jarvis-aws, brianjar@amazon.com)
-- Pravek Sharma (@praveksharma, pravek.sharma@uwaterloo.ca)
-- Douglas Stebila (@dstebila, dstebila@uwaterloo.ca)
-- Spencer Wilson (@SWilson4, spencer.wilson@uwaterloo.ca)
-
-This team is codified as `security-managers` in the [config.yaml](../config.yaml) file.
+VMT membership is codified as `security-managers` in the [config.yaml](../config.yaml) file.
 
 VMT members may be added or removed by the OQS TSC via its standard voting procedures.
 Members may voluntarily remove themselves from the VMT.
-Members may additionally declare absence for a period of time not exceeding one year, to be documented in this file.
+Members may additionally declare absence for a period of time not exceeding one year.
 If a member's absence extends beyond one year, then that member shall be removed from the VMT.
 
 ### Coverage
 
-Non-absent members of the VMT take it in turns to acknowledge and triage reports, rotating at each OQS Technical Steering Committee meeting, in the order listed here (which also happens to be alphabetical by last name).
+Active members of the VMT take it in turns to acknowledge and triage reports, rotating at each OQS Technical Steering Committee meeting, in the order listed here (which also happens to be alphabetical by last name).
 The "on-call" member of the VMT shall be confirmed and communicated at each TSC meeting.
 The above ordering is intended as an aid in staying organized but may be adjusted by the VMT as circumstances dictate---the important thing is to ensure coverage at all times.
 Members of the VMT agree to be available to support each other on short notice if the need arises (e.g., because of overload).
@@ -67,21 +60,18 @@ It ends when the report is acknowledged by a member of the VMT, who assumes the 
 
 ### External reports
 
-OQS provides reporters with three methods for reporting a vulnerability:
+OQS provides reporters with two methods for reporting a vulnerability:
 1. Email to security@openquantumsafe.org.
 This email is an alias for the members of the VMT.
 2. GitHub security advisories.
 These are submitted similarly to GitHub issues but are private.
-3. Encrypted email to dstebila@uwaterloo.ca.
 
-When a report is received via one of the first two methods, the "on call" member of the VMT is responsible for acknowledging it promptly (the OSSF recommends within 1-2 days).
+When a report is received, the "on call" member of the VMT is responsible for acknowledging it promptly (the OSSF recommends within 1-2 days).
 - For email, this means responding to the reporter, cc'ing security@openquantumsafe.org.
 - For a GitHub security advisory (which will be in the "Triage" state), this means leaving a comment on the security advisory.
 
 No assessment of the report is necessary at this time.
 The purpose of the acknowledgement is to let the reporter(s) and the rest of the VMT know that the issue is being looked at.
-
-The responding VMT member assumes the role of Quarterback for the issue.
 
 Reports received via encrypted email may be more sensitive and will be handled on a case-by-case basis.
 
@@ -133,7 +123,7 @@ The below table, indicating possible assessment outcomes, is copied from the [OS
 
 | Assessment          | Response                                                                                                                                                                                                                                                                                                                                                               |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Working as intended | Let the reporter know this is the intended behavior. If they think this behavior could be improved, they can file a feature request. Close the security issue. When responding with this assessment, the VMT responder should explain why this conclusion was reached, in case the original report was unclear and the VMT has unintentionally misunderstood the original report. |
+| Working as intended | Let the reporter know this is the intended behavior. If they think this behavior could be improved, they can file a feature request. Close the security issue. When responding with this assessment, the Quarterback should explain why this conclusion was reached, in case the original report was unclear and the VMT has unintentionally misunderstood the original report. |
 | Bug                 | Let the reporter know this is unwanted behavior but not a security issue, and ask them to refile this as a bug. Close the security issue.                                                                                                                                                                                                                              |
 | Feature request     | Let the reporter know this is the intended behavior. If they think this behavior could be improved, they can file a feature request. Close the security issue.                                                                                                                                                                                                         |
 | Vulnerability       | Let the reporter know that the VMT has confirmed this unwanted behavior creates a security issue. Proceed with the process.                                                                                                                                                                                                                                               |
@@ -148,6 +138,8 @@ Similarly, OQS may fix vulnerabilties in its own projects without security suppo
 
 For all "out of scope" assessments involving upstream code, the vulnerability report should be passed on to the relevant upstream(s).
 Depending on the nature of the issue, additional action may be required.
+
+In the event that OQS patches code sources from an upstream but the upstream itself remains unfixed, the published security advisory should include a warning to this effect.
 
 | "Out of scope" assessment | Description | Additional action |
 |------------------|----------|-|
@@ -242,8 +234,9 @@ It may be necessary to override branch protections.
 The security advisory should be published only after the patch has been merged and, if applicable, a security release has been published.
 Whether or not a security release is required is left to the discretion of the VMT.
 
-For every liboqs security advisory and release, advisories and releases using the same CVE should be published on oqs-provider and the liboqs language wrappers.
-Additionally, since the [oqs Rust crate](https://crates.io/crates/oqs) installs a specific version of liboqs as part of its build process, a new version should be pushed to Crates.io whenever a security release of liboqs is made.
+For every liboqs security advisory and release, advisories using the same CVE should be published on oqs-provider and the liboqs language wrappers.
+Whether or not security releases are warranted for oqs-provider and the language wrappers is at the discretion of the VMT, with one exception:
+Since the oqs Rust crate installs a specific version of liboqs as part of its build process, a new version of liboqs-rust must be released and published to Crates.io.
 
 ## 6. Feedback
 
