@@ -11,10 +11,10 @@ Everyone, regardless of membership within the TSC itself, is welcome to attend. 
 - 2024-03-11: [agenda](2024-03-11/agenda.md) / [minutes](2024-03-11/minutes.md)
 - 2024-04-10: [agenda](2024-04-10/agenda.md) / [minutes](2024-04-10/minutes.md)
 - 2024-06-27: [agenda](2024-06-27/agenda.md) / [minutes](2024-06-27/minutes.md)
-- 2024-09-10: [agenda](2024-09-10/agenda.md) / [minutes]([2024-09-10/minutes.md](https://github.com/open-quantum-safe/tsc/pull/100))
+- 2024-09-10: [agenda](2024-09-10/agenda.md) / [minutes](2024-09-10/minutes.md)
 - 2024-11-05: [agenda](2024-11-05/agenda.md) / [minutes](2024-11-05/minutes.md)
-- 2024-12-10: [agenda](2024-12-10/agenda.md) / [minutes](https://github.com/open-quantum-safe/tsc/pull/123)
-- 2025-01-14: [agenda](2025-01-14/agenda.md)
+- 2024-12-10: [agenda](2024-12-10/agenda.md) / [minutes](2024-12-10/minutes)
+- 2025-01-14: [agenda](2025-01-14/agenda.md) / [minutes](2025-01-14/minutes.md)
 
 ## Upcoming meetings
 
