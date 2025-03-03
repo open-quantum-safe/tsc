@@ -251,6 +251,13 @@ teams:
   - SWilson4
   - vsoftco
 
+- name: liboqs-cupqc-maintainers
+  maintainers:
+   - praveksharma
+  members:
+   - ydoroz
+   - stevenireeves
+
 repositories:
 - name: .github
   teams:
