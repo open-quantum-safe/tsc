@@ -23,11 +23,12 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 	- PQCA TAC (Spencer)
 	- PQ Code Package (Pravek)
 6. Appointment of new TSC chair
-7. NTRU (Akira Nagai and Kan Yasuda, NTT Social Informatics Laboratories)
+7. Election of Technical Community Rep to PQCA Governing Board
+8. NTRU (Akira Nagai and Kan Yasuda, NTT Social Informatics Laboratories)
 	- (agenda item may move earlier in the meeting depending on attendees' presence)
 	- Akira Nagai and colleagues from NTT contacted Douglas asking for willingness to re-introduce support for NTRU in OQS
 	- They are working on [reviving an Internet-Draft for NTRU](https://github.com/mesur-io/ntru-key-encapsulation/pull/7/files), and NTRU is [scheduled to be adopted in GlobalPlatform (TEE)](https://globalplatform.org/wp-content/uploads/2023/07/GPD_TEE_InternalCoreAPI_Spec_v1.3.1.35_PublicRvw.pdf)
 	- Implementation will be based off of John Schanck's implementation
 	- Planning some implementation improvements
 	- They plan to maintain the implementation within liboqs
-8. Other business
+9. Other business
