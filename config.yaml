@@ -450,8 +450,8 @@ repositories:
     oqs-admins: admin
     liboqs-maintainers: admin
     oqs-release-managers: maintain
+    liboqs-cupqc-maintainers: write
     liboqs-committers: write
-    liboqs-codeowners: write
     oqs-contributors: triage
     security-managers: read
     bots: write
