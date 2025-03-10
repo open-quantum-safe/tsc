@@ -120,3 +120,5 @@
 - Hart Montgomery
     - TSC team members can submit speaking proposals in various LF events, where security 
        is always a most welcome topic. Events such as CNCF, LFN, LF EDGE, OSS, etc. Balaji Ethirajulu of LF can give guidance.
+- Meeting Recording
+    - [Recording](https://zoom.us/rec/share/gADvQF0yH7_sNeSRE8IW_WbB7ZTjQEBTb2fIKA1-3zNvV6o_wDGJbRzkIXMgLMG_.q65ytllLWYsKpGGu)
