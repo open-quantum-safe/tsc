@@ -23,7 +23,7 @@ Concretely, the OQS OpenSSL 3 provider and the liboqs language wrappers consist 
 
 Other technical subprojects, such as the OQS fork of OpenSSH, do not have security support and will only be updated on a best-effort basis.
 
-This document was initially accepted on *TODO: add date before merge*.
+This document was initially accepted on March 7, 2025.
 It does not apply to versions of OQS projects released before this date.
 
 In the future, the scope of this document may be expanded to include other OQS subprojects.
