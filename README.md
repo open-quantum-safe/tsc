@@ -25,6 +25,9 @@ The role and responsibilities of the TSC are described in the [Technical Charter
 - Douglas Stebila (University of Waterloo) – TSC chair
 - Spencer Wilson (University of Waterloo) – OQS representative to PQCA TAC
 
+## Former Members
+- Brian Jarvis (AWS)
+
 ## Communication Channels
 
 ### Meetings
