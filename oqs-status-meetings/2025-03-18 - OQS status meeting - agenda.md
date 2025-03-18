@@ -4,8 +4,10 @@
 
 ## Agenda
 
-1. Status updates
-2. liboqs 0.13.0
+1. PQCA Technical Community Representative
+2. PQCA Happy Hour in Sofia, Bulgaria on Tuesday March 25
+3. Status updates
+4. liboqs 0.13.0
 
 ## OQS subprojects
 
