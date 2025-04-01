@@ -20,4 +20,5 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 	- PQ Code Package (Pravek)
 6. [Appointment of new TSC chair](https://github.com/open-quantum-safe/tsc/issues/151)
 7. Election of Technical Community Rep to PQCA Governing Board
-8. Other business
+8. Additional maintainers in liboqs and oqs-provider
+9. Other business
