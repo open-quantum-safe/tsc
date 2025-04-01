@@ -16,6 +16,7 @@ Everyone, regardless of membership within the TSC itself, is welcome to attend. 
 - 2024-12-10: [agenda](2024-12-10/agenda.md) / [minutes](2024-12-10/minutes)
 - 2025-01-14: [agenda](2025-01-14/agenda.md) / [minutes](2025-01-14/minutes.md)
 - 2025-03-04: [agenda](2025-03-04/agenda.md) / [minutes](2025-03-04/minutes.md)
+- 2025-04-01: [agenda](2025-04-01/agenda.md)
 
 ## Upcoming meetings
 
