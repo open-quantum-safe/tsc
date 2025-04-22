@@ -116,6 +116,7 @@ teams:
   - dstebila
   members:
   - baentsch
+  - SWilson4
 # liboqs Committers
 # https://github.com/open-quantum-safe/liboqs/blob/main/GOVERNANCE.md#committers-1
 - name: liboqs-committers
