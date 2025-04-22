@@ -5,7 +5,8 @@
 ## Agenda
 
 1. oqs-provider status and release
-2. Status updates
+2. Profiling updates
+3. Status updates
 
 ## OQS subprojects
 
