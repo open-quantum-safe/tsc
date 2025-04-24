@@ -38,8 +38,7 @@ The TSC holds regular meetings every 5 weeks, alternating between 10am and 12:30
 
 Upcoming meetings:
 
-- Tuesday March 25, 2025, at 10:00am US Eastern time -- rescheduled to Tuesday April 1, 2025, at 10:00am US Eastern time – [agenda](meetings/2025-04-01/agenda.md)
-- Tuesday April 29, 2025, at 12:30pm US Eastern time
+- Tuesday April 29, 2025, at 12:30pm US Eastern time – [agenda](meetings/2025-04-29/agenda.md)
 - Tuesday June 3, 2025, at 10:00am US Eastern time
 - Tuesday July 8, 2025, at 12:30pm US Eastern time
 - Tuesday August 12, 2025, at 10:00am US Eastern time
