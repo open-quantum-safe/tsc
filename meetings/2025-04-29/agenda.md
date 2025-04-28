@@ -17,7 +17,7 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 5. Reports
 	- PQCA TAC (Spencer)
 	- PQ Code Package (Pravek)
-6. Industry mentors for PQCA mentorship program
-7. OQS community survey preliminary results
+6. Industry mentors for [PQCA mentorship program](mentorship.png)
+7. OQS community survey preliminary results ([Q10-12](survey-Q10-12.jpg), [Q14-17](survey-Q14-17.jpg), [Q18-19](survey-Q18-19.jpg), [Q21-24](survey-Q21-24.jpg))
 8. Action plan for soliciting signature on-ramp submissions
 9. Other business
