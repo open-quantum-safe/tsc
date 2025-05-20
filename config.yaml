@@ -280,6 +280,7 @@ repositories:
 
 - name: liboqs
   teams:
+    bots: admin
     oqs-admins: admin
     liboqs-maintainers: admin
     oqs-release-managers: maintain
@@ -287,7 +288,6 @@ repositories:
     liboqs-codeowners: write
     oqs-contributors: triage
     security-managers: read
-    bots: write
     tsc: read
   visibility: public
 
