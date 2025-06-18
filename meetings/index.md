@@ -23,9 +23,8 @@ Everyone, regardless of membership within the TSC itself, is welcome to attend. 
 
 Upcoming meetings:
 
-- Tuesday June 3, 2025, at 10:00am US Eastern time - cancelled
-- Tuesday July 8, 2025, at 12:30pm US Eastern time
-- Tuesday August 12, 2025, at 10:00am US Eastern time
+- Tuesday July 8, 2025, at 10:00am US Eastern time
+- Tuesday August 12, 2025, at 12:30pm US Eastern time
 - Tuesday September 16, 2025, at 12:30pm US Eastern time
 - Tuesday October 21, 2025, at 10:00am US Eastern time
 - Tuesday November 25, 2025, at 12:30pm US Eastern time
