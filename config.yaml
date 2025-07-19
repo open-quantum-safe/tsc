@@ -19,8 +19,6 @@ teams:
 - name: minute-takers
   maintainers:
   - dstebila
-  members:
-  - SWilson4
 
 # Security managers
 - name: security-managers
@@ -31,12 +29,11 @@ teams:
   - bhess
   - brian-jarvis-aws
   - praveksharma
-  - SWilson4
 
 # access to Trail of Bits audit project board
 - name: trail-of-bits
   maintainers:
-  - SWilson4
+  - dstebila
   members:
   - fcasal
   - tob-scott-a
@@ -58,7 +55,6 @@ teams:
   members:
   - baentsch
   - praveksharma
-  - SWilson4
   - vsoftco
 # A sensible default for projects without a clear list of Committers.
 # Mirrors the old "core" team.
@@ -71,7 +67,6 @@ teams:
   - bhess
   - christianpaquin
   - praveksharma
-  - SWilson4
   - vsoftco
 # A sensible default for projects without a clear list of Contributors.
 # TODO: add/update per-project GOVERNANCE.md files and remove this team.
@@ -106,7 +101,6 @@ teams:
   - baentsch
   - bhess
   - christianpaquin
-  - SWilson4
   - zadlg
   - vsoftco
 
@@ -117,7 +111,6 @@ teams:
   - dstebila
   members:
   - baentsch
-  - SWilson4
 # liboqs Committers
 # https://github.com/open-quantum-safe/liboqs/blob/main/GOVERNANCE.md#committers-1
 - name: liboqs-committers
@@ -129,7 +122,6 @@ teams:
   - christianpaquin
   - Martyrshot
   - praveksharma
-  - SWilson4
   - vsoftco
 # liboqs CODEOWNERS
 # https://github.com/open-quantum-safe/liboqs/blob/main/.github/CODEOWNERS
@@ -145,7 +137,6 @@ teams:
   - cothan
   - Martyrshot
   - praveksharma
-  - SWilson4
 
 # oqs-provider Maintainers
 # https://github.com/open-quantum-safe/oqs-provider/blob/main/GOVERNANCE.md#maintainers-1
@@ -241,7 +232,6 @@ teams:
   - thomwiggers
   members:
   - dstebila
-  - SWilson4
   - vsoftco
 # liboqs-rust Release Managers
 # TODO: provide "source of truth"
@@ -252,7 +242,6 @@ teams:
   members:
   - dstebila
   - praveksharma
-  - SWilson4
   - vsoftco
 
 - name: liboqs-cupqc-maintainers
