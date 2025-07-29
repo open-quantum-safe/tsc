@@ -28,6 +28,8 @@ See project dashboard at: https://openquantumsafe.org/dashboard.html
 	- Merges in the last 7 days: None.
 	- Open PRs:
 		 - PR 192: Add TSC minutes from 2025-07-08
+	- To discuss:
+		- [Issue 193: Feedback on OQS blog post](https://github.com/open-quantum-safe/tsc/issues/193)
 
 
 2. **liboqs**
