@@ -9,3 +9,7 @@ This document records license exemptions approved by the OQS TSC.
 ### OQS-BoringSSL
 
 Contributions to the repository [open-quantum-safe/boringssl](https://github.com/open-quantum-safe/boringssl/) can be made using the [LICENSE file included in that repository](https://github.com/open-quantum-safe/boringssl/blob/master/LICENSE).
+
+### OQS-OpenSSH
+
+Contributions to the repository [open-quantum-safe/openssh](https://github.com/open-quantum-safe/openssh/) can be made using the [LICENCE file included in that repository](https://github.com/open-quantum-safe/openssh/blob/OQS-v10/LICENCE).
