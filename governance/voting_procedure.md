@@ -24,5 +24,5 @@ Section 3 of the [Technical Charter for the Open Quantum Safe project](https://g
   - The outcome of the vote should have some effect on the contents of the TSC repository, such as editing an existing file or adding a new file to record or implement the policy decision being made.
 4. Motions may be submitted as a draft PR to solicit discussion or feedback or changes, and then converted into a full PR once the motion is ready for a vote.
 5. When the motion is ready for a vote, the TSC chair will request PR reviews from all voting TSC members. Members can vote in favour by approving the pull request or leaving a comment indicating their approval; members can vote opposed by leaving a comment indicating their disapproval.
-6. The motion will be considered passed once a majority of TSC members, excluding the chair, have voted in favour.
+6. The motion will be considered passed once a majority of TSC members have voted in favour. The chair is allowed to vote.
 7. Once the motion is passed, the TSC chair will merge the pull request.
