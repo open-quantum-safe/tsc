@@ -20,11 +20,12 @@ Everyone, regardless of membership within the TSC itself, is welcome to attend. 
 - 2025-04-29: [agenda](2025-04-29/agenda.md) / [minutes](2025-04-29/minutes.md)
 - 2025-07-08: [agenda](2025-07-08/agenda.md) / [minutes](2025-07-08/minutes.md)
 - 2025-08-12: [agenda](2025-08-12/agenda.md) / [minutes](2025-08-12/minutes.md)
+- 2025-09-16: [agenda](2025-09-16/agenda.md)
+- 2025-10-21: [agenda](2025-10-21/agenda.md)
 
 ## Upcoming meetings
 
 Upcoming meetings:
 
-- Tuesday September 16, 2025, at 12:30pm US Eastern time - [agenda](meetings/2025-09-16/agenda.md)
-- Tuesday October 21, 2025, at 10:00am US Eastern time
+- Tuesday October 21, 2025, at [10:00am US Eastern time](https://www.timeanddate.com/worldclock/fixedtime.html?iso=20251021T10&p1=1203) - [agenda](meetings/2025-10-21/agenda.md)
 - Tuesday November 25, 2025, at 12:30pm US Eastern time
