@@ -64,7 +64,10 @@ Douglas volunteers to take minutes.
 
 - PQCA TAC (Norm): PQCA TAC has noted that OQS is categorized as Lab Stage on the Research Projects track. The TAC is doing its annual review of the lifecycle document and doing a retrospective on the year.
   Norm tasked with overall review of PQCA lifecycle documents in TAC. Will facilitate annual review.
-- PQ Code Package: Matthias gave a presentation on the PQ Code Package at the OPTIMIST workshop at the CHES conference recently. [Slides available](https://kannwischer.eu/talks/20250914_optimist.pdf).
+- PQ Code Package:
+  - Matthias gave a presentation on the PQ Code Package at the OPTIMIST workshop at the CHES conference recently. [Slides available](https://kannwischer.eu/talks/20250914_optimist.pdf).
+  - mldsa-native: Still in progress.
+  - mlkem-native: Optimized versions coming for RISC-V and PPC.
 - PQCA general / Outreach and Education committee (Hart): Hart will be in touch with Basil about legal issues regarding the SQIsign pull request.
 
 ## 6. PR review procedure for liboqs
@@ -83,7 +86,15 @@ There is general agreement to allow contributions generated using AI, as long as
 
 ## 9. PQCA support of activities
 
-Douglas mentions that we can propose to PQCA activities that we would like to see supported. We could consider a meet-up co-located with another event that many of us expect to attend. RWPQC might be an option, but is in Taipei in 2026 so maybe not as many people will be travelling there. To be revisited.
+Douglas mentions that we can propose to PQCA activities that we would like to see supported.
+
+We could consider a meet-up co-located with another event that many of us expect to attend.
+
+Observations: hard to run a solo event. Easier when colocated with a research or customer event. Key question is ensuring we have critical mass.
+
+RWPQC might be an option, but is in Taipei in 2026 so maybe not as many people will be travelling there. Douglas suggests something associated to Eurocrypt 2026 in Rome.
+
+To be revisited at a future meeting.
 
 ## 10. OpenSSL conference (October 7–9)
 
