@@ -63,7 +63,7 @@ Christian will take notes.
 
 ### PQCA TAC (Norm)
 
-PQCA review coming up this week. Michael said we should define success metrics for our projects.
+PQCA review coming up this week. PQCA TAC suggests we should define success metrics for our projects; Michael doesn't agree and suggests we don't.
 
 ### PQ Code Package
 
