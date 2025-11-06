@@ -244,7 +244,7 @@ teams:
 
 - name: liboqs-cupqc-maintainers
   maintainers:
-   - oqs-maintainers
+   - dstebila
   members:
    - ydoroz
    - stevenireeves
