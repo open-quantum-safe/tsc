@@ -145,7 +145,6 @@ teams:
 - name: oqs-provider-maintainers
   maintainers:
   - baentsch
-  - ashman-p
 # oqs-provider Committers
 # https://github.com/open-quantum-safe/oqs-provider/blob/main/GOVERNANCE.md#committers-1
 - name: oqs-provider-committers
