@@ -43,7 +43,7 @@ Bruce discussed two main projects: a pull request to remove ACVP test vectors an
 
 **liboqs Prehash API Development:**
 
-The team discussed adding prehash variants support to liboqs, agreeing to create a new API rather than modifying the existing sign API. They decided to make the API as generic as possible, supporting all NIST algorithms, with the goal of potentially deprecating the old sign API in the future. Michael suggested closing out lingering PRs after version 0.15 is released, with Douglas agreeing to focus on landing 3-4 PRs and resolving the status of others like the markdown lint feature. The team also noted Rodrigo's promotion from contributor to committer.
+The team discussed adding prehash variants support to liboqs, agreeing to create a new API rather than modifying the existing sign API. They decided to make the API as generic as possible, supporting indiscriminately all PQC algorithms, with the goal of potentially deprecating the old sign API in the future. Michael suggested closing out lingering PRs after version 0.15 is released, with Douglas agreeing to focus on landing 3-4 PRs and resolving the status of others like the markdown lint feature. The team also noted Rodrigo's promotion from contributor to committer.
 
 **JavaScript Wrapper Contribution Update:**
 
