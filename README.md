@@ -39,7 +39,7 @@ The TSC holds regular meetings every 5 weeks, alternating between 10am and 12:30
 
 Upcoming meetings:
 
-- Tuesday November 25, 2025, at 12:30pm US Eastern time
+- Tuesday November 25, 2025, at 12:30pm US Eastern time: [agenda](meetings/2025-11-25/agenda.md)
 
 ### Email list
 
