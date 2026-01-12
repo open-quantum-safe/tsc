@@ -28,7 +28,6 @@ teams:
   - baentsch
   - bhess
   - brian-jarvis-aws
-  - praveksharma
   - xuganyu96
 
 # access to Trail of Bits audit project board
@@ -55,9 +54,9 @@ teams:
   - dstebila
   members:
   - baentsch
-  - praveksharma
   - xuganyu96
   - vsoftco
+  - ashman-p
 # A sensible default for projects without a clear list of Committers.
 # Mirrors the old "core" team.
 # TODO: add/update per-project GOVERNANCE.md files and remove this team.
@@ -68,7 +67,6 @@ teams:
   - baentsch
   - bhess
   - christianpaquin
-  - praveksharma
   - xuganyu96
   - vsoftco
 # A sensible default for projects without a clear list of Contributors.
@@ -90,10 +88,10 @@ teams:
   - Martyrshot
   - pi-314159
   - planetf1
-  - zadlg
   - thomwiggers
   - h2parson
   - pablo-gf
+  - RodriM11
 
 # Technical Steering Committee
 # https://github.com/open-quantum-safe/tsc/blob/main/README.md#members
@@ -124,7 +122,6 @@ teams:
   - bhess
   - christianpaquin
   - Martyrshot
-  - praveksharma
   - xuganyu96
   - vsoftco
 # liboqs CODEOWNERS
@@ -140,7 +137,6 @@ teams:
   - brian-jarvis-aws
   - cothan
   - Martyrshot
-  - praveksharma
   - saitomst
   - xuganyu96
 
@@ -158,8 +154,7 @@ teams:
   - ashman-p
   members:
   - bhess
-  - christianpaquin
-  - zadlg
+  - RodriM11
 # oqs-provider CODEOWNERS
 # https://github.com/open-quantum-safe/oqs-provider/blob/main/.github/CODEOWNERS
 - name: oqs-provider-codeowners
@@ -172,7 +167,6 @@ teams:
   - feventura
   - iyanmv
   - jplomas
-  - zadlg
 
 # boringssl Maintainers
 # TODO: provide "source of truth"
@@ -188,7 +182,6 @@ teams:
   members:
   - baentsch
   - geedo0
-  - praveksharma
   - xuganyu96
 
 # liboqs-cpp Maintainers
@@ -248,13 +241,12 @@ teams:
   - thomwiggers
   members:
   - dstebila
-  - praveksharma
   - xuganyu96
   - vsoftco
 
 - name: liboqs-cupqc-maintainers
   maintainers:
-   - praveksharma
+   - dstebila
   members:
    - ydoroz
    - stevenireeves
