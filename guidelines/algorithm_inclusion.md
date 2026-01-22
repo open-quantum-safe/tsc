@@ -20,6 +20,8 @@ An algorithm meeting the above criteria will not necessarily be automatically ap
 - Availability of reference and optimized implementations
 - Interest from members of the OQS Technical Steering Committee and active contributors
 
+Inclusion of an algorithm in liboqs does not necessarily imply that the algorithm will be included in an OQS subproject, as individual OQS subprojects have their own goals and constraints.
+
 ## Deprecation policy
 
 Algorithms may be deprecated and marked for removal from OQS as their status changes. Examples of status changes that may lead to deprecation include:
@@ -31,9 +33,11 @@ Algorithms may be deprecated and marked for removal from OQS as their status cha
 
 Our algorithm deprecation process would normally be:
 
-1. Raise an issue proposing the deprecation and removal of the algorithm.
+1. Raise an issue in liboqs proposing the deprecation and removal of the algorithm.
 2. In the release notes for the next release of liboqs (say, 0.Y.0), announce that the algorithm is deprecated and will be removed in the subsequent release.
 3. After the release of liboqs 0.Y.0, the code can be removed from main branch.
+
+Subprojects will need to determine how to communicate and execute deprecation in a manner appropriate to their development and release cycle.
 
 ## Cryptanalysis
 
