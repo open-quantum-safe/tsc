@@ -16,13 +16,18 @@ A post-quantum algorithm is a candidate for inclusion in OQS if it meets one of 
 
 An algorithm meeting the above criteria will not necessarily be automatically approved for inclusion. The following are additional factors in deciding to include an algorithm in OQS:
 
-- Availability of reference and optimized implementations
 - Individuals / organizations willing to maintain and support the implementation
+- Availability of reference and optimized implementations
 - Interest from members of the OQS Technical Steering Committee and active contributors
 
 ## Deprecation policy
 
-Algorithms may be deprecated and marked for removal from OQS as their status changes. For example, if an algorithm was included because it was under consideration for standardization by a standards organization, and then that standards organization decides to not standardize the algorithm, the algorithm may be deprecated from OQS. 
+Algorithms may be deprecated and marked for removal from OQS as their status changes. Examples of status changes that may lead to deprecation include:
+
+- If an algorithm was included because it was under consideration for standardization by a standards organization, and then that standards organization decides to not standardize the algorithm
+- Cryptanalysis or security vulnerability (see cryptanalysis section below)
+- Lack of individuals / organizations willing to maintain and support the implementation
+- Lack of interest in the algorithm from the community
 
 Our algorithm deprecation process would normally be:
 
