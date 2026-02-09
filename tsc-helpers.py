@@ -18,19 +18,35 @@ but recommended via the GITHUB_TOKEN environment variable to avoid rate limits.
 import argparse
 import datetime as dt
 import os
-from typing import List, Dict
 from urllib.parse import urlparse
+import warnings
 
 import requests
 
 GITHUB_API_BASE = "https://api.github.com"
 
-DEFAULT_SUBPROJECTS = [
-    "https://github.com/example/project-a",
-    "https://github.com/example/project-b",
-]
+SUBPROJECTS = {
+    "OQS Technical Steering Committee": "https://github.com/open-quantum-safe/tsc",
+    "liboqs": "https://github.com/open-quantum-safe/liboqs",
+    "OQS-OpenSSL 3 provider": "https://github.com/open-quantum-safe/oqs-provider",
+    "OQS-BoringSSL": "https://github.com/open-quantum-safe/boringssl",
+    "OQS-OpenSSH": "https://github.com/open-quantum-safe/openssh",
+    "oqs-demos": "https://github.com/open-quantum-safe/oqs-demos",
+    "ci-containers": "https://github.com/open-quantum-safe/ci-containers",
+    "www.openquantumsafe.org": "https://github.com/open-quantum-safe/www",
+    "liboqs-cpp": "https://github.com/open-quantum-safe/liboqs-cpp",
+    "liboqs-go": "https://github.com/open-quantum-safe/liboqs-go",
+    "liboqs-java": "https://github.com/open-quantum-safe/liboqs-java",
+    "liboqs-python": "https://github.com/open-quantum-safe/liboqs-python",
+    "liboqs-rust": "https://github.com/open-quantum-safe/liboqs-rust",
+}
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+if not GITHUB_TOKEN:
+    warnings.warn("GITHUB_TOKEN not found")
+# NOTE: most GitHub API can return up to 100 items per page. Setting page size
+#   beyond 100 will not increase the number of items returned.
+GITHUB_PAGE_SIZE = 100
 
 
 def parse_date(date_str: str) -> dt.datetime:
@@ -40,7 +56,10 @@ def parse_date(date_str: str) -> dt.datetime:
     :param date_str: Date string in the format "%a %b %d, %Y"
     :return: Parsed datetime
     """
-    return dt.datetime.strptime(date_str, "%a %b %d, %Y")
+    parsed = dt.datetime.strptime(date_str, "%a %b %d %H:%M:%S %Y")
+    parsed = parsed.astimezone()  # insert system clock's timezone
+
+    return parsed.astimezone(dt.timezone.utc)
 
 
 def extract_repo(repo_url: str) -> str:
@@ -58,7 +77,7 @@ def extract_repo(repo_url: str) -> str:
     return f"{parts[0]}/{parts[1]}"
 
 
-def github_headers() -> Dict[str, str]:
+def github_headers() -> dict[str, str]:
     """
     Build HTTP headers for GitHub API requests.
 
@@ -72,7 +91,7 @@ def github_headers() -> Dict[str, str]:
     return headers
 
 
-def github_get(url: str, params: Dict | None = None) -> List[Dict]:
+def github_get(url: str, params: dict | None = None, count: int = GITHUB_PAGE_SIZE) -> list[dict]:
     """
     Perform a GET request against the GitHub API and transparently handle
     pagination.
@@ -81,8 +100,8 @@ def github_get(url: str, params: Dict | None = None) -> List[Dict]:
     :param params: Optional query parameters (only sent on first request)
     :return: Aggregated list of JSON objects from all pages
     """
-    results: List[Dict] = []
-    while url:
+    results: list[dict] = []
+    while url and (len(results) < count):
         response = requests.get(url, headers=github_headers(), params=params)
         response.raise_for_status()
         results.extend(response.json())
@@ -91,18 +110,31 @@ def github_get(url: str, params: Dict | None = None) -> List[Dict]:
     return results
 
 
-def get_pull_requests(repo: str, state: str) -> List[Dict]:
+def get_pull_requests(
+    repo: str, state: str
+) -> list[dict]:
     """
     Retrieve pull requests for a repository.
 
     :param repo: Repository identifier in the form "owner/repo"
     :param state: PR state ("open", "closed", or "all")
+    :param count: only fetch a subset of all filtered items to reduce the number
+        of calls to GitHub API
     """
     url = f"{GITHUB_API_BASE}/repos/{repo}/pulls"
-    return github_get(url, params={"state": state, "per_page": 100})
+    pulls = github_get(
+        url,
+        params={
+            "state": state,
+            "per_page": GITHUB_PAGE_SIZE,
+            "sort": "updated",
+            "direction": "desc",
+        },
+    )
+    return pulls
 
 
-def get_issues(repo: str) -> List[Dict]:
+def get_issues(repo: str) -> list[dict]:
     """
     Retrieve issues for a repository.
 
@@ -110,14 +142,23 @@ def get_issues(repo: str) -> List[Dict]:
     by the caller if necessary.
     """
     url = f"{GITHUB_API_BASE}/repos/{repo}/issues"
-    return github_get(url, params={"state": "all", "per_page": 100})
+    issues = github_get(
+        url,
+        params={
+            "state": "all",
+            "per_page": GITHUB_PAGE_SIZE,
+            "sort": "updated",
+            "direction": "desc",
+        },
+    )
+    return issues
 
 
 def filter_since(
-    items: List[Dict],
+    items: list[dict],
     since: dt.datetime,
     field: str,
-) -> List[Dict]:
+) -> list[dict]:
     """
     Filter GitHub API objects based on a timestamp field.
 
@@ -128,13 +169,11 @@ def filter_since(
     return [
         item
         for item in items
-        if dt.datetime.fromisoformat(
-            item[field].replace("Z", "+00:00")
-        ) >= since
+        if dt.datetime.fromisoformat(item[field].replace("Z", "+00:00")) >= since
     ]
 
 
-def collect_project_status(repo_url: str, since: dt.datetime) -> Dict:
+def collect_project_status(repo_url: str, since: dt.datetime) -> dict:
     """
     Collect status information for a single GitHub project.
 
@@ -145,7 +184,7 @@ def collect_project_status(repo_url: str, since: dt.datetime) -> Dict:
 
     :param repo_url: Full GitHub repository URL
     :param since: Lower bound datetime for activity
-    :return: Dictionary containing categorized project activity
+    :return: dictionary containing categorized project activity
     """
     repo = extract_repo(repo_url)
 
@@ -153,9 +192,7 @@ def collect_project_status(repo_url: str, since: dt.datetime) -> Dict:
         pr
         for pr in get_pull_requests(repo, "closed")
         if pr.get("merged_at")
-        and dt.datetime.fromisoformat(
-            pr["merged_at"].replace("Z", "+00:00")
-        ) >= since
+        and dt.datetime.fromisoformat(pr["merged_at"].replace("Z", "+00:00")) >= since
     ]
 
     open_prs = filter_since(
@@ -169,12 +206,10 @@ def collect_project_status(repo_url: str, since: dt.datetime) -> Dict:
         for issue in get_issues(repo)
         if "pull_request" not in issue
         and (
-            dt.datetime.fromisoformat(
-                issue["created_at"].replace("Z", "+00:00")
-            ) >= since
-            or dt.datetime.fromisoformat(
-                issue["updated_at"].replace("Z", "+00:00")
-            ) >= since
+            dt.datetime.fromisoformat(issue["created_at"].replace("Z", "+00:00"))
+            >= since
+            or dt.datetime.fromisoformat(issue["updated_at"].replace("Z", "+00:00"))
+            >= since
         )
     ]
 
@@ -199,14 +234,15 @@ def status_agenda(args: argparse.Namespace) -> None:
         else meeting_date - dt.timedelta(days=7)
     )
 
-    subprojects = args.subproject or DEFAULT_SUBPROJECTS
-
     print(f"\n📅 Status Meeting Agenda — {meeting_date.date()}")
     print(f"🕒 Since: {prev_date.date()}\n")
 
-    for project in subprojects:
-        print(f"## {project}")
-        data = collect_project_status(project, prev_date)
+    for name, url in SUBPROJECTS.items():
+        data = collect_project_status(url, prev_date)
+        print(f"## {name}")
+        if len(data["merged_prs"]) + len(data["open_prs"]) + len(data["issues"]) == 0:
+            print("\nNo recent issues or pull requests\n")
+            continue
 
         print("\n### Merged PRs")
         for pr in data["merged_prs"]:
@@ -242,16 +278,11 @@ def main() -> None:
     status.add_argument(
         "--date",
         required=True,
-        help="Target meeting date",
+        help='Target meeting date (example "Tue Feb 10 10:30:00 2026")',
     )
     status.add_argument(
         "--prevdate",
         help="Previous meeting date (defaults to 7 days prior)",
-    )
-    status.add_argument(
-        "--subproject",
-        action="append",
-        help="GitHub repo URL (can be repeated)",
     )
     status.set_defaults(func=status_agenda)
 
