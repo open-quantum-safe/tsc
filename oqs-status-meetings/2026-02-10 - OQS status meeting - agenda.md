@@ -32,6 +32,7 @@ See project dashboard at: https://openquantumsafe.org/dashboard.html
 		 - PR 234: Guidelines on algorithm inclusion in OQS
 	- Open issues:
 		- Issue 238: [vote] Accept liboqs-node as an OQS subproject
+		- Issue 240: Propose PQCA mentorships for Summer 2026
 
 
 2. **liboqs**
