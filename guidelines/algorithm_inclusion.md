@@ -14,11 +14,13 @@ A post-quantum algorithm is a candidate for inclusion in OQS if it meets one of 
 - Currently under consideration for standardization by a notable standards organization
 - Included in a notable application
 
+A necessary criteria is also the willingness of an individual or organization to maintain and support the implementation.
+
 An algorithm meeting the above criteria will not necessarily be automatically approved for inclusion. The following are additional factors in deciding to include an algorithm in OQS:
 
-- Individuals / organizations willing to maintain and support the implementation
 - Availability of reference and optimized implementations
 - Interest from members of the OQS Technical Steering Committee and active contributors
+- Relevance and novelty to research and prototyping of post-quantum cryptography
 
 Inclusion of an algorithm in liboqs does not necessarily imply that the algorithm will be included in an OQS subproject, as individual OQS subprojects have their own goals and constraints.
 
