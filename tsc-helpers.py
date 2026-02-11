@@ -27,6 +27,7 @@ import warnings
 import jinja2
 import requests
 
+# Set TSCHELPERS_DEBUG=1 to turn on debugging messages
 TSCHELPERS_DEBUG = os.getenv("TSCHELPERS_DEBUG", None)
 
 GITHUB_API_BASE = "https://api.github.com"
@@ -58,18 +59,18 @@ GITHUB_PAGE_SIZE = 100
 OQS_STATUS_AGENDA_TEMPLATE = """
 # {{ meeting_date.strftime("%Y-%m-%d") }} - OQS status meeting - agenda
 
-**When:**
-- US Eastern time:          {{ eastern_time.strftime("%I:%M %p") }}
-- US Pacific time:          {{ pacific_time.strftime("%I:%M %p") }}
-- Central European time:    {{ eu_time.strftime("%I:%M %p") }}
-
-**Where:** [Zoom](https://pqca.org/calendar)
+|                           |                                           |
+|:--------------------------|:------------------------------------------|
+| **US Eastern time**       | {{ eastern_time.strftime("%I:%M %p") }}   |
+| **US Pacific time**       | {{ pacific_time.strftime("%I:%M %p") }}   |
+| **Central European time** | {{ eu_time.strftime("%I:%M %p") }}        |
+| **Where**                 | [Zoom](https://pqca.org/calendar)         |
 
 ## Agenda
 
 ## OQS subprojects
 {% for project in subprojects -%}
-- {{ project.name }}
+- [{{ project.name }}]({{ project.url }})
 {% endfor %}
 
 ## Pre-meeting project reviews
@@ -79,7 +80,7 @@ Updates since last meeting on {{ prev_date.strftime("%Y-%m-%d") }}:
 
 {% for project in subprojects %}
 1. **{{ project.name }}**
-    {%- if not project.merged_prs %}
+    {% if not project.merged_prs %}
     - Merged pull requests since {{ prev_date.strftime("%Y-%m-%d") }}: *None*
     {% else %}
     - Merged pull requests since {{ prev_date.strftime("%Y-%m-%d") }}
@@ -87,7 +88,7 @@ Updates since last meeting on {{ prev_date.strftime("%Y-%m-%d") }}:
         - [#{{ pull.number }}]({{ pull.url }}): {{ pull.title }}
         {%- endfor %}
     {% endif -%}
-    {%- if not project.open_prs %}
+    {% if not project.open_prs %}
     - Open pull requests: *None*
     {% else %}
     - Open pull requests:
@@ -95,7 +96,7 @@ Updates since last meeting on {{ prev_date.strftime("%Y-%m-%d") }}:
         - [#{{ pull.number }}]({{ pull.url }}): {{ pull.title }}
         {%- endfor %}
     {% endif -%}
-    {%- if not project.issues %}
+    {% if not project.issues %}
     - New or updated issues: *None*
     {% else %}
     - New or updated issues
@@ -198,12 +199,14 @@ class ProjectStatus:
     def __init__(
         self,
         name: str,
+        url: str,
         merged_prs: list[GHPullRequest],
         open_prs: list[GHPullRequest],
         issues: list[GHIssue],
         since: dt.datetime,
     ):
         self.name = name
+        self.url = url
         self.merged_prs = merged_prs
         self.open_prs = open_prs
         self.issues = issues
@@ -248,7 +251,7 @@ class ProjectStatus:
         ]
         open_pulls = [pull for pull in pulls if pull.state == GHState.Open]
         issues = [issue for issue in issues if issue.updated_at >= filter_since]
-        return ProjectStatus(name, merged_pulls, open_pulls, issues, filter_since)
+        return ProjectStatus(name, url, merged_pulls, open_pulls, issues, filter_since)
 
 
 def parse_date(date_str: str) -> dt.datetime:
@@ -476,6 +479,18 @@ def main() -> None:
     status = subparsers.add_parser(
         "status-agenda",
         help="Generate status meeting agenda",
+        # NOTE: description is already correctly formatted, do not change
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description="""Generate OQS status meeting agenda
+
+Example:
+TSCHELPERS_DEBUG=1 ./tsc-helpers.py status-agenda \\
+    --date "Tue Feb 10 10:30:00 2026" \\
+    --out "oqs-status-meetings/2026-02-10 - OQS status meeting - agenda.md"
+
+This script searches GITHUB_TOKEN for GitHub API token, which is not required
+but recommended.
+""",
     )
     status.add_argument(
         "--date",
