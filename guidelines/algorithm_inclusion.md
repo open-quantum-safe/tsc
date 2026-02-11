@@ -35,9 +35,10 @@ Algorithms may be deprecated and marked for removal from OQS as their status cha
 
 Our algorithm deprecation process would normally be:
 
-1. Raise an issue in liboqs proposing the deprecation and removal of the algorithm.
-2. In the release notes for the next release of liboqs (say, 0.Y.0), announce that the algorithm is deprecated and will be removed in the subsequent release.
-3. After the release of liboqs 0.Y.0, the code can be removed from main branch.
+1. Raise an issue in liboqs proposing the deprecation and removal of the algorithm. Sufficient discussion should occur to ensure support for removal of the algorithm from liboqs as well as from subprojects.
+3. In the release notes for the next release of liboqs (say, 0.Y.0), announce that the algorithm is deprecated and will be removed in the subsequent release.
+4. After the release of liboqs 0.Y.0, the code can be removed from main branch.
+5. In concert with step 3, change all subprojects to also no longer support the algorithm.
 
 Subprojects will need to determine how to communicate and execute deprecation in a manner appropriate to their development and release cycle.
 
