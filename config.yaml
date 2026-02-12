@@ -253,6 +253,18 @@ teams:
    - ydoroz
    - stevenireeves
 
+# liboqs-js Maintainers
+# TODO: provide "source of truth"
+- name: liboqs-js-maintainers
+  maintainers:
+  - ktufekcic
+
+# liboqs-js Release Managers
+# TODO: provide "source of truth"
+- name: liboqs-js-release-managers
+  maintainers:
+  - ktufekcic
+
 repositories:
 - name: .github
   teams:
@@ -447,6 +459,18 @@ repositories:
     oqs-release-managers: maintain
     liboqs-cupqc-maintainers: write
     liboqs-committers: write
+    oqs-contributors: triage
+    security-managers: read
+    bots: write
+    tsc: read
+  visibility: public
+
+- name: liboqs-js
+  teams:
+    oqs-admins: admin
+    liboqs-js-maintainers: admin
+    liboqs-js-release-managers: maintain
+    oqs-committers: write
     oqs-contributors: triage
     security-managers: read
     bots: write
