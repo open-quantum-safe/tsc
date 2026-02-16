@@ -23,13 +23,14 @@ Everyone, regardless of membership within the TSC itself, is welcome to attend. 
 - 2025-09-16: [agenda](2025-09-16/agenda.md) / [minutes](2025-09-16/minutes.md)
 - 2025-10-21: [agenda](2025-10-21/agenda.md) / [minutes](2025-10-21/minutes.md)
 - 2025-11-25: [agenda](2025-11-25/agenda.md) / [minutes](2025-11-25/minutes.md)
-- 2026-01-03: [agenda](2026-01-03/agenda.md) <!-- / [minutes](2026-01-03/minutes.md)-->
+- 2026-01-03: [agenda](2026-01-03/agenda.md) / [minutes](2026-01-03/minutes.md)
+- 2026-02-17: [agenda](2026-02-17/agenda.md) <!--/ [minutes](2026-02-17/minutes.md)-->
 
 ## Upcoming meetings
 
 Upcoming meetings:
 
-- Tuesday February 17, 2026, at 10:00am US Eastern time
+- Tuesday February 17, 2026, at 10:00am US Eastern time: [agenda](2026-02-17/agenda.md)
 - Tuesday March 24, 2026, at 12:30pm US Eastern time
 - Tuesday April 28, 2026, at 10:00am US Eastern time
 - Tuesday June 2, 2026, at 12:30pm US Eastern time
