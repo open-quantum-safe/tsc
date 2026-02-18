@@ -1,6 +1,6 @@
 # Guidelines on algorithm inclusion in OQS
 
-Informed by [OQS's positioning](https://github.com/open-quantum-safe/tsc/blob/main/governance/project_lifecycle.md) as "Labs Stage" on the "Research Projects" track of the Post-Quantum Cryptography Alliance [Project Lifecycle Policy](https://pqca.github.io/TAC/Processes/Project_Lifecycle.html), this document outlines some principles on the inclusion of post-quantum algorithms in OQS.
+Informed by [OQS's positioning](https://github.com/open-quantum-safe/tsc/blob/main/governance/project_lifecycle.md) as "Labs Stage" on the "Research Projects" track of the Post-Quantum Cryptography Alliance [Project Lifecycle Policy](https://pqca.github.io/TAC/Processes/Project_Lifecycle.html), this document outlines some principles on the inclusion of post-quantum algorithms in OQS. Any decision to include a post-quantum algorithm into OQS will be subject to discussion by the Technical Steering Committee. The below captures some possible decision criteria that may change over time.
 
 ## Types of algorithms
 
