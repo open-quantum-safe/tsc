@@ -2,6 +2,7 @@ import argparse
 from collections import defaultdict
 import json
 import subprocess
+import urllib.request
 from pytz import timezone
 from datetime import datetime, timedelta
 
@@ -9,14 +10,58 @@ EST = timezone('US/Eastern')
 CEST = timezone('Europe/Berlin')
 PST = timezone('US/Pacific')
 
+CALENDAR_URL = 'https://webcal.prod.itx.linuxfoundation.org/lfx/a092M00001NWnfNQAT_sub'
+
+
+def fetch_next_meeting_from_calendar(calendar_url):
+    """Return the datetime of the next OQS Status Meeting from the LFX calendar."""
+    try:
+        import icalendar
+        import recurring_ical_events
+    except ImportError:
+        raise ImportError(
+            'Required packages not found. Install with:\n'
+            '  pip install icalendar recurring-ical-events'
+        )
+
+    with urllib.request.urlopen(calendar_url) as response:
+        cal_data = response.read()
+
+    cal = icalendar.Calendar.from_ical(cal_data)
+    now = datetime.now(tz=EST)
+    end = now + timedelta(days=90)
+
+    events = recurring_ical_events.of(cal).between(now, end)
+    oqs_events = [e for e in events if 'OQS Status Meeting' in str(e.get('SUMMARY', ''))]
+
+    if not oqs_events:
+        raise ValueError('No upcoming OQS Status Meeting found in the calendar within the next 90 days')
+
+    oqs_events.sort(key=lambda e: e['DTSTART'].dt)
+    dt = oqs_events[0]['DTSTART'].dt
+
+    if not hasattr(dt, 'tzinfo') or dt.tzinfo is None:
+        dt = EST.localize(dt)
+    else:
+        dt = dt.astimezone(EST)
+
+    return dt
+
+
 parser = argparse.ArgumentParser(description='Generate OQS status meeting agenda')
-parser.add_argument('date', help='Meeting date (YYYY-MM-DD)')
-parser.add_argument('time', nargs='?', default='12:30', help='Meeting time in HH:MM Eastern (default: 12:30)')
+parser.add_argument('date', nargs='?', default=None,
+                    help='Meeting date (YYYY-MM-DD); if omitted, determined from the LFX calendar')
+parser.add_argument('time', nargs='?', default=None,
+                    help='Meeting time in HH:MM Eastern (default: from calendar, or 12:30)')
 args = parser.parse_args()
 
-_date = datetime.strptime(args.date, '%Y-%m-%d')
-_hour, _minute = map(int, args.time.split(':'))
-MEETING_TIME = EST.localize(datetime(_date.year, _date.month, _date.day, _hour, _minute))
+if args.date is None:
+    MEETING_TIME = fetch_next_meeting_from_calendar(CALENDAR_URL)
+    print(f'Using next meeting from calendar: {MEETING_TIME.strftime("%Y-%m-%d %H:%M")} ET')
+else:
+    _date = datetime.strptime(args.date, '%Y-%m-%d')
+    _hour, _minute = map(int, (args.time or '12:30').split(':'))
+    MEETING_TIME = EST.localize(datetime(_date.year, _date.month, _date.day, _hour, _minute))
 
 AGENDA_ITEMS = ['Status updates & items seeking help']
 
