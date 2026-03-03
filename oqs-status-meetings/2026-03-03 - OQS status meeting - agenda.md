@@ -19,9 +19,25 @@
 9. liboqs language wrappers: liboqs-C++, liboqs-Go, liboqs-Java, liboqs-js, liboqs-Python, liboqs-Rust
 
 
-## Project board: []()
+## Project board: [0.16.0 prioritization](https://github.com/orgs/open-quantum-safe/projects/11)
 
-No non-Done items.
+**Ready**
+- [Issue 2291](https://github.com/open-quantum-safe/liboqs/issues/2291): Avoid duplicate CI runs in pull requests (push+PR tests) (liboqs)
+- [Issue 2118](https://github.com/open-quantum-safe/liboqs/issues/2118): Update HQC implementation to 2025/02/19 version (liboqs)
+- [Issue 2045](https://github.com/open-quantum-safe/liboqs/issues/2045): Create a table of algorithm support levels (liboqs)
+- [Issue 2101](https://github.com/open-quantum-safe/liboqs/issues/2101): Adding FAEST (liboqs)
+- [PR 2277](https://github.com/open-quantum-safe/liboqs/pull/2277): SQIsign integration (liboqs)
+
+**Backlog**
+- [Issue 2334](https://github.com/open-quantum-safe/liboqs/issues/2334): Review performance regression tests (liboqs)
+- [Issue 1788](https://github.com/open-quantum-safe/liboqs/issues/1788): Enable data independent timing on Apple Silicon (liboqs)
+- [Issue 2282](https://github.com/open-quantum-safe/liboqs/issues/2282): Review and Apply Hardened Default Compiler Options (liboqs)
+- [Issue 2329](https://github.com/open-quantum-safe/liboqs/issues/2329): Add support for Clang 22 \_\_builtin\_ct\_select (liboqs)
+- [Issue 2098](https://github.com/open-quantum-safe/liboqs/issues/2098): Solicit more schemes from NIST signature on-ramp round 2 (liboqs)
+
+**In review**
+- [PR 2356](https://github.com/open-quantum-safe/liboqs/pull/2356): sntrup761: replace PQClean code with public domain OpenSSH code (liboqs)
+
 
 
 ## Pre-meeting project reviews
