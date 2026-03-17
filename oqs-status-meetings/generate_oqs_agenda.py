@@ -305,20 +305,20 @@ with open(filename, 'w') as f:
         fmt_name = project['fmt_name']
         f.write(f'\n\n{idx}. **[{fmt_name}](https://github.com/open-quantum-safe/{gh_name})**\n\n\n')
 
-        # Issues opened in the last 14 days.
-        issue_cutoff = MEETING_TIME.date() - timedelta(days=14)
-        new_issues = gh([
+        # Issues with discussion/activity in the last 7 days.
+        discussion_cutoff = MEETING_TIME.date() - timedelta(days=7)
+        discussed_issues = gh([
             'search', 'issues',
             '--repo', f'open-quantum-safe/{gh_name}',
-            '--created', f'>={issue_cutoff.strftime("%Y-%m-%d")}',
+            '--updated', f'>={discussion_cutoff.strftime("%Y-%m-%d")}',
             '--json', 'number,title,url,labels', '--limit', '100',
         ])
-        if not new_issues:
-            f.write('\t- New issues in the last 14 days: None.\n')
+        if not discussed_issues:
+            f.write('\t- Issues with activity in the last 7 days: None.\n')
         else:
-            f.write('\t- New issues in the last 14 days:\n')
-            for issue in new_issues:
-                f.write(f'\t\t - {format_item(issue, 'Issue')}\n')
+            f.write('\t- Issues with activity in the last 7 days:\n')
+            for issue in discussed_issues:
+                f.write(f'\t\t - {format_item(issue, "Issue")}\n')
 
         # PRs merged in the last 7 days.
         pr_cutoff = MEETING_TIME.date() - timedelta(days=7)
