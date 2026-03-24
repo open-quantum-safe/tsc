@@ -23,4 +23,5 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
     - PQCA general / Outreach and Education committee (Hart)
 6. [Selection of new TSC chair](https://github.com/open-quantum-safe/tsc/issues/246)
 7. [PQCA mentorships for summer 2026 (deadline for proposals extended)](https://github.com/open-quantum-safe/tsc/issues/240)
-8. Other business
+8. Project governance and onboarding (review) [[1]](https://github.com/open-quantum-safe/oqs-provider/pull/764),[[2]](https://github.com/user-attachments/files/26002281/oqs_health_report.docx)
+9. Other business
