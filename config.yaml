@@ -146,21 +146,23 @@ teams:
   maintainers:
   - baentsch
   - ashman-p
+  - RodriM11
 # oqs-provider Committers
 # https://github.com/open-quantum-safe/oqs-provider/blob/main/GOVERNANCE.md#committers-1
 - name: oqs-provider-committers
   maintainers:
   - baentsch
   - ashman-p
+  - RodriM11
   members:
   - bhess
-  - RodriM11
 # oqs-provider CODEOWNERS
 # https://github.com/open-quantum-safe/oqs-provider/blob/main/.github/CODEOWNERS
 - name: oqs-provider-codeowners
   maintainers:
   - baentsch
   - ashman-p
+  - RodriM11
   members:
   - alexrow
   - bhess
