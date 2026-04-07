@@ -41,8 +41,6 @@
 - [PR 2328](https://github.com/open-quantum-safe/liboqs/pull/2328): Hqc update reference implementation  (liboqs)
 
 **In review**
-- [PR 2356](https://github.com/open-quantum-safe/liboqs/pull/2356): sntrup761: replace PQClean code with public domain OpenSSH code (liboqs)
-- [PR 2376](https://github.com/open-quantum-safe/liboqs/pull/2376): Update mlkem-native to v1.1.0 (liboqs)
 - [PR 2361](https://github.com/open-quantum-safe/liboqs/pull/2361): Add MQOM (liboqs)
 
 
@@ -58,6 +56,7 @@ See project dashboard at: https://openquantumsafe.org/dashboard.html
 		 - [Issue 246](https://github.com/open-quantum-safe/tsc/issues/246): New TSC chair
 		 - [Issue 240](https://github.com/open-quantum-safe/tsc/issues/240): Propose PQCA mentorships for Summer 2026  `discussion` `High priority`
 	- Merges in the last 7 days:
+		 - [PR 262](https://github.com/open-quantum-safe/tsc/pull/262): Add agenda for OQS status meeting 2026-04-07
 		 - [PR 261](https://github.com/open-quantum-safe/tsc/pull/261): 2026-03-31 OQS Status Meeting agenda
 		 - [PR 260](https://github.com/open-quantum-safe/tsc/pull/260): add Rodrigo as oqsprovider maintainer
 	- Open PRs: None
@@ -69,8 +68,12 @@ See project dashboard at: https://openquantumsafe.org/dashboard.html
 	- Issues with activity in the last 7 days:
 		 - [Issue 2399](https://github.com/open-quantum-safe/liboqs/issues/2399): XMSS Signature Verification Fuzzing  `help wanted` `future-work` `good first issue`
 		 - [Issue 2398](https://github.com/open-quantum-safe/liboqs/issues/2398): LMS Signature Verification Fuzzing  `help wanted` `good first issue`
+		 - [Issue 2324](https://github.com/open-quantum-safe/liboqs/issues/2324): `#define p 761` conflicts with Termux variant of Android NDK, preventing build for Termux
 	- Merges in the last 7 days:
 		 - [PR 2393](https://github.com/open-quantum-safe/liboqs/pull/2393): Pin Wycheproof test vectors to last good commit
+		 - [PR 2385](https://github.com/open-quantum-safe/liboqs/pull/2385): Add MQOM to liboqs
+		 - [PR 2376](https://github.com/open-quantum-safe/liboqs/pull/2376): Update mlkem-native to v1.1.0  `ready for merge` `focus`
+		 - [PR 2356](https://github.com/open-quantum-safe/liboqs/pull/2356): sntrup761: replace PQClean code with public domain OpenSSH code  `needs review` `focus`
 	- Open PRs:
 		 - [PR 2397](https://github.com/open-quantum-safe/liboqs/pull/2397): Fix: Limit pytest processes to prevent OOM on low-RAM systems
 		 - [PR 2396](https://github.com/open-quantum-safe/liboqs/pull/2396): fix: correct cuPQC ML-KEM derand symbol names and #if/#elif chains
@@ -79,14 +82,11 @@ See project dashboard at: https://openquantumsafe.org/dashboard.html
 		 - [PR 2389](https://github.com/open-quantum-safe/liboqs/pull/2389): Bump the pip group across 2 directories with 1 update  `dependencies` `python`
 		 - [PR 2387](https://github.com/open-quantum-safe/liboqs/pull/2387): Adapt/Fix latest Wycheproof tests
 		 - [PR 2386](https://github.com/open-quantum-safe/liboqs/pull/2386): Add missing ACVP tests [ML-KEM]
-		 - [PR 2385](https://github.com/open-quantum-safe/liboqs/pull/2385): Add MQOM to liboqs
 		 - [PR 2384](https://github.com/open-quantum-safe/liboqs/pull/2384): Fix Reading beyond buffer end
 		 - [PR 2383](https://github.com/open-quantum-safe/liboqs/pull/2383): Move compiler optimization level to CMAKE\_BUILD\_TYPE  `enhancement`
 		 - [PR 2382](https://github.com/open-quantum-safe/liboqs/pull/2382): Add common dependencies with include\_only
 		 - [PR 2379](https://github.com/open-quantum-safe/liboqs/pull/2379): Fix mismatched macros in LMS variants
-		 - [PR 2376](https://github.com/open-quantum-safe/liboqs/pull/2376): Update mlkem-native to v1.1.0
 		 - [PR 2366](https://github.com/open-quantum-safe/liboqs/pull/2366): Add API support for External-MU Signature[ML-DSA]
-		 - [PR 2356](https://github.com/open-quantum-safe/liboqs/pull/2356): sntrup761: replace PQClean code with public domain OpenSSH code  `needs review` `focus`
 		 - [PR 2328](https://github.com/open-quantum-safe/liboqs/pull/2328): Hqc update reference implementation 
 		 - [PR 2277](https://github.com/open-quantum-safe/liboqs/pull/2277): SQIsign integration
 
