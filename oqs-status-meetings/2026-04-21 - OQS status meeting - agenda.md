@@ -24,17 +24,16 @@
 
 **In progress**
 - [Issue 2118](https://github.com/open-quantum-safe/liboqs/issues/2118): Update HQC implementation to 2025/02/19 version (liboqs)
+- [Issue 2404](https://github.com/open-quantum-safe/liboqs/issues/2404): Update GOVERNANCE.md file and codeownwers for algorithms (liboqs)
 - [PR 2407](https://github.com/open-quantum-safe/liboqs/pull/2407): Update HQC implementation to 2025-08-22 version (liboqs)
 
 **Ready**
 - [Issue 2045](https://github.com/open-quantum-safe/liboqs/issues/2045): Create a table of algorithm support levels (liboqs)
 - [Issue 2405](https://github.com/open-quantum-safe/liboqs/issues/2405): Mention FrodoKEM algorithm change in 0.16.0 release notes (liboqs)
-- [Issue 2404](https://github.com/open-quantum-safe/liboqs/issues/2404): Update GOVERNANCE.md file and codeownwers for algorithms (liboqs)
 
 **In review**
 - [PR 2361](https://github.com/open-quantum-safe/liboqs/pull/2361): Add MQOM (liboqs)
 - [PR 2384](https://github.com/open-quantum-safe/liboqs/pull/2384): Fix Reading beyond buffer end (liboqs)
-- [PR 2383](https://github.com/open-quantum-safe/liboqs/pull/2383): Move compiler optimization level to CMAKE\_BUILD\_TYPE (liboqs)
 
 
 
@@ -47,12 +46,15 @@ See project dashboard at: https://openquantumsafe.org/dashboard.html
 
 	- Issues with activity in the last 7 days:
 		 - [Issue 246](https://github.com/open-quantum-safe/tsc/issues/246): New TSC chair
+		 - [Issue 216](https://github.com/open-quantum-safe/tsc/issues/216): Project health and maturity metrics
 	- Merges in the last 7 days:
+		 - [PR 268](https://github.com/open-quantum-safe/tsc/pull/268): Add agenda for OQS status meeting 2026-04-21
 		 - [PR 267](https://github.com/open-quantum-safe/tsc/pull/267): [vote] Add Rodrigo Martín as TSC co-chair / future chair  `vote`
 		 - [PR 266](https://github.com/open-quantum-safe/tsc/pull/266): Add minutes from 2026-04-14 status meeting
 		 - [PR 265](https://github.com/open-quantum-safe/tsc/pull/265): Add agenda for OQS status meeting 2026-04-14
 		 - [PR 264](https://github.com/open-quantum-safe/tsc/pull/264): Add hartm to the security-managers team
-	- Open PRs: None
+	- Open PRs:
+		 - [PR 269](https://github.com/open-quantum-safe/tsc/pull/269): Update liboqs permissions
 
 
 2. **[liboqs](https://github.com/open-quantum-safe/liboqs)**
@@ -71,7 +73,9 @@ See project dashboard at: https://openquantumsafe.org/dashboard.html
 		 - [PR 2403](https://github.com/open-quantum-safe/liboqs/pull/2403): Pull MAYO update from upstream (fixing issue reported by @programsurf)
 		 - [PR 2396](https://github.com/open-quantum-safe/liboqs/pull/2396): fix: correct cuPQC ML-KEM derand symbol names and #if/#elif chains
 		 - [PR 2394](https://github.com/open-quantum-safe/liboqs/pull/2394): fix: build on windows clang
+		 - [PR 2383](https://github.com/open-quantum-safe/liboqs/pull/2383): Move compiler optimization level to CMAKE\_BUILD\_TYPE  `enhancement` `ready for merge`
 	- Open PRs:
+		 - [PR 2410](https://github.com/open-quantum-safe/liboqs/pull/2410): [vote] Update GOVERNANCE.md and CODEOWNERS
 		 - [PR 2407](https://github.com/open-quantum-safe/liboqs/pull/2407): Update HQC implementation to 2025-08-22 version
 		 - [PR 2400](https://github.com/open-quantum-safe/liboqs/pull/2400): tests: add fuzz harness for XMSS stateful signature verification (#2399)
 		 - [PR 2397](https://github.com/open-quantum-safe/liboqs/pull/2397): Fix: Limit pytest processes to prevent OOM on low-RAM systems
@@ -79,7 +83,6 @@ See project dashboard at: https://openquantumsafe.org/dashboard.html
 		 - [PR 2387](https://github.com/open-quantum-safe/liboqs/pull/2387): Adapt/Fix latest Wycheproof tests
 		 - [PR 2386](https://github.com/open-quantum-safe/liboqs/pull/2386): Add missing ACVP tests [ML-KEM]
 		 - [PR 2384](https://github.com/open-quantum-safe/liboqs/pull/2384): Fix Reading beyond buffer end  `focus`
-		 - [PR 2383](https://github.com/open-quantum-safe/liboqs/pull/2383): Move compiler optimization level to CMAKE\_BUILD\_TYPE  `enhancement` `ready for merge`
 		 - [PR 2382](https://github.com/open-quantum-safe/liboqs/pull/2382): Add common dependencies with include\_only
 		 - [PR 2366](https://github.com/open-quantum-safe/liboqs/pull/2366): Add API support for External-MU Signature[ML-DSA]
 		 - [PR 2277](https://github.com/open-quantum-safe/liboqs/pull/2277): SQIsign integration
