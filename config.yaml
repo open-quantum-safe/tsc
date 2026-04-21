@@ -99,6 +99,7 @@ teams:
 - name: tsc
   maintainers:
   - dstebila
+  - RodriM11
   members:
   - ashman-p
   - baentsch

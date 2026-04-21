@@ -19,9 +19,10 @@ The role and responsibilities of the TSC are described in the [Technical Charter
 - Norman Ashley (Cisco) – OQS representative to PQCA TAC
 - Michael Baentsch (independent contributor)
 - Vlad Gheorghiu (softwareQ Inc.)
-- Basil Hess (IBM Research) – TSC vice chair, OQS liasion to PQ Code Package
+- Basil Hess (IBM Research) – OQS liasion to PQ Code Package
+- Rodrigo Martín (Indra) - TSC co-chair (until August 31, 2026, then sole chair)
 - Christian Paquin (Microsoft Research)
-- Douglas Stebila (University of Waterloo) – TSC chair
+- Douglas Stebila (University of Waterloo) – TSC co-chair (until August 31, 2026)
 
 ## Former Members
 
@@ -39,8 +40,6 @@ The TSC holds regular meetings every 5 weeks, alternating between 10am and 12:30
 
 Upcoming meetings:
 
-- Tuesday February 17, 2026, at 10:00am US Eastern time: [agenda](2026-02-17/agenda.md)
-- Tuesday March 24, 2026, at 12:30pm US Eastern time
 - Tuesday April 28, 2026, at 10:00am US Eastern time
 - Tuesday June 2, 2026, at 12:30pm US Eastern time
 - Tuesday July 7, 2026, at 10:00am US Eastern time
