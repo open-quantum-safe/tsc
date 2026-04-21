@@ -114,31 +114,37 @@ teams:
   - dstebila
   members:
   - baentsch
+  - xuganyu96
 # liboqs Committers
 # https://github.com/open-quantum-safe/liboqs/blob/main/GOVERNANCE.md#committers-1
 - name: liboqs-committers
   maintainers:
   - dstebila
   members:
+  - ashman-p
   - baentsch
   - bhess
-  - christianpaquin
-  - Martyrshot
+  - mkannwischer
+  - RodriM11
   - xuganyu96
-  - vsoftco
 # liboqs CODEOWNERS
 # https://github.com/open-quantum-safe/liboqs/blob/main/.github/CODEOWNERS
 - name: liboqs-codeowners
   maintainers:
   - dstebila
   members:
+  - abhi-dev-engg
   - alexrow
   - ashman-p
   - baentsch
+  - bbbrumley
   - bhess
   - brian-jarvis-aws
   - cothan
-  - Martyrshot
+  - Frauschi
+  - mkannwischer
+  - rben-dev
+  - rtjk
   - saitomst
   - xuganyu96
 
