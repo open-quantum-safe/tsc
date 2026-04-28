@@ -10,7 +10,7 @@ TSC members
 - [x] [Michael Baentsch (independent contributor)](https://github.com/baentsch)
 - [ ] [Vlad Gheorghiu (softwareQ Inc.)](https://github.com/vsoftco)
 - [x] [Basil Hess (IBM Research)](https://github.com/bhess)
-- [x] [Rodrigo Martín (Indra)](https://github.com/bheRodriM11ss)
+- [x] [Rodrigo Martín (Indra)](https://github.com/RodriM11)
 - [x] [Christian Paquin (Microsoft Research)](https://github.com/christianpaquin)
 - [x] [Douglas Stebila (University of Waterloo)](https://github.com/dstebila)
 
