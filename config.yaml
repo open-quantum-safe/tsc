@@ -224,6 +224,7 @@ teams:
 - name: liboqs-python-maintainers
   maintainers:
   - vsoftco
+  - dstebila
 # liboqs-python Release Managers
 # TODO: provide "source of truth"
 - name: liboqs-python-release-managers
