@@ -40,8 +40,7 @@ The TSC holds regular meetings every 5 weeks, alternating between 10am and 12:30
 
 Upcoming meetings:
 
-- Tuesday April 28, 2026, at 10:00am US Eastern time: [agenda](meetings/2026-04-28/agenda.md)
-- Tuesday June 2, 2026, at 12:30pm US Eastern time
+- Tuesday June 2, 2026, at 12:30pm US Eastern time: [agenda](meetings/2026-06-02/agenda.md)
 - Tuesday July 7, 2026, at 10:00am US Eastern time
 - Tuesday August 11, 2026, at 12:30pm US Eastern time
 - Tuesday September 15, 2026, at 10:00am US Eastern time
