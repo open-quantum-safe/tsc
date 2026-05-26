@@ -4,7 +4,8 @@
 
 ## Agenda
 
-1. Status updates & items seeking help
+1. Discussion with HQC team
+2. Status updates & items seeking help
 
 ## OQS subprojects
 
