@@ -48,6 +48,7 @@ teams:
   members:
   - baentsch
   - vsoftco
+  - RodriM11
 # A sensible default for projects without a clear list of Release Managers.
 # TODO: add/update per-project GOVERNANCE.md files and remove this team.
 - name: oqs-release-managers
@@ -70,6 +71,7 @@ teams:
   - christianpaquin
   - xuganyu96
   - vsoftco
+  - RodriM11
 # A sensible default for projects without a clear list of Contributors.
 # TODO: add/update per-project GOVERNANCE.md files and remove this team.
 - name: oqs-contributors
