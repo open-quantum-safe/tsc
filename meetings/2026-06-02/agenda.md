@@ -16,18 +16,18 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
     - [Update CODEOWNERS in liboqs to establish a responsible maintainer for each algorithm and update GOVERNANCE file with current maintainers/committers](https://github.com/open-quantum-safe/liboqs/pull/2410)
     - [PQCA mentorship program is still open for Autumn 2026](https://github.com/open-quantum-safe/tsc/issues/240)
     - [Issues still open for March Health report](https://github.com/open-quantum-safe/tsc/issues/275)
-4. Reports (Douglas)
-    - PQCA TAC (Norm)
-    - PQ Code Package (Basil)
-    - PQCA general / Outreach and Education committee (Hart)
-5. Round 3 on-ramp (Rodrigo)
+4. Round 3 on-ramp (Rodrigo)
     - Discuss expected timeline for inclusion of remaining algorithms
     - Process to include algorithms
     - Possible resources to execute such inclusions
+5. Security response process from emerging number of reports (Douglas)
 6. Report on Google meeting (Douglas)
 7. TSC vice chair role starting September 2026 (Douglas)
-8. Security response process from emerging number of reports (Douglas)
-9. OQS presentations at appropriate conferences (Rodrigo)
+8. OQS presentations at appropriate conferences (Rodrigo)
     - Provide update of submissions generated
     - PQCA Funding
+9. Reports (Douglas)
+    - PQCA TAC (Norm)
+    - PQ Code Package (Basil)
+    - PQCA general / Outreach and Education committee (Hart)
 10. Other business (Rodrigo)
