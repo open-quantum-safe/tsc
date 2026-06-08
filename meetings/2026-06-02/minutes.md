@@ -17,7 +17,7 @@ TSC members
 Other attendees
 
 - Bruce Xu (University of Waterloo)
-- Loganaden Velvindron
+- Loganaden Velvindron (cyberstorm.mu)
 
 **Date and time:** Tuesday, June 2, 2026, 16:30–17:30 UTC / 9:30–10:30 US Pacific / 12:30–13:30 US Eastern / 18:30–19:30 Central European
 
