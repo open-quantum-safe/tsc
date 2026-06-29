@@ -287,6 +287,15 @@ repositories:
     tsc: read
   visibility: public
 
+- name: security-tracking
+  teams:
+    oqs-admins: admin
+    security-managers: write
+    oqs-maintainers: write
+    liboqs-maintainers: write
+    oqs-provider-maintainers: write
+  visibility: private
+
 - name: tsc
   teams:
     oqs-admins: admin
