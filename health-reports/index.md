@@ -11,3 +11,4 @@ These reports will be generated with the help of AI.
 ## Report history
 
 - March 2026: [report](march-2026/report.pdf)
+- June 2026: [report](june-2026/report.pdf)
