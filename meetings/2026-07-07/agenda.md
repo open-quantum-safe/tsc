@@ -12,7 +12,7 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 
 1. Introduction (Rodrigo)
 2. Approve agenda (Rodrigo)
-3. Review [action items from previous meeting](https://github.com/open-quantum-safe/tsc/blob/main/meetings/2026-03-24/minutes.md) (Rodrigo)
+3. Review [action items from previous meeting](https://github.com/open-quantum-safe/tsc/blob/main/meetings/2026-06-02/minutes.md) (Rodrigo)
     - [Update CODEOWNERS in liboqs to establish a responsible maintainer for each algorithm and update GOVERNANCE file with current maintainers/committers](https://github.com/open-quantum-safe/liboqs/pull/2410)
     - [TSC Vice Chair nomination](https://github.com/open-quantum-safe/tsc/issues/295)
 4. Round 3 on-ramp (Rodrigo)
@@ -22,8 +22,11 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
     - Security email list
     - Private security repository
     - TrailOfBits report
-6. Reports (Douglas)
+6. Q2 OQS Health report discussion (Rodrigo)
+    - Actions to be taken
+    - Expand it to other subprojects?
+7. Reports (Douglas)
     - PQCA TAC (Norm)
     - PQ Code Package (Basil)
     - PQCA general / Outreach and Education committee (Hart)
-7. Other business (Rodrigo)
+8. Other business (Rodrigo)
