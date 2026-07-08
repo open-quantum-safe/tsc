@@ -50,13 +50,11 @@ Rodrigo reported that most algorithm maintainer teams have been contacted and ha
 
 Douglas noted that the companion TSC permissions PR — adding Rodrigo to the liboqs backup maintainers and committers teams — is also open and is looking for an additional review and approval from TSC members.
 
-Important
+> [!IMPORTANT]
+> **Action (all):** Review and approve the open TSC permissions PR adding Rodrigo to the liboqs backup maintainers and committers teams.
 
-**Action (all):** Review and approve the open TSC permissions PR adding Rodrigo to the liboqs backup maintainers and committers teams.
-
-Important
-
-**Action (Rodrigo):** Follow up with non-responding algorithm teams (likely spam-filtered) and finalize the CODEOWNERS/GOVERNANCE PR this week.
+> [!IMPORTANT]
+> **Action (Rodrigo):** Follow up with non-responding algorithm teams (likely spam-filtered) and finalize the CODEOWNERS/GOVERNANCE PR this week.
 
 ### PQCA mentorship program
 
@@ -82,21 +80,17 @@ Discussion covered the following points:
 
 **Upstream motivation.** Basil noted that integrating with liboqs while preparing a round 3 submission benefits submission teams by providing additional build and test coverage. He cited the skSign project (in which he is involved) as planning to prepare liboqs integration in parallel with the round 3 submission. He also flagged that some integrations may require changes on the liboqs side (e.g., handling large numbers of included files), which is an additional argument for mentorship support.
 
-Important
+> [!IMPORTANT]
+> **Action (Rodrigo):** Open tracking issues in liboqs for each of the 5 remaining on-ramp algorithms and add them to the 0.17 milestone.
 
-**Action (Rodrigo):** Open tracking issues in liboqs for each of the 5 remaining on-ramp algorithms and add them to the 0.17 milestone.
+> [!IMPORTANT]
+> **Action (Rodrigo):** Reach out to the 5 remaining submission teams to gauge interest in collaborating on liboqs integration.
 
-Important
+> [!IMPORTANT]
+> **Action (Douglas / Bruce):** Discuss and document the current state of scripting/tooling for algorithm inclusion, with a view to improving onboarding material over the summer.
 
-**Action (Rodrigo):** Reach out to the 5 remaining submission teams to gauge interest in collaborating on liboqs integration.
-
-Important
-
-**Action (Douglas / Bruce):** Discuss and document the current state of scripting/tooling for algorithm inclusion, with a view to improving onboarding material over the summer.
-
-Important
-
-**Action (all):** Consider proposing or mentoring a PQCA mentorship project focused on algorithm integration ([issue #240](https://github.com/open-quantum-safe/tsc/issues/240)).
+> [!IMPORTANT]
+> **Action (all):** Consider proposing or mentoring a PQCA mentorship project focused on algorithm integration ([issue #240](https://github.com/open-quantum-safe/tsc/issues/240)).
 
 ## Security response process
 
@@ -108,17 +102,14 @@ Douglas reported that the number of incoming security reports has increased noti
 
 **Project Glasswing / Anthropic.** Loganaden mentioned that Anthropic's Project Glasswing (access to Claude Mythos Preview for open source security scanning) allows project teams to request a scan through a named contact. Douglas noted that Hart had been exploring LF-level access; Rodrigo agreed the next step is to follow up with Hart before pursuing this independently.
 
-Important
+> [!IMPORTANT]
+> **Action (Michael):** Open a TSC issue to discuss consolidating security intake to GitHub and deprioritising the email alias, incorporating Douglas's suggestion to retain it as a fallback.
 
-**Action (Michael):** Open a TSC issue to discuss consolidating security intake to GitHub and deprioritising the email alias, incorporating Douglas's suggestion to retain it as a fallback.
+> [!IMPORTANT]
+> **Action (Douglas):** Explore using a private GitHub project dashboard for internal tracking of security reports.
 
-Important
-
-**Action (Douglas):** Explore using a private GitHub project dashboard for internal tracking of security reports.
-
-Important
-
-**Action (Rodrigo / Douglas):** Follow up with Hart on the status of LF access to Anthropic's Project Glasswing / Mythos Preview security scanning.
+> [!IMPORTANT]
+> **Action (Rodrigo / Douglas):** Follow up with Hart on the status of LF access to Anthropic's Project Glasswing / Mythos Preview security scanning.
 
 ## Google.org funding discussion
 
@@ -128,9 +119,8 @@ The most likely funding model is a university-hosted grant, as the Linux Foundat
 
 Rodrigo's impression from the meeting was that Google.org is open to letting OQS define how the support is used; the exact scope will become clearer through the proposal process. Michael cautioned that such offers rarely come without conditions and encouraged the team to clarify expectations carefully.
 
-Important
-
-**Action (Douglas):** Submit the initial funding proposal to Google.org next week and keep the TSC informed of progress.
+> [!IMPORTANT]
+> **Action (Douglas):** Submit the initial funding proposal to Google.org next week and keep the TSC informed of progress.
 
 ## TSC vice chair role starting September 2026
 
@@ -142,9 +132,8 @@ Norman suggested the vice chair should ideally be someone with long-standing exp
 
 No candidate came forward during the meeting. Rodrigo will open a GitHub issue to continue the discussion.
 
-Important
-
-**Action (Rodrigo):** Open a GitHub issue to solicit candidates and continue discussion on the TSC vice chair role.
+> [!IMPORTANT]
+> **Action (Rodrigo):** Open a GitHub issue to solicit candidates and continue discussion on the TSC vice chair role.
 
 ## OQS presentations at appropriate conferences
 
@@ -160,13 +149,11 @@ Michael noted that the original intention was to align on the conference message
 
 Rodrigo also raised the question of funding for travel and attendance beyond the presenter alone, and plans to discuss with Hart what the process is for requesting PQCA support for this (direct request, or via Norm as TAC representative).
 
-Important
+> [!IMPORTANT]
+> **Action (Rodrigo):** Update the conference messaging issues with the submitted proposal text for team review and comment.
 
-**Action (Rodrigo):** Update the conference messaging issues with the submitted proposal text for team review and comment.
-
-Important
-
-**Action (Rodrigo):** Discuss with Hart the process for requesting PQCA travel funding for conference attendance.
+> [!IMPORTANT]
+> **Action (Rodrigo):** Discuss with Hart the process for requesting PQCA travel funding for conference attendance.
 
 ## Reports
 
