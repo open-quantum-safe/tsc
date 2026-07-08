@@ -294,6 +294,7 @@ repositories:
     oqs-maintainers: write
     liboqs-maintainers: write
     oqs-provider-maintainers: write
+    tsc: write
   visibility: private
 
 - name: tsc
