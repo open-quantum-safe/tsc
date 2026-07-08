@@ -47,17 +47,15 @@ Going forward, Rodrigo committed to a new agenda cadence: he will post the TSC m
 
 Rodrigo reported that five algorithms already present in liboqs still lack an assigned responsible maintainer. He has reached out again to each team and has received responses from three of them (e.g., FrodoKEM). A draft PR incorporating the responses received to date will be prepared. The Falcon team is a special case: their plans depend on the forthcoming NIST IPD, so Rodrigo is in contact with Thomas (their lead point of contact) to understand timing and will share more once known. If no answer arrives from the remaining teams, those algorithms' entries will be updated and outreach will continue.
 
-Important
-
-**Action (Rodrigo):** Prepare a draft PR updating CODEOWNERS/GOVERNANCE with the responses received so far, and continue following up with non-responding algorithm teams.
+> [!IMPORTANT]
+> **Action (Rodrigo):** Prepare a draft PR updating CODEOWNERS/GOVERNANCE with the responses received so far, and continue following up with non-responding algorithm teams.
 
 ### TSC vice chair role ([issue #295](https://github.com/open-quantum-safe/tsc/issues/295))
 
 Rodrigo wants to resolve the vice chair question this month so the chair / vice chair structure is in place for the transition to sole-chair mode in September. No one else came forward for the role during the meeting. Douglas reiterated his willingness to serve as vice chair, and also his willingness to step aside if anyone else wanted it. Michael suggested that, since the issue has been open for some time with no other interest, it should simply go to an online vote for Douglas rather than waiting longer. Rodrigo will put it to a vote this week.
 
-Important
-
-**Action (Rodrigo):** Open the online vote this week to confirm Douglas as TSC vice chair, effective September 2026.
+> [!IMPORTANT]
+> **Action (Rodrigo):** Open the online vote this week to confirm Douglas as TSC vice chair, effective September 2026.
 
 ## Round 3 on-ramp — algorithm inclusion strategy
 
@@ -79,17 +77,14 @@ Discussion points:
 
 Douglas thanked Rodrigo for the substantial background email effort with all the submission teams.
 
-Important
+> [!IMPORTANT]
+> **Action (Rodrigo):** Document the three-phase inclusion plan (meeting minutes deemed sufficient by Norman) and decide where a fuller writeup should live.
 
-**Action (Rodrigo):** Document the three-phase inclusion plan (meeting minutes deemed sufficient by Norman) and decide where a fuller writeup should live.
+> [!IMPORTANT]
+> **Action (OQS team, over the summer):** Improve `copy_from_upstream` documentation and tooling — including a documented schema for `meta.yaml` data sheets and better-advertised features — to make the process as easy as possible ahead of the September workshop.
 
-Important
-
-**Action (OQS team, over the summer):** Improve `copy_from_upstream` documentation and tooling — including a documented schema for `meta.yaml` data sheets and better-advertised features — to make the process as easy as possible ahead of the September workshop.
-
-Important
-
-**Action (Rodrigo):** Organize an early-September workshop with the submission teams and follow up with the two teams that have not yet responded.
+> [!IMPORTANT]
+> **Action (Rodrigo):** Organize an early-September workshop with the submission teams and follow up with the two teams that have not yet responded.
 
 ## Security response process
 
@@ -110,33 +105,26 @@ Douglas reported on several related items ([TSC issue #293](https://github.com/o
 
 **OpenAI subscriptions.** A further outcome of the Trail of Bits engagement is the availability of a few sponsored six-month OpenAI Pro subscriptions. Bruce has already taken one up; a few remain. Anyone who would benefit should contact Douglas for the link.
 
-Important
+> [!IMPORTANT]
+> **Action (Douglas):** Configure permissions so Christian and all other TSC members have access to the private `security-tracking` repository.
 
-**Action (Douglas):** Configure permissions so Christian and all other TSC members have access to the private `security-tracking` repository.
+> [!IMPORTANT]
+> **Action (Douglas):** Remove the security email alias from public intake documentation (keeping it active as a fallback) and update intake-path references accordingly.
 
-Important
+> [!IMPORTANT]
+> **Action (Douglas / Michael):** Update SECURITY.md — Douglas in liboqs, Michael in oqs-provider — to remove the email address and clarify what qualifies as a security report versus a normal issue, steering denial-of-service-type findings toward regular issues.
 
-**Action (Douglas):** Remove the security email alias from public intake documentation (keeping it active as a fallback) and update intake-path references accordingly.
+> [!IMPORTANT]
+> **Action (all — future discussion):** Decide the ongoing security-handling model (rotating "quarterback" vs. per-subproject maintainer ownership) now that the tracking repository exists.
 
-Important
+> [!IMPORTANT]
+> **Action (Bruce):** Upload the Trail of Bits report to the private `security-tracking` repository.
 
-**Action (Douglas / Michael):** Update SECURITY.md — Douglas in liboqs, Michael in oqs-provider — to remove the email address and clarify what qualifies as a security report versus a normal issue, steering denial-of-service-type findings toward regular issues.
+> [!IMPORTANT]
+> **Action (Rodrigo):** Map each Trail of Bits report item to a tracked issue assigned to the relevant code owner, aiming for a one-line status on each by the next TSC meeting.
 
-Important
-
-**Action (all — future discussion):** Decide the ongoing security-handling model (rotating "quarterback" vs. per-subproject maintainer ownership) now that the tracking repository exists.
-
-Important
-
-**Action (Bruce):** Upload the Trail of Bits report to the private `security-tracking` repository.
-
-Important
-
-**Action (Rodrigo):** Map each Trail of Bits report item to a tracked issue assigned to the relevant code owner, aiming for a one-line status on each by the next TSC meeting.
-
-Important
-
-**Action (all):** Anyone wanting a sponsored six-month OpenAI Pro subscription should email Douglas for the link.
+> [!IMPORTANT]
+> **Action (all):** Anyone wanting a sponsored six-month OpenAI Pro subscription should email Douglas for the link.
 
 ## Q2 OQS health report discussion
 
@@ -146,17 +134,14 @@ When Michael asked who had read the report, only Michael and Rodrigo had. Rodrig
 
 Michael, who had read it, endorsed one recommendation: the report flags a single-point-of-failure bus factor (himself) and recommends writing up Architectural Decision Records (ADRs) — capturing the reasoning behind design decisions so people (or AI tools) can understand the project and evaluate/reject contributions accordingly (e.g., an ADR clarifying that OQS is about post-quantum, not new hash algorithms). This aligns with the motivation for his OpenSSL Conference presentation last year. Michael will work on writing up such ADRs and recommended the whole team consider doing the same across the project throughout the year; he specifically suggested Douglas read the report with an eye to what else could be documented this way.
 
-Important
+> [!IMPORTANT]
+> **Action (Rodrigo):** Open an issue to track the Q2 health report for discussion at the next TSC meeting.
 
-**Action (Rodrigo):** Open an issue to track the Q2 health report for discussion at the next TSC meeting.
+> [!IMPORTANT]
+> **Action (all members):** Read the Q2 health report — especially the recommended actions — before the next TSC meeting.
 
-Important
-
-**Action (all members):** Read the Q2 health report — especially the recommended actions — before the next TSC meeting.
-
-Important
-
-**Action (Michael):** Begin writing up Architectural Decision Records (ADRs) to reduce the bus factor and document design rationale.
+> [!IMPORTANT]
+> **Action (Michael):** Begin writing up Architectural Decision Records (ADRs) to reduce the bus factor and document design rationale.
 
 ## Reports
 
@@ -164,9 +149,8 @@ Important
 
 Norman was not present at the last TAC meeting but reviewed the minutes. The only OQS-relevant item: a couple of new people joined the call expressing interest in OQS (some working in the healthcare sector, some interested in the demo repos) and wanting to learn where they could contribute. Their names appear in the minutes but without contact details. Michael asked that their email addresses be obtained via TAC members so the team can proactively reach out rather than waiting for them; Norman agreed to try, and Michael offered to follow up with them about demos.
 
-Important
-
-**Action (Norman):** Obtain contact details for the interested individuals from the TAC minutes (via TAC members) and pass them to Michael for follow-up on demos.
+> [!IMPORTANT]
+> **Action (Norman):** Obtain contact details for the interested individuals from the TAC minutes (via TAC members) and pass them to Michael for follow-up on demos.
 
 ### PQ Code Package (Basil)
 
