@@ -22,7 +22,7 @@ The role and responsibilities of the TSC are described in the [Technical Charter
 - Basil Hess (IBM Research) – OQS liasion to PQ Code Package
 - Rodrigo Martín (Indra) - TSC co-chair (until August 31, 2026, then sole chair)
 - Christian Paquin (Microsoft Research)
-- Douglas Stebila (University of Waterloo) – TSC co-chair (until August 31, 2026)
+- Douglas Stebila (University of Waterloo) – TSC co-chair (until August 31, 2026, then vice-chair)
 
 ## Former Members
 
