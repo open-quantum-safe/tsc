@@ -65,7 +65,8 @@ AGENDA_ITEMS = ['Status updates & items seeking help']
 #   https://github.com/orgs/open-quantum-safe/projects/<PROJECT_NUMBER>
 # Set to None to skip the project board section.
 PROJECT_ORG = 'open-quantum-safe'
-PROJECT_NUMBER = 11
+# PROJECT_NUMBER = 11
+PROJECT_NUMBER = None
 
 # Primary OQS repositories. Each entry has a 'gh_name' (GitHub repo name under
 # open-quantum-safe) and a 'fmt_name' (display name used in the agenda).
