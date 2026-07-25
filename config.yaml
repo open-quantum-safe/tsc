@@ -397,6 +397,7 @@ repositories:
     oqs-maintainers: admin
     oqs-release-managers: maintain
     oqs-committers: write
+    jplomas: write
     oqs-contributors: triage
     security-managers: read
     bots: write
