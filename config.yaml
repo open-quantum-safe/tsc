@@ -391,13 +391,20 @@ repositories:
     tsc: read
   visibility: public
 
+# ci-container Committers
+- name: ci-container-committers
+  maintainers:
+  - baentsch
+  members:
+  - jplomas
+
 - name: ci-containers
   teams:
     oqs-admins: admin
     oqs-maintainers: admin
     oqs-release-managers: maintain
     oqs-committers: write
-    jplomas: write
+    ci-container-committers: write
     oqs-contributors: triage
     security-managers: read
     bots: write
