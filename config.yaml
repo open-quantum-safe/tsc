@@ -279,6 +279,14 @@ teams:
   maintainers:
   - ktufekcic
 
+# ci-containers Committers
+# TODO: provide "source of truth"
+- name: ci-containers-committers
+  maintainers:
+  - baentsch
+  members:
+  - jplomas
+
 repositories:
 - name: .github
   teams:
@@ -391,20 +399,13 @@ repositories:
     tsc: read
   visibility: public
 
-# ci-container Committers
-- name: ci-container-committers
-  maintainers:
-  - baentsch
-  members:
-  - jplomas
-
 - name: ci-containers
   teams:
     oqs-admins: admin
     oqs-maintainers: admin
     oqs-release-managers: maintain
     oqs-committers: write
-    ci-container-committers: write
+    ci-containers-committers: write
     oqs-contributors: triage
     security-managers: read
     bots: write
