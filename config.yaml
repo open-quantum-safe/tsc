@@ -214,6 +214,7 @@ teams:
 # TODO: provide "source of truth"
 - name: liboqs-go-maintainers
   maintainers:
+  - dstebila
   - vsoftco
 # liboqs-go Release Managers
 # TODO: provide "source of truth"
