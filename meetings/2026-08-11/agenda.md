@@ -18,7 +18,7 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 4. OQS Q2 Health report discussion (Rodrigo)
     - Actions to be taken
     - Expand it to other subprojects?
-5. Discussion on Classic McEliece inclusion (Rodrigo)
+5. Discussion on ["What to do with subprojects which lose their last maintainer?"](https://github.com/open-quantum-safe/tsc/discussions/221) (Rodrigo)
 6. Round 3 on-ramp (Douglas)
     - Update on efforts
     - Planification for September
