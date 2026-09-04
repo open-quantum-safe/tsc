@@ -10,4 +10,4 @@ The goal of this guideline is to describe what a good review looks like, so revi
 - **Match the depth of your review to the depth of the change.** Typo fixes, version bumps, and similar trivial changes are fine with a plain approval and no further comment. But a change to constant-time arithmetic deserves real engagement — save the substance for where it matters, rather than either skipping it everywhere or adding ceremony everywhere.
 - **Don't delete other people's contributions or comments.** If a comment or suggestion seems wrong, resolved, or off-base, reply or mark it resolved — don't remove it. The discussion trail is part of the record, including for people who weren't in the room.
 
-If you're new to a subproject and unsure what to look for, saying so in the review is itself useful signal — it tells maintainers where reviewer bandwidth is thin.
+If you're new to a subproject and unsure what to look for, saying so in the review is itself useful signal — it tells all other subproject's committers where reviewer bandwidth is thin and closer collaboration, support or more work-sharing is required.
