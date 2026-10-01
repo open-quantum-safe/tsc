@@ -4,10 +4,9 @@
 
 A sub project moves to `INACTIVE`/`UNMAINTAINED` status in either of these cases:
 
-- it loses its last Maintainer and no Committer is ready to step up and
-  be listed as Maintainer in their place, or
-- it still has a listed Maintainer, but that person is not actually
-  fulfilling the Maintainer responsibilities defined in GOVERNANCE.md
+- it loses its last Committer, or
+- it still has a listed Committer, but that person is not actually
+  fulfilling the Committer responsibilities defined in GOVERNANCE.md
   (e.g. unresponsive to PRs and issues over a sustained period).
 
 Once this happens, the TSC will have the capacity to appoint an interim caretaker 
@@ -53,8 +52,8 @@ may raise that a sub project has reached either of these states.
   or if the Caretaker is not keeping to the narrow scope defined in
   GOVERNANCE.md.
 - While a project is under Caretaker status, the TSC assumes the
-  governance decisions a Maintainer would normally make unilaterally.
-  This includes not only voting on a replacement Maintainer, but also
+  governance decisions a Maintainer/Committer would normally make unilaterally.
+  This includes not only voting on a replacement Maintainer/Committer, but also
   confirming any Contributor who wants to become a Committer on that
   project.
 
@@ -78,5 +77,5 @@ The Caretaker role for a sub project ends in any of these ways:
    the same voting procedure used to confirm it.
 
 In all cases, ending a Caretaker appointment without a new Maintainer in
-place reverts the sub project to fallback `oqs-maintainers` team rights
+place will warrant a vote on whether to revert the sub project to fallback `oqs-maintainers` team rights
 until a new Caretaker is nominated.
