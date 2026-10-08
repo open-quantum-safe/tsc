@@ -12,3 +12,4 @@ These reports will be generated with the help of AI.
 
 - March 2026: [report](march-2026/report.pdf)
 - June 2026: [report](june-2026/report.pdf)
+- September 2026: [report](september-2026/report.pdf)
