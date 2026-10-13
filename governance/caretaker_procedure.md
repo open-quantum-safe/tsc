@@ -50,9 +50,9 @@ When a sub project reaches this state:
 - Appointment is per sub project. A Caretaker for one sub project has no
   standing role in any other.
 
-## Grooming Contributors into Committers
+## Mentoring Contributors into Committers
 
-A key responsibility of the Caretaker is to groom Contributors into
+A key responsibility of the Caretaker is to prepare Contributors into
 Committers: to help willing Contributors grow, teach them the project's
 code base and processes, and ensure the takeover runs smoothly once they
 are ready. Soliciting interest is not enough. The Caretaker identifies
@@ -61,7 +61,7 @@ candidates, mentors them, and puts them forward to the TSC for a vote.
 ## TSC oversight
 
 - The TSC periodically reviews open Caretaker appointments to confirm the
-  appointment is still needed and still working, and that grooming is
+  appointment is still needed and still working, and that mentoring is
   making progress.
 - The TSC is the escalation point if a Caretaker's merges are disputed,
   or if the Caretaker is not keeping to the narrow scope defined in
@@ -76,7 +76,7 @@ candidates, mentors them, and puts them forward to the TSC for a vote.
 
 The Caretaker role for a sub project ends in any of these ways:
 
-1. **A Committer or Maintainer is voted in.** A Contributor groomed by
+1. **A Committer or Maintainer is voted in.** A Contributor mentored by
    the Caretaker, or otherwise willing to take on real maintenance,
    presents themselves at a TSC meeting and is voted on as usual, per
    existing process. Once confirmed and the handover is complete, the
