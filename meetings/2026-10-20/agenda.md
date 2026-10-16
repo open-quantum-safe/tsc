@@ -20,9 +20,6 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 5. OQS Provider discussion
     - [Drop std algs?](https://github.com/open-quantum-safe/oqs-provider/issues/821).
     - [Hybrid-provider](https://github.com/baentsch/hybrid-provider).
-6. Reports
-    - PQCA TAC (Norm)
-    - PQ Code Package (Basil)
-    - PQCA general / Outreach and Education committee (Hart)
-    - OpenSSL Conference reporting (Bruce, Michael, Norm, Rodrigo)
-7. Other business
+6. Report on Google funding
+7. OpenSSL Conference reporting
+8. Other business
