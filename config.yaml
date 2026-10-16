@@ -299,6 +299,7 @@ repositories:
 - name: security-tracking
   teams:
     oqs-admins: admin
+    bots: write
     security-managers: write
     oqs-maintainers: write
     liboqs-maintainers: write
