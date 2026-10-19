@@ -53,6 +53,18 @@ Members of the VMT agree to be available to support each other on short notice i
 When acknowledging a report, the on-call VMT member takes on the role of "[Quarterback](https://en.wikipedia.org/wiki/Quarterback)" for the issue.
 They will be responsible for managing the OQS response to the vulnerability report, as described below.
 
+### Security tracking repository
+
+The VMT maintains a private repository, [`open-quantum-safe/security-tracking`](https://github.com/open-quantum-safe/security-tracking), which lists all open security advisories across OQS subprojects.
+Access is restricted to VMT members and to the domain experts and response team members involved in a given report.
+
+For each open advisory, the tracking repository records the affected subproject, the current phase of this process, the Quarterback, the assigned domain expert(s), and links to the advisory and its private fork.
+The VMT keeps this entry up to date as the report moves through the phases below, and closes it once the advisory is published or closed.
+
+Internal discussion of open reports takes place in the tracking repository, and communication with the reporter(s) takes place on the advisory itself.
+Open reports should not be discussed in public issues or pull requests.
+If a public issue or pull request turns out to overlap with an open advisory, this should be recorded in the corresponding tracking entry and handled from there.
+
 ## 1. Intake
 
 This phase begins when a vulnerability report is received.
@@ -60,47 +72,36 @@ It ends when the report is acknowledged by a member of the VMT, who assumes the 
 
 ### External reports
 
-OQS provides reporters with two methods for reporting a vulnerability:
-1. Email to security@openquantumsafe.org.
-This email is an alias for the members of the VMT.
-2. GitHub security advisories.
-These are submitted similarly to GitHub issues but are private.
+OQS accepts private vulnerability reports only through GitHub security advisories, which are submitted similarly to GitHub issues but are private.
+Each subproject's SECURITY.md links to the corresponding advisory form and describes which types of issues should instead be reported publicly.
 
 When a report is received, the "on call" member of the VMT is responsible for acknowledging it promptly (the OSSF recommends within 1-2 days).
-- For email, this means responding to the reporter, cc'ing security@openquantumsafe.org.
-- For a GitHub security advisory (which will be in the "Triage" state), this means leaving a comment on the security advisory.
+The security advisory will be in the "Triage" state; acknowledging it means leaving a comment on the advisory.
 
 No assessment of the report is necessary at this time.
 The purpose of the acknowledgement is to let the reporter(s) and the rest of the VMT know that the issue is being looked at.
-
-Reports received via encrypted email may be more sensitive and will be handled on a case-by-case basis.
+Upon acknowledgement, the Quarterback adds an entry for the report to the [security tracking repository](#security-tracking-repository).
 
 > Example 1:
-A vulnerability report is received via email.
-Brian is on call.
-He replies to the reporter(s) the next day, cc'ing security@openquantumsafe.org.
-Brian is now the Quarterback for the report.
-
-> Example 2:
-A GitHub security advisory is received.
-Pravek is on call.
-He leaves a comment on the advisory the next day to acknowledge receipt of the report.
-Pravek is now the Quarterback for the report.
+> A GitHub security advisory is received.
+> Pravek is on call.
+> He leaves a comment on the advisory the next day to acknowledge receipt of the report and adds it to the security tracking repository.
+> Pravek is now the Quarterback for the report.
 
 ### Internal reports
 
 Vulnerabilities may also be discovered internally by members of the OQS development team or regular contributors.
 For these reports, the Intake and Assessment phases may be streamlined at the discretion of the VMT.
 
-> Example 3:
-Michael receives an email from a former OQS developer advising him of a security issue in liboqs, including a patch.
-Michael immediately recognizes the issue as a vulnerability.
-Michael responds to the report, cc'ing security@openquantumsafe.org, and proceeds directly to the Patching phase.
+> Example 2:
+> Michael receives an email from a former OQS developer advising him of a security issue in liboqs, including a patch.
+> Michael immediately recognizes the issue as a vulnerability.
+> Michael acknowledges the report, opens a draft security advisory on the liboqs repository, adds it to the security tracking repository, and proceeds directly to the Patching phase.
 
 ### Reports from other channels
 
 Reporters may not always follow instructions, and it is possible that security reports are received through other, non-endorsed channels (for example, email sent directly to a member of the VMT or a direct message on the PQCA discord).
-Such a report should be funnelled into one of the provided channels as the member of the VMT who first becomes aware of it sees fit.
+Such a report should be funnelled into a GitHub security advisory, or into a public issue if it falls under the categories described in the next section, by the member of the VMT who first becomes aware of it.
 The focus should be on addressing the vulnerability report, not forcing the reporter(s) to resubmit via another channel.
 
 ## 2. Assessment
@@ -129,6 +130,10 @@ The below table, indicating possible assessment outcomes, is copied from the [OS
 | Vulnerability       | Let the reporter know that the VMT has confirmed this unwanted behavior creates a security issue. Proceed with the process.                                                                                                                                                                                                                                               |
 | Out of scope        | Let the reporter know that the issue is out of scope for OQS. If applicable, assist them in refiling the report upstream. See the following section for further actions.                                                                                                                                                                                                  |
 
+Reports of issues that the affected subproject's SECURITY.md designates for public reporting (for example, denial of service without memory corruption or exposure of secret data, memory leaks, or failures reachable only through API misuse) should be assessed as "Bug".
+In such cases, the Quarterback may give this assessment when acknowledging the report, without appointing a domain expert, and ask the reporter(s) to refile it as a public issue or pull request.
+Reports that do not meet the criteria for a valid security report set out in the subproject's SECURITY.md may be handled the same way.
+
 #### "Out of scope" assessments
 
 OQS packages cryptographic algorithm implementations from a variety of upstream sources.
@@ -141,12 +146,12 @@ Depending on the nature of the issue, additional action may be required.
 
 In the event that OQS patches code sources from an upstream but the upstream itself remains unfixed, the published security advisory should include a warning to this effect.
 
-| "Out of scope" assessment | Description | Additional action |
-|------------------|----------|-|
-| Outside threat model | The issue lies outside the threat model of OQS. | Decide whether or not the severity of the issue warrants developing a patch irrespective of scope. |
-| Unsupported project | The issue lies in an OQS subproject that does not have security support. | Decide whether or not the issue warrants developing a patch irrespective of scope. If not, document the issue in the affected subproject. |
-| Unable to assess | Assessing the issue requires domain knowledge about the upstream beyond that of the OQS VMT. | Monitor the upstream for resolution. |
-| Vulnerability: can patch  | The issue is indeed a vulnerability and can be simply and easily patched within OQS. | Decide whether or not to develop a patch. Coordinate disclosure with the upstream. |
+| "Out of scope" assessment  | Description | Additional action |
+| -------------------------- | ----------- | ----------------- |
+| Outside threat model       | The issue lies outside the threat model of OQS. | Decide whether or not the severity of the issue warrants developing a patch irrespective of scope. |
+| Unsupported project        | The issue lies in an OQS subproject that does not have security support. | Decide whether or not the issue warrants developing a patch irrespective of scope. If not, document the issue in the affected subproject. |
+| Unable to assess           | Assessing the issue requires domain knowledge about the upstream beyond that of the OQS VMT. | Monitor the upstream for resolution. |
+| Vulnerability: can patch   | The issue is indeed a vulnerability and can be simply and easily patched within OQS. | Decide whether or not to develop a patch. Coordinate disclosure with the upstream. |
 | Vulnerability: can't patch | The issue is indeed a vulnerability but cannot be simply and easily patched within OQS. | Coordinate disclosure with the upstream. Monitor the upstream for resolution. Depending on severity, consider dropping the upstream. |
 
 Decisions on whether or not to proceed with a possible patch should be made taking into account specifics of the upstream source.
@@ -160,6 +165,7 @@ For severe vulnerabilities which the upstream is unlikely to patch in a reasonab
 Once the evaluation process is complete, the Quarterback responds to the reporter(s) with the OQS assessment of the vulnerability.
 Regardless of the assessment outcome, the response should be courteous and thank the reporter(s) for filing the issue.
 If a patch is to be made, the reporter(s) should be offered the opportunity to review and/or contribute to the fix.
+If the security advisory is closed at this point, the Quarterback also closes the corresponding entry in the security tracking repository.
 
 ### Assembling a response team
 
@@ -229,19 +235,20 @@ It may be necessary to override branch protections.
 - If necessary, prepare and publish a security release.
 - Add specifics about the patch to the security advisory text (commit hash and version information).
 - Publish the security advisory.
-- Publicize the security advisory via the oqs-security-announce@lists.pqca.org mailing list.
+- Publicize the security advisory via the <oqs-security-announce@lists.pqca.org> mailing list.
+- Close the corresponding entry in the security tracking repository.
 
 The security advisory should be published only after the patch has been merged and, if applicable, a security release has been published.
 Whether or not a security release is required is left to the discretion of the VMT.
 
 For every liboqs security advisory and release, advisories using the same CVE should be published on oqs-provider and the liboqs language wrappers.
-Whether or not security releases are warranted for oqs-provider and the language wrappers is at the discretion of the VMT, with one exception:
+Whether or not security releases are warranted for oqs-provider and the liboqs language wrappers is at the discretion of the VMT, with one exception:
 Since the oqs Rust crate installs a specific version of liboqs as part of its build process, a new version of liboqs-rust must be released and published to Crates.io.
 
 ## 6. Feedback
 
 This phase begins after the security advisory is published and ends when a security report is filed in the OQS TSC repository.
 
-The Quarterback files a report for the issue following the [Vulnerability Response Report Template](reports/YYYYMMDD-template.md).
+The Quarterback files a report for the issue following the [Vulnerability Response Report Template](https://github.com/open-quantum-safe/tsc/blob/main/security/reports/YYYYMMDD-template.md).
 The report should highlight any friction or unexpected issues that arose in the response process.
 This step is optional if the work did not proceed past the "Assessment" phase.
