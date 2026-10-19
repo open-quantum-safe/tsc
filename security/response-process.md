@@ -146,13 +146,12 @@ Depending on the nature of the issue, additional action may be required.
 
 In the event that OQS patches code sources from an upstream but the upstream itself remains unfixed, the published security advisory should include a warning to this effect.
 
-| "Out of scope" assessment  | Description | Additional action |
-| -------------------------- | ----------- | ----------------- |
-| Outside threat model       | The issue lies outside the threat model of OQS. | Decide whether or not the severity of the issue warrants developing a patch irrespective of scope. |
-| Unsupported project        | The issue lies in an OQS subproject that does not have security support. | Decide whether or not the issue warrants developing a patch irrespective of scope. If not, document the issue in the affected subproject. |
-| Unable to assess           | Assessing the issue requires domain knowledge about the upstream beyond that of the OQS VMT. | Monitor the upstream for resolution. |
-| Vulnerability: can patch   | The issue is indeed a vulnerability and can be simply and easily patched within OQS. | Decide whether or not to develop a patch. Coordinate disclosure with the upstream. |
-| Vulnerability: can't patch | The issue is indeed a vulnerability but cannot be simply and easily patched within OQS. | Coordinate disclosure with the upstream. Monitor the upstream for resolution. Depending on severity, consider dropping the upstream. |
+| "Out of scope" assessment | Description | Additional action |
+|------------------|----------|-|
+| Outside threat model | The issue lies outside the threat model of OQS. | Decide whether or not the severity of the issue warrants developing a patch irrespective of scope. |
+| Unsupported project | The issue lies in an OQS subproject that does not have security support. | Decide whether or not the issue warrants developing a patch irrespective of scope. If not, document the issue in the affected subproject. |
+| Unable to assess | Assessing the issue requires domain knowledge about the upstream beyond that of the OQS VMT. | Monitor the upstream for resolution. |
+| Vulnerability: can patch  | The issue is indeed a vulnerability and can be simply and easily patched within OQS. | Decide whether or not to develop a patch. Coordinate disclosure with the upstream. |
 
 Decisions on whether or not to proceed with a possible patch should be made taking into account specifics of the upstream source.
 These include responsiveness to vulnerability reports and ability of the upstream maintainers to develop a patch.
