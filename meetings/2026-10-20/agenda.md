@@ -23,4 +23,5 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 7. OQS Provider discussion
     - [Drop std algs?](https://github.com/open-quantum-safe/oqs-provider/issues/821).
     - [Hybrid-provider](https://github.com/baentsch/hybrid-provider).
+    - [Practical proposal](https://github.com/open-quantum-safe/oqs-provider/pull/846).
 8. Other business
