@@ -15,11 +15,12 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 3. Review [action items from previous meeting](https://github.com/open-quantum-safe/tsc/blob/main/meetings/2026-09-15/minutes.md)
     - [How to handle security notifications](https://github.com/open-quantum-safe/tsc/discussions/331)
     - [Caretaker approach](https://github.com/open-quantum-safe/tsc/pull/333)
-4. Classic McEliece future status
+    - Round 3 updates and timeline
+4. OpenSSL Conference reporting
+5. Classic McEliece future status
     - Decision of what to do with the algorithm after recent reports.
-5. OQS Provider discussion
+6. Report on Google funding
+7. OQS Provider discussion
     - [Drop std algs?](https://github.com/open-quantum-safe/oqs-provider/issues/821).
     - [Hybrid-provider](https://github.com/baentsch/hybrid-provider).
-6. Report on Google funding
-7. OpenSSL Conference reporting
 8. Other business
