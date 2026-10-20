@@ -1,4 +1,4 @@
-# OQS Technical Steering – 2026-09-15 – agenda
+# OQS Technical Steering – 2026-10-20 – agenda
 
 ## Meeting information
 
