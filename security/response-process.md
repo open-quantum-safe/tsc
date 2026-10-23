@@ -234,7 +234,6 @@ It may be necessary to override branch protections.
 - If necessary, prepare and publish a security release.
 - Add specifics about the patch to the security advisory text (commit hash and version information).
 - Publish the security advisory.
-- Publicize the security advisory via the <oqs-security-announce@lists.pqca.org> mailing list.
 - Close the corresponding entry in the security tracking repository.
 
 The security advisory should be published only after the patch has been merged and, if applicable, a security release has been published.
