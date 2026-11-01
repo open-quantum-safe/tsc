@@ -96,3 +96,18 @@ In all cases, if a Caretaker appointment ends without a new Committer or
 Maintainer in place, the default timeline above applies: the sub project
 is archived after one TSC meeting cycle unless a new Caretaker volunteers
 or the TSC votes for something else.
+
+## Single-Committer projects
+
+A project with exactly one Committer or Maintainer is not under caretaking, and the
+Caretaker does not stay on as a second reviewer. If the Caretaker is
+the one voted in as Committer, the Caretaker role simply ends.
+
+The sole Committer may merge PRs at their own discretion, including
+their own, after a cool-off period of 24 hours so that anyone left in the
+community can raise concerns. No further review is required.
+
+Each such project documents this in its GOVERNANCE.md, so users and
+Contributors know that changes are not independently reviewed. If a
+second Committer is later voted in, the project reverts to the regular
+joint decision-making described in its GOVERNANCE.md.
