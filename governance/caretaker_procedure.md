@@ -19,7 +19,7 @@ When a sub project reaches this state:
 
 1. It is flagged: a tracking issue is opened in the TSC repository and a
    "maintenance at risk" line is added to the sub project's README.
-2. It is archived (read-only) after one TSC meeting cycle, unless within
+2. It is archived (read-only) after two TSC meeting cycles, unless within
    that window someone volunteers as Caretaker, or the TSC votes for
    something else.
 
@@ -41,8 +41,7 @@ When a sub project reaches this state:
 - Once confirmed:
   - The sub project's GOVERNANCE.md is updated to name the Caretaker
     under the Caretaker entry.
-  - The `INACTIVE`/`UNMAINTAINED` status is set in the two places
-    established by the existing openssh precedent: the GitHub repository
+  - The `INACTIVE`/`UNMAINTAINED` status is set in two places: the GitHub repository
     description ("project overview"), and a prominent line near the top
     of the README, e.g. "PROJECT INACTIVE. CONTRIBUTORS WANTED."
   - The Caretaker is granted the GitHub permissions needed to approve
@@ -94,7 +93,7 @@ The Caretaker role for a sub project ends in any of these ways:
 
 In all cases, if a Caretaker appointment ends without a new Committer or
 Maintainer in place, the default timeline above applies: the sub project
-is archived after one TSC meeting cycle unless a new Caretaker volunteers
+is archived after two TSC meeting cycles unless a new Caretaker volunteers
 or the TSC votes for something else.
 
 ## Single-Committer projects
