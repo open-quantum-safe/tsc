@@ -95,6 +95,7 @@ teams:
   - h2parson
   - pablo-gf
   - RodriM11
+  - 0rlych1kk4
 
 # Technical Steering Committee
 # https://github.com/open-quantum-safe/tsc/blob/main/README.md#members
@@ -250,6 +251,7 @@ teams:
   members:
   - dstebila
   - vsoftco
+  - 0rlych1kk4
 # liboqs-rust Release Managers
 # TODO: provide "source of truth"
 # This team is tied to permissions on Crates.io: https://crates.io/teams/github:open-quantum-safe:liboqs-rust-release-managers
@@ -260,6 +262,7 @@ teams:
   - dstebila
   - xuganyu96
   - vsoftco
+  - 0rlych1kk4
 
 - name: liboqs-cupqc-maintainers
   maintainers:
