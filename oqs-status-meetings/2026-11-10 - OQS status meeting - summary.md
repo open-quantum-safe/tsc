@@ -9,8 +9,8 @@
 - Dean Jay Mathew
 - Michael Baentsch (independent contributor)
 - Norman Ashley (Cisco)
-- Owen Waldron (University of Waterloo, co-op)
-- Pablo Gutiérrez (LFX mentee)
+- Owen Waldron (University of Waterloo)
+- Pablo Gutiérrez
 - Rodrigo Martín (Indra)
 
 **Date and time:** Tuesday, November 10, 2026, 10:00–10:45 AM US Eastern / 7:00 AM US Pacific / 16:00 Central European
@@ -111,8 +111,7 @@ Rodrigo noted he has been focused on language-wrapper governance and has not yet
 Rodrigo summarised the governance status across wrappers:
 
 - **liboqs-C++, liboqs-js, liboqs-Go:** placed under "no maintenance" status.
-- **liboqs-Python:** placed under caretaker status with Douglas as caretaker.
-- **liboqs-Java:** Dagan has expressed interest in acting as caretaker; PR forthcoming.
+- **liboqs-Python, liboqs-Java:** placed under caretaker status with Douglas as caretaker.
 - **liboqs-Rust:** awaiting the TSC vote on Orly as maintainer, after which a governance file will be created.
 
 Three PRs were merged in liboqs-Java this week ([#36](https://github.com/open-quantum-safe/liboqs-java/pull/36), [#37](https://github.com/open-quantum-safe/liboqs-java/pull/37), [#38](https://github.com/open-quantum-safe/liboqs-java/pull/38)), addressing extmu test fixes, null handling, and dispose idempotency. No other technical wrapper updates were raised.
