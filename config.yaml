@@ -91,7 +91,6 @@ teams:
   - Martyrshot
   - pi-314159
   - planetf1
-  - thomwiggers
   - h2parson
   - pablo-gf
   - RodriM11
@@ -247,9 +246,8 @@ teams:
 # TODO: provide "source of truth"
 - name: liboqs-rust-maintainers
   maintainers:
-  - thomwiggers
-  members:
   - dstebila
+  members:
   - vsoftco
   - 0rlych1kk4
 # liboqs-rust Release Managers
@@ -257,9 +255,8 @@ teams:
 # This team is tied to permissions on Crates.io: https://crates.io/teams/github:open-quantum-safe:liboqs-rust-release-managers
 - name: liboqs-rust-release-managers
   maintainers:
-  - thomwiggers
-  members:
   - dstebila
+  members:
   - xuganyu96
   - vsoftco
   - 0rlych1kk4
