@@ -32,6 +32,7 @@ Everyone, regardless of membership within the TSC itself, is welcome to attend. 
 - 2026-08-11: [agenda](2026-08-11/agenda.md) / [minutes](2026-08-11/minutes.md)
 - 2026-09-15: [agenda](2026-09-15/agenda.md) / [minutes](2026-09-15/minutes.md)
 - 2026-10-20: [agenda](2026-10-20/agenda.md) / [minutes](2026-10-20/minutes.md)
+- 2026-11-24: [agenda](2026-11-24/agenda.md)
 
 ## Upcoming meetings
 
