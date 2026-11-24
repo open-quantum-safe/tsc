@@ -17,7 +17,7 @@ Information about the TSC (members, roles and responsibilities, charter) is avai
 4. Discussion about upcoming releases
     - remaining work and timelines (e.g. see concrete proposal https://github.com/open-quantum-safe/tsc/pull/364#discussion_r4587944246)
     - security responses
-    - oqs-provider 0.13 announcements (https://github.com/open-quantum-safe/oqs-provider/issues/821) (https://github.com/open-quantum-safe/oqs-provider/issues/847)
+    - oqs-provider 0.13 announcements (https://github.com/open-quantum-safe/oqs-provider/issues/821) (https://github.com/open-quantum-safe/oqs-provider/issues/847). Please see https://github.com/open-quantum-safe/tsc/pull/364#discussion_r4676098441 for a report on the status of the discussion(s).
 5. Initial revision of caretaker status declarations
     - Language wrappers
     - Demos
