@@ -30,6 +30,7 @@ teams:
   - jarvis-brian
   - hartm
   - xuganyu96
+  - owaldron
 
 # access to Trail of Bits audit project board
 - name: trail-of-bits
@@ -57,6 +58,7 @@ teams:
   members:
   - baentsch
   - xuganyu96
+  - owaldron
   - vsoftco
   - ashman-p
 # A sensible default for projects without a clear list of Committers.
@@ -72,6 +74,7 @@ teams:
   - xuganyu96
   - vsoftco
   - RodriM11
+  - owaldron
 # A sensible default for projects without a clear list of Contributors.
 # TODO: add/update per-project GOVERNANCE.md files and remove this team.
 - name: oqs-contributors
@@ -129,6 +132,7 @@ teams:
   - mkannwischer
   - RodriM11
   - xuganyu96
+  - owaldron
 # liboqs CODEOWNERS
 # https://github.com/open-quantum-safe/liboqs/blob/main/.github/CODEOWNERS
 - name: liboqs-codeowners
